@@ -230,8 +230,8 @@ p.lead, .lead { font-size: clamp(1.2rem, 2vw, 1.45rem); line-height: 1.65; }
 .brand-panel h3 { color: var(--cyan-light); font-size: 1.35rem; margin-bottom: 0.5rem; }
 .brand-panel p { color: var(--pale-text); font-size: 1.125rem; line-height: 1.7; margin-bottom: 1rem; }
 .brand-panel ul { list-style: none; margin: 0 0 1.25rem; padding: 0; }
-.brand-panel li { display: flex; gap: 0.6rem; align-items: center; color: var(--pale-text); font-weight: 700; font-size: 1.125rem; padding: 0.25rem 0; }
-.brand-panel li::before { content: '✓'; color: var(--cyan-light); font-weight: 700; }
+.brand-panel li { display: flex; gap: 0.6rem; align-items: flex-start; color: var(--pale-text); font-weight: 700; font-size: 1.125rem; padding: 0.25rem 0; }
+.brand-panel li::before { content: '✓'; color: var(--cyan-light); font-weight: 700; line-height: 1.75; }
 .aside-call { margin-top: 1rem; background: var(--cream); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.25rem 1.5rem; border: 1px solid rgba(0, 86, 163, 0.1); }
 .aside-call p { margin: 0 0 0.75rem; font-weight: 700; color: var(--ink); }
 .aside-call .btn { width: 100%; }
@@ -348,13 +348,20 @@ p.lead, .lead { font-size: clamp(1.2rem, 2vw, 1.45rem); line-height: 1.65; }
 .footer-hours::before { content: '●'; color: var(--cyan); margin-right: 0.5rem; }
 .footer-col ul { list-style: none; margin: 0; padding: 0; }
 .footer-col li { margin-bottom: 0.45rem; }
-.footer-col ul a { color: var(--pale-text); text-decoration: none; font-size: 1.125rem; font-weight: 500; } /* ul only: .btn links in this column keep their own colors */
-.footer-col ul a:hover { color: var(--cyan-light); }
+/* Footer links: clean — a cyan underline grows in on hover and the
+   link nudges 2px right; "View all" links carry a permanent cyan underline. */
+.footer-col ul a {
+  color: var(--pale-text); text-decoration: none; font-size: 1.125rem; font-weight: 500;
+  text-decoration: underline; text-decoration-color: transparent; text-decoration-thickness: 2px;
+  text-underline-offset: 4px; transition: color 0.15s ease, text-decoration-color 0.15s ease, transform 0.15s ease;
+  display: inline-block;
+}
+.footer-col ul a:hover { color: var(--cream); text-decoration-color: var(--cyan); transform: translateX(2px); }
+.footer-col ul a.footer-more { font-weight: 700; color: var(--cream); text-decoration-color: var(--cyan); }
+.footer-col ul a.footer-more:hover { color: var(--cyan-light); }
 .footer-col p a { color: var(--pale-text); text-decoration: none; }
 .footer-col p a:hover { color: var(--cyan-light); text-decoration: underline; }
-.footer-col a .arrow { transition: margin 0.15s ease; }
-.footer-col a:hover .arrow { margin-left: 0.25rem; }
-.footer-col .btn { margin-bottom: 0.6rem; }
+.footer-col .btn { margin-bottom: 0.6rem; flex-direction: column; gap: 0.15rem; font-size: 1rem; padding: 0.875rem 1rem; line-height: 1.35; }
 .footer-bottom { border-top: 1px solid var(--border); padding: 1.25rem 0 2rem; font-size: 1.125rem; display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; justify-content: space-between; }
 .footer-bottom a { color: var(--pale-text); text-decoration: none; }
 .footer-bottom a:hover { color: var(--cyan-light); }

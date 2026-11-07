@@ -34,14 +34,12 @@ export default function Footer({ showMap = true }) {
             <ul>
               {FOOTER_SERVICES.map((s) => (
                 <li key={s}>
-                  <Link href={s}>
-                    {shortName(s)} <span className="arrow" aria-hidden="true">→</span>
-                  </Link>
+                  <Link href={s}>{shortName(s)}</Link>
                 </li>
               ))}
               <li>
-                <Link href="/services/">
-                  View all services <span className="arrow" aria-hidden="true">→</span>
+                <Link href="/services/" className="footer-more">
+                  View all services
                 </Link>
               </li>
             </ul>
@@ -52,14 +50,12 @@ export default function Footer({ showMap = true }) {
             <ul>
               {FOOTER_AREAS.map((s) => (
                 <li key={s}>
-                  <Link href={s}>
-                    {shortName(s)} <span className="arrow" aria-hidden="true">→</span>
-                  </Link>
+                  <Link href={s}>{shortName(s)}</Link>
                 </li>
               ))}
               <li>
-                <Link href="/#which-tulsa-areas-do-you-serve">
-                  View all areas <span className="arrow" aria-hidden="true">→</span>
+                <Link href="/#which-tulsa-areas-do-you-serve" className="footer-more">
+                  View all areas
                 </Link>
               </li>
             </ul>
@@ -69,8 +65,8 @@ export default function Footer({ showMap = true }) {
             <p>Guides and cost information from Tulsa Water Damage Repair.</p>
             <ul>
               <li>
-                <Link href="/resources/">
-                  Blog <span className="arrow" aria-hidden="true">→</span>
+                <Link href="/resources/" className="footer-more">
+                  Blog
                 </Link>
               </li>
             </ul>
@@ -79,7 +75,8 @@ export default function Footer({ showMap = true }) {
             <h3>Emergency Help</h3>
             <p>Speak with Tulsa Water Damage Repair about your restoration needs.</p>
             <a className="btn btn-cyan" href={SITE.phoneHref}>
-              Call Now · {SITE.phone}
+              <span>Call Now ·</span>
+              <span>{SITE.phone}</span>
             </a>
             <br />
             <a className="btn btn-cream" href="/contact/">

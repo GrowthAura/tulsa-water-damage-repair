@@ -165,9 +165,18 @@ function groupBlocks(blocks, page) {
 function jsonLd(page) {
   const url = SITE.url + page.slug;
   const parent = parentOf(page);
+  /* BreadcrumbList must match the visible breadcrumb trail exactly:
+     - homepage: a single Home item (it renders no visible trail, and a
+       second item pointing at the same URL was a duplicate);
+     - last item name is shortName(page.slug), the same text the visible
+       breadcrumb shows — NOT the full H1;
+     - area pages have no parent (no /service-areas/ hub exists);
+       resource pages parent to the real /resources/ hub. */
   const crumbs = [{ '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url + '/' }];
   if (parent) crumbs.push({ '@type': 'ListItem', position: 2, name: parent.label, item: SITE.url + parent.href });
-  crumbs.push({ '@type': 'ListItem', position: crumbs.length + 1, name: page.h1, item: url });
+  if (page.type !== 'homepage') {
+    crumbs.push({ '@type': 'ListItem', position: crumbs.length + 1, name: shortName(page.slug), item: url });
+  }
   const localBusiness = {
     '@type': 'LocalBusiness',
     '@id': SITE.url + '/#business',
@@ -190,6 +199,10 @@ function jsonLd(page) {
       closes: '23:59',
     },
   };
+  /* LocalBusiness belongs on EVERY page, not just homepage/service pages:
+     the 34 area/resource/hub/about/contact/commercial pages had no business
+     entity at all. WebPage is likewise present on every page. */
+  const webPage = { '@type': 'WebPage', '@id': url, url, name: page.h1, isPartOf: { '@id': SITE.url + '/#website' } };
   const out = [
     {
       '@context': 'https://schema.org',
@@ -197,7 +210,7 @@ function jsonLd(page) {
         { '@type': 'WebSite', '@id': SITE.url + '/#website', url: SITE.url + '/', name: SITE.brand },
         { '@type': 'BreadcrumbList', itemListElement: crumbs },
         ...(page.type === 'homepage'
-          ? [{ ...localBusiness, '@type': 'LocalBusiness' }]
+          ? [localBusiness, webPage]
           : page.type === 'service'
             ? [
                 {
@@ -209,7 +222,7 @@ function jsonLd(page) {
                 },
                 localBusiness,
               ]
-            : [{ '@type': 'WebPage', '@id': url, url, name: page.h1, isPartOf: { '@id': SITE.url + '/#website' } }]),
+            : [webPage, localBusiness]),
         ...(page.faqs && page.faqs.length
           ? [
               {

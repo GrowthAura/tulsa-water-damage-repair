@@ -78,8 +78,10 @@ export function shortName(slug) {
 
 export function parentOf(page) {
   if (page.type === 'service') return { label: 'Services', href: '/services/' };
-  if (page.type === 'area') return { label: 'Service Areas', href: '/' };
-  if (page.type === 'resource') return { label: 'Resources', href: '/' };
+  /* No /service-areas/ hub route exists, so area pages have no parent crumb:
+     linking "Service Areas" to "/" was a duplicate Home link with a wrong name. */
+  if (page.type === 'area') return null;
+  if (page.type === 'resource') return { label: 'Resources', href: '/resources/' };
   return null;
 }
 
