@@ -68,6 +68,100 @@ function slugify(text) {
     .replace(/^-|-$/g, '');
 }
 
+const SMALL_WORDS = new Set(['and', 'or', 'of', 'for', 'the', 'in', 'to', 'a', 'an']);
+function titleCase(s) {
+  return s
+    .split(/\s+/)
+    .map((w, i) => {
+      if (/^[A-Z]{2,}$/.test(w)) return w; // AC, IICRC stay uppercase
+      const lw = w.toLowerCase();
+      if (i > 0 && SMALL_WORDS.has(lw)) return lw;
+      return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
+    })
+    .join(' ');
+}
+
+function parseHandleItem(html) {
+  const href = (html.match(/<a href="([^"]+)"/) || [])[1] || '/services/';
+  const label = (html.match(/<strong>([\s\S]*?)<\/strong>/) || [])[1] || '';
+  const body = html
+    .replace(/^<a[^>]*><strong>[\s\S]*?<\/strong>/, '')
+    .replace(/<\/a>/, '')
+    .trim();
+  return { href, titleHtml: label, descHtml: body };
+}
+
+// Group doc list paragraphs into card grids + the area-page SEO strip.
+// - Homepage Phase 1/2 paragraphs -> phase-grid.
+// - About "What Do We Handle?" paragraphs -> handle-grid (+ directory link).
+// - Area offer <ul> -> demand-strip with that page's own services + city
+//   (city taken from the offer H2 itself, exactly as written on the page).
+function groupBlocks(blocks, page) {
+  const out = [];
+  let lastH2 = '';
+  let i = 0;
+  while (i < blocks.length) {
+    const b = blocks[i];
+    if (b.t === 'h2') lastH2 = b.text || '';
+    // Phase cards (homepage only).
+    if (page.type === 'homepage' && b.t === 'p' && /^<strong>Phase \d/.test(b.html || '')) {
+      const items = [];
+      while (i < blocks.length && blocks[i].t === 'p' && /^<strong>Phase \d/.test(blocks[i].html || '')) {
+        items.push(blocks[i].html);
+        i++;
+      }
+      out.push({ t: 'phase-grid', items });
+      continue;
+    }
+    // About handle cards. (An intro paragraph sits between the h2 and the
+    // list, so pass non-list blocks through first, then collect the run.)
+    if (b.t === 'h2' && b.text === 'What Do We Handle?') {
+      out.push(b);
+      i++;
+      while (
+        i < blocks.length &&
+        blocks[i].t !== 'h2' &&
+        blocks[i].t !== 'hr' &&
+        !(blocks[i].t === 'p' && /^<a href="[^"]+"><strong>/.test(blocks[i].html || ''))
+      ) {
+        out.push(blocks[i]);
+        i++;
+      }
+      const items = [];
+      while (i < blocks.length && blocks[i].t === 'p' && /^<a href="[^"]+"><strong>/.test(blocks[i].html || '')) {
+        items.push(blocks[i].html);
+        i++;
+      }
+      if (items.length) out.push({ t: 'handle-grid', items });
+      if (
+        i < blocks.length &&
+        blocks[i].t === 'p' &&
+        /^<a href="\/services\/">See the full services directory:/.test((blocks[i].html || '').trim())
+      ) {
+        out.push({ t: 'handle-more', html: blocks[i].html });
+        i++;
+      }
+      continue;
+    }
+    out.push(b);
+    // Area SEO strip, directly below the offer list (which renders as cards).
+    if (page.type === 'area' && b.t === 'ul') {
+      const cards = serviceListItems(b.items);
+      const cityMatch = /Services Do We Offer in (.+)\?/.exec(lastH2);
+      if (cards && cityMatch) {
+        const city = cityMatch[1];
+        out.push({
+          t: 'demand-strip',
+          city,
+          items: cards.map((c) => `${titleCase(c.titleHtml.replace(/<[^>]*>/g, ''))} in ${city}`),
+        });
+      }
+    }
+    i++;
+  }
+  return out;
+}
+
 function jsonLd(page) {
   const url = SITE.url + page.slug;
   const parent = parentOf(page);
@@ -285,10 +379,11 @@ function Block({ b, page }) {
     case 'p':
       return <p dangerouslySetInnerHTML={{ __html: b.html }} />;
     case 'ul': {
-      // Doc grouped service lists (hub + homepage) render as card grids, so
-      // each service appears once as a card instead of twice (cards + list).
-      // Any other list shape stays a plain bullet list.
-      if (page.type === 'hub' || page.type === 'homepage') {
+      // Doc grouped service lists (hub + homepage + area offer lists) render
+      // as card grids, so each service appears once as a card instead of a
+      // bullet list. serviceListItems returns null for any other list shape,
+      // so plain lists (documentation, checklists, areas covered) stay lists.
+      if (page.type === 'hub' || page.type === 'homepage' || page.type === 'area') {
         const cards = serviceListItems(b.items);
         if (cards) return <ServiceListCards items={cards} />;
       }
@@ -325,6 +420,38 @@ function Block({ b, page }) {
           </table>
         </div>
       );
+    case 'phase-grid':
+      return (
+        <div className="phase-grid">
+          {b.items.map((html, i) => {
+            const title = (html.match(/<strong>([\s\S]*?)<\/strong>/) || [])[1] || '';
+            const body = html.replace(/<strong>[\s\S]*?<\/strong>/, '').trim();
+            return (
+              <article className="phase-card" key={i}>
+                <h3>{title}</h3>
+                <p dangerouslySetInnerHTML={{ __html: body }} />
+              </article>
+            );
+          })}
+        </div>
+      );
+    case 'handle-grid':
+      return <ServiceListCards items={b.items.map(parseHandleItem)} />;
+    case 'handle-more':
+      return <p className="handle-more" dangerouslySetInnerHTML={{ __html: b.html }} />;
+    case 'demand-strip':
+      return (
+        <div className="demand-strip">
+          <h3>Most In-Demand Services in {b.city}</h3>
+          <ul className="demand-list">
+            {b.items.map((name, i) => (
+              <li key={i}>
+                <strong>{name}</strong>
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
     case 'cta':
       return (
         <section className="call-strip">
@@ -359,12 +486,14 @@ export default function Page({ params }) {
   const isContact = page.type === 'contact';
 
   // First normal paragraph is the intro: hero (home) or navy band (inner) shows it.
-  const blocks = [...page.blocks];
+  let blocks = [...page.blocks];
   let intro = page.intro || '';
   const firstP = blocks.findIndex((b) => b.t === 'p');
   if (firstP >= 0) blocks.splice(firstP, 1);
   // Drop leading section dividers left over after the intro was consumed.
   while (blocks.length && blocks[0].t === 'hr') blocks.shift();
+  // Group list paragraphs into card grids + the area-page SEO strip.
+  blocks = groupBlocks(blocks, page);
 
   const parent = parentOf(page);
   const crumbs = (
@@ -430,7 +559,7 @@ export default function Page({ params }) {
           </div>
         </section>
       ) : (
-        <section className="section">
+        <section className={`section page-${page.type}`}>
           <div className="container">
             {crumbs}
             <div className="split">

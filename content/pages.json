@@ -11668,11 +11668,11 @@
         "items": [
           "<a href=\"/services/commercial-water-damage\"><strong>Commercial water damage restoration</strong> extraction and drying for offices, retail, warehouses and multi-family buildings</a> ",
           "<a href=\"/services/flood-damage-restoration\"><strong>Flood damage restoration</strong> Category 3 floodwater cleanup, contaminated-material removal and structural disinfection</a> ",
-          "<a href=\"/services/sewage-backup-cleanup\"><strong>Sewage backup cleanup</strong> restroom overflows, floor drain backups and lower-level unit contamination</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines for commercial spaces</a> ",
-          "<a href=\"/services/storm-damage-repair\"><strong>Storm damage repair</strong> emergency tarping, board-up and interior drying after wind, hail and tornado damage</a> ",
-          "<a href=\"/services/fire-damage-restoration\"><strong>Fire damage restoration</strong> board-up, water extraction, soot cleaning, deodorization and rebuild</a> ",
-          "<a href=\"/services/smoke-soot-damage-cleanup\"><strong>Smoke and soot cleanup</strong> surface cleaning, HVAC assessment and odor removal</a> "
+          "<strong>Sewage backup cleanup</strong> restroom overflows, floor drain backups and lower-level unit contamination",
+          "<strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines for commercial spaces",
+          "<strong>Storm damage repair</strong> emergency tarping, board-up and interior drying after wind, hail and tornado damage",
+          "<strong>Fire damage restoration</strong> board-up, water extraction, soot cleaning, deodorization and rebuild",
+          "<strong>Smoke and soot cleanup</strong> surface cleaning, HVAC assessment and odor removal"
         ]
       },
       {

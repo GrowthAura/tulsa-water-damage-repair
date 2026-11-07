@@ -132,7 +132,7 @@ export function ServiceListCards({ items }) {
 
 export function ResourceCards({ slugs, heading, eyebrow }) {
   return (
-    <section className="section" aria-label={heading || 'Resources'}>
+    <section className="section resource-cards" aria-label={heading || 'Resources'}>
       <div className="container">
         {eyebrow && <p className="eyebrow">{eyebrow}</p>}
         {heading && <h2>{heading}</h2>}
