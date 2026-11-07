@@ -9,6 +9,7 @@ const dmSans = DM_Sans({ subsets: ['latin'], weight: ['400', '500', '700'], disp
 export const metadata = {
   metadataBase: new URL(SITE.url),
   robots: { index: true, follow: true },
+  manifest: '/site.webmanifest',
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -17,6 +18,10 @@ export const metadata = {
     ],
     apple: '/apple-touch-icon.png',
   },
+};
+
+export const viewport = {
+  themeColor: '#073B66',
 };
 
 export default function RootLayout({ children }) {
