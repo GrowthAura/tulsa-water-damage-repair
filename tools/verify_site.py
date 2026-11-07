@@ -53,7 +53,7 @@ class LinkParser(HTMLParser):
         if self._in_title: self.title += data.strip()
 
 def canon(path):
-    return 'https://tulsawaterdamagerepair.com' + path
+    return 'https://www.tulsawaterdamagerepair.com' + path
 
 problems = []
 checked_links = Counter()

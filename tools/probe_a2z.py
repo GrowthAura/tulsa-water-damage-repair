@@ -74,7 +74,7 @@ res['links'] = {'internal_refs': len(hrefs), 'broken': broken}
 # ---- sitemap ----
 sm = open(os.path.join(BASE, 'public', 'sitemap.xml'), encoding='utf-8').read()
 locs = re.findall(r'<loc>([^<]+)</loc>', sm)
-res['sitemap'] = {'count': len(locs), 'in_pages_json': sum(1 for u in locs if any(u.endswith(p['slug'].rstrip('/')) or u == 'https://tulsawaterdamagerepair.com/' and p['slug'] == '/' for p in pages))}
+res['sitemap'] = {'count': len(locs), 'in_pages_json': sum(1 for u in locs if any(u.endswith(p['slug'].rstrip('/')) or u == 'https://www.tulsawaterdamagerepair.com/' and p['slug'] == '/' for p in pages))}
 # ---- FAQ schema vs visible ----
 bad_faq = []
 for p in pages:

@@ -16,7 +16,7 @@ from collections import Counter
 
 SITE_DIR = os.path.expanduser('~/workspace/tulsa-water-damage-repair/site')
 QA = os.path.join(SITE_DIR, 'qa-see-seo')
-HOST = 'https://tulsawaterdamagerepair.com'
+HOST = 'https://www.tulsawaterdamagerepair.com'
 PHONE = '(918) 395-9320'
 ADDR = {'@type': 'PostalAddress', 'streetAddress': '400 S 129th E Ave', 'addressLocality': 'Tulsa',
         'addressRegion': 'OK', 'postalCode': '74108', 'addressCountry': 'US'}
@@ -296,7 +296,7 @@ st, rb, _ = fetch('/robots.txt')
 robots = {'status': st, 'body': rb}
 if st != 200:
     defects.append(f'robots.txt status {st}')
-if 'Sitemap: https://tulsawaterdamagerepair.com/sitemap.xml' not in rb:
+if 'Sitemap: https://www.tulsawaterdamagerepair.com/sitemap.xml' not in rb:
     defects.append('robots.txt missing/incorrect Sitemap line')
 if 'User-agent: *' not in rb or 'Allow: /' not in rb:
     defects.append('robots.txt missing User-agent/Allow')

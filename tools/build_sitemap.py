@@ -5,7 +5,7 @@ doc's exact slugs."""
 import json, os
 BASE = os.path.expanduser('~/workspace/tulsa-water-damage-repair/site')
 pages = json.load(open(os.path.join(BASE, 'content', 'pages.json')))
-DOMAIN = 'https://tulsawaterdamagerepair.com'
+DOMAIN = 'https://www.tulsawaterdamagerepair.com'
 LASTMOD = '2026-11-07'
 urls = sorted({p['slug'] for p in pages})
 assert len(urls) == 53, f'expected 53 urls, got {len(urls)}'

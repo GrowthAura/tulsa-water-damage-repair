@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tulsawaterdamagerepair.com/sitemap.xml
-Host: tulsawaterdamagerepair.com
+Sitemap: https://www.tulsawaterdamagerepair.com/sitemap.xml
+Host: www.tulsawaterdamagerepair.com

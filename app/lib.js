@@ -41,8 +41,8 @@ const pagesData = pagesDataRaw.map(fixPage);
 
 export const SITE = {
   brand: 'Tulsa Water Damage Repair',
-  domain: 'tulsawaterdamagerepair.com',
-  url: 'https://tulsawaterdamagerepair.com',
+  domain: 'www.tulsawaterdamagerepair.com',
+  url: 'https://www.tulsawaterdamagerepair.com',
   phone: '(918) 395-9320',
   phoneHref: 'tel:+19183959320',
   address: '400 S 129th E Ave, Tulsa, OK 74108',
