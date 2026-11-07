@@ -35,9 +35,9 @@ function CardMedia({ img, label }) {
 
 export function ServiceCards({ slugs, heading, eyebrow }) {
   return (
-    <section className="section section-navy" aria-label={heading || 'Our services'}>
+    <section className="section" aria-label={heading || 'Our services'}>
       <div className="container">
-        {eyebrow && <p className="eyebrow on-navy">{eyebrow}</p>}
+        {eyebrow && <p className="eyebrow">{eyebrow}</p>}
         {heading && <h2>{heading}</h2>}
         <div className="cards">
           {slugs.map((slug) => {
@@ -132,9 +132,9 @@ export function ServiceListCards({ items }) {
 
 export function ResourceCards({ slugs, heading, eyebrow }) {
   return (
-    <section className="section section-navy" aria-label={heading || 'Resources'}>
+    <section className="section" aria-label={heading || 'Resources'}>
       <div className="container">
-        {eyebrow && <p className="eyebrow on-navy">{eyebrow}</p>}
+        {eyebrow && <p className="eyebrow">{eyebrow}</p>}
         {heading && <h2>{heading}</h2>}
         <div className="cards">
           {slugs.map((slug) => {
@@ -161,7 +161,7 @@ export function ResourceCards({ slugs, heading, eyebrow }) {
 
 export function AreaCards({ slugs, heading, eyebrow }) {
   return (
-    <section className="section section-tan" aria-label={heading || 'Service areas'}>
+    <section className="section" aria-label={heading || 'Service areas'}>
       <div className="container">
         {eyebrow && <p className="eyebrow">{eyebrow}</p>}
         {heading && <h2>{heading}</h2>}

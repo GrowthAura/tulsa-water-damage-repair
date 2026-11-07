@@ -61,8 +61,8 @@ export function normSlug(s) {
 export function pageImage(slug) {
   const entry = IMAGES[slug] || {};
   return {
-    hero: entry.hero || null,
-    body: entry.body || null,
+    hero: entry.hero ? { ...entry.hero } : null,
+    body: entry.body ? { ...entry.body } : null,
   };
 }
 

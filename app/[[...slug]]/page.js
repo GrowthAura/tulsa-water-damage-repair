@@ -147,13 +147,12 @@ function Hero({ page }) {
             alt={img.alt}
             width={1200}
             height={800}
+            style={img.pos ? { objectPosition: img.pos } : undefined}
           />
         </div>
       ) : (
         <div className="hero-brand-panel">
-          <div className="panel-inner">
-            <p className="eyebrow on-navy">Tulsa Water Damage Repair</p>
-          </div>
+          <div className="panel-inner" aria-hidden="true" />
         </div>
       )}
       <div className="hero-content">
@@ -195,9 +194,9 @@ function Hero({ page }) {
 
 function NavyBand({ intro }) {
   return (
-    <section className="section-navy" style={{ padding: '2.5rem 0' }}>
+    <section className="section" style={{ padding: '2.5rem 0' }}>
       <div className="container">
-        <p className="lead" style={{ color: 'var(--pale-text)' }}>
+        <p className="lead" style={{ color: 'var(--navy)' }}>
           {intro}
         </p>
         <ul
@@ -211,8 +210,8 @@ function NavyBand({ intro }) {
           }}
         >
           {TRUST_CHECKS.map((c) => (
-            <li key={c} style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', fontWeight: 700, fontSize: '0.85rem', color: 'var(--pale-text)' }}>
-              <span className="check" aria-hidden="true" style={{ width: 20, height: 20, borderRadius: '50%', border: '1px solid var(--cyan-light)', color: 'var(--cyan-light)', display: 'grid', placeItems: 'center', fontSize: '0.75rem' }}>
+            <li key={c} style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', fontWeight: 700, fontSize: '1.125rem', color: 'var(--ink)' }}>
+              <span className="check" aria-hidden="true" style={{ width: 20, height: 20, borderRadius: '50%', border: '1px solid var(--blue)', color: 'var(--blue)', display: 'grid', placeItems: 'center', fontSize: '0.75rem' }}>
                 ✓
               </span>
               {c}
@@ -419,19 +418,19 @@ export default function Page({ params }) {
       {isHome ? <TrustBand /> : intro && <NavyBand intro={intro} />}
       {isResourcesHub ? (
         <>
-          <section className="section section-cream" style={{ paddingBottom: 0 }}>
+          <section className="section" style={{ paddingBottom: 0 }}>
             <div className="container">{crumbs}</div>
           </section>
           <ResourceCards slugs={RESOURCE_SLUGS} heading="Guides and Cost Information" eyebrow="Resources" />
         </>
       ) : isHome ? (
-        <section className="section section-cream">
+        <section className="section">
           <div className="container content-block">
             {bodyBlocks}
           </div>
         </section>
       ) : (
-        <section className="section section-cream">
+        <section className="section">
           <div className="container">
             {crumbs}
             <div className="split">
@@ -444,7 +443,7 @@ export default function Page({ params }) {
         </section>
       )}
       {isArea && (
-        <section className="section section-tan" aria-label="Service area map">
+        <section className="section" aria-label="Service area map">
           <div className="container">
             <MapBlock query={areaMapQuery(page.slug)} title={`Map — ${shortName(page.slug)}, Tulsa, OK`} />
           </div>
