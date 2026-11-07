@@ -1,0 +1,181 @@
+{
+ "/": {
+  "hero": {
+   "file": "/images/home-tulsa-water-damage-repair.webp",
+   "alt": "An empty room with standing water on the tiled floor reflecting a window, and dark stains on the wall beside a doorway"
+  },
+  "body": null
+ },
+ "/services/": {
+  "hero": {
+   "file": "/images/services-tulsa-water-damage-repair.webp",
+   "alt": "Three cleaners in work clothes standing in a living room with a vacuum cleaner, a mop and a bucket"
+  },
+  "body": null
+ },
+ "/commercial/": {
+  "hero": {
+   "file": "/images/commercial-tulsa-water-damage-repair.webp",
+   "alt": "Three workers in white hard hats and face masks talking inside an unfinished building"
+  },
+  "body": null
+ },
+ "/about-us/": {
+  "hero": {
+   "file": "/images/about-us-tulsa-water-damage-repair.webp",
+   "alt": "Two workers in hard hats and high-visibility vests talking on a job site, one holding a clipboard"
+  },
+  "body": null
+ },
+ "/contact/": {
+  "hero": {
+   "file": "/images/contact-tulsa-water-damage-repair.webp",
+   "alt": "A woman wearing a headset speaking while working at a laptop in an office"
+  },
+  "body": null
+ },
+ "/services/emergency-water-damage-restoration": {
+  "hero": {
+   "file": "/images/services-emergency-water-damage-restoration-tulsa-water-damage-repair.webp",
+   "alt": "A worker in red coveralls standing at the open back of a work van holding cleaning equipment, with a house behind"
+  },
+  "body": {
+   "file": "/images/services-emergency-water-damage-restoration-tulsa-water-damage-repair-drying-equipment.webp",
+   "alt": "A worker in a yellow hard hat and high-visibility vest holding a wrench"
+  }
+ },
+ "/services/water-mitigation": {
+  "hero": {
+   "file": "/images/services-water-mitigation-tulsa-water-damage-repair.webp",
+   "alt": "A yellow wet and dry vacuum cleaner with a hose standing on a wood floor in a room with green walls"
+  },
+  "body": {
+   "file": "/images/services-water-mitigation-tulsa-water-damage-repair-drying-equipment.webp",
+   "alt": "A worker in white coveralls and orange gloves vacuuming a tiled floor with a yellow vacuum cleaner"
+  }
+ },
+ "/services/flood-damage-restoration": {
+  "hero": {
+   "file": "/images/services-flood-damage-restoration-tulsa-water-damage-repair.webp",
+   "alt": "A white suburban house with dormer windows standing in muddy floodwater in its front yard"
+  },
+  "body": {
+   "file": "/images/services-flood-damage-restoration-tulsa-water-damage-repair-flood-response.webp",
+   "alt": "Flood response workers in rain gear stacking sandbags on a flooded residential street"
+  }
+ },
+ "/services/mold-remediation": {
+  "hero": {
+   "file": "/images/services-mold-remediation-tulsa-water-damage-repair.webp",
+   "alt": "A man with a headlamp inspecting a wall covered in black mold in a damaged room"
+  },
+  "body": {
+   "file": "/images/services-mold-remediation-tulsa-water-damage-repair-drying-equipment.webp",
+   "alt": "A close-up of a white surface covered in scattered black mold spots"
+  }
+ },
+ "/services/commercial-water-damage": {
+  "hero": {
+   "file": "/images/services-commercial-water-damage-tulsa-water-damage-repair.webp",
+   "alt": "A person in red coveralls vacuuming a living room floor with a yellow canister vacuum cleaner"
+  },
+  "body": {
+   "file": "/images/services-commercial-water-damage-tulsa-water-damage-repair-drying-equipment.webp",
+   "alt": "A yellow wet and dry vacuum cleaner with a coiled hose standing on a tiled floor in sunlight"
+  }
+ },
+ "/services/flooded-basement-cleanup": {
+  "hero": {
+   "file": "/images/services-flooded-basement-cleanup-tulsa-water-damage-repair.webp",
+   "alt": "A puddle of standing water on a cracked concrete floor"
+  },
+  "body": null
+ },
+ "/services/storm-damage-repair": {
+  "hero": {
+   "file": "/images/services-storm-damage-repair-tulsa-water-damage-repair.webp",
+   "alt": "A severely damaged room interior with a collapsed ceiling, exposed joists and debris on the floor"
+  },
+  "body": null
+ },
+ "/services/burst-pipe-water-damage": {
+  "hero": {
+   "file": "/images/services-burst-pipe-water-damage-tulsa-water-damage-repair.webp",
+   "alt": "A white plastic pipe joint wrapped in cloth with water dripping from it against a brick wall"
+  },
+  "body": {
+   "file": "/images/services-burst-pipe-water-damage-tulsa-water-damage-repair-drying-equipment.webp",
+   "alt": "Gloved hands installing metal pipe fittings with a wrench"
+  }
+ },
+ "/services/sewage-backup-cleanup": {
+  "hero": null,
+  "body": null
+ },
+ "/services/ceiling-water-damage": {
+  "hero": {
+   "file": "/images/services-ceiling-water-damage-tulsa-water-damage-repair.webp",
+   "alt": "A room with sagging collapsed ceiling panels and debris scattered across a dirty floor"
+  },
+  "body": null
+ },
+ "/services/hardwood-floor-drying": {
+  "hero": {
+   "file": "/images/services-hardwood-floor-drying-tulsa-water-damage-repair.webp",
+   "alt": "A bright empty room with polished dark hardwood floors, large windows and a ceiling fan"
+  },
+  "body": null
+ },
+ "/services/ac-drain-line-overflow-cleanup/": {
+  "hero": {
+   "file": "/images/services-ac-drain-line-overflow-cleanup-tulsa-water-damage-repair.webp",
+   "alt": "A worker in a hat using a power drill to repair a large rooftop air conditioning unit"
+  },
+  "body": null
+ },
+ "/services/appliance-leak-water-damage/": {
+  "hero": {
+   "file": "/images/services-appliance-leak-water-damage-tulsa-water-damage-repair.webp",
+   "alt": "A white-tiled laundry area with a front-loading washing machine under a wooden counter"
+  },
+  "body": null
+ },
+ "/services/water-heater-leak-cleanup/": {
+  "hero": {
+   "file": "/images/services-water-heater-leak-cleanup-tulsa-water-damage-repair.webp",
+   "alt": "A white wall-mounted water heater installed inside a cabinet beside a brick wall"
+  },
+  "body": null
+ },
+ "/services/roof-leak-water-damage/": {
+  "hero": {
+   "file": "/images/services-roof-leak-water-damage-tulsa-water-damage-repair.webp",
+   "alt": "Workers on the roof of a large brick house installing shingles under a clear blue sky"
+  },
+  "body": null
+ },
+ "/services/slab-leak-water-damage/": {
+  "hero": null,
+  "body": null
+ },
+ "/services/smoke-soot-damage-cleanup": {
+  "hero": {
+   "file": "/images/services-smoke-soot-damage-cleanup-tulsa-water-damage-repair.webp",
+   "alt": "Charred blackened wooden roof beams and rafters after a fire"
+  },
+  "body": null
+ },
+ "/services/fire-damage-restoration": {
+  "hero": {
+   "file": "/images/services-fire-damage-restoration-tulsa-water-damage-repair.webp",
+   "alt": "A burned-out kitchen with blackened walls, a ruined stove and debris on the floor"
+  },
+  "body": null
+ },
+ "missing": [
+  {
+   "slug": "/services/sewage-backup-cleanup",
+   "reason": "No genuinely relevant Pexels photo found after searching drain/sewer cleaning, flooded bathroom and street-drain terms; the only candidates were a street drain worker beside a branded bin and parked car, a sink-cleaning close-up and a toilet-flush close-up, none showing a home sewage backup. Slot left empty rather than forcing an irrelevant filler."
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+node_modules/
+.next/
+out/
+qa-*/
+.env*
+.DS_Store
+tmp-chrome/
+__pycache__/
+*.pyc
