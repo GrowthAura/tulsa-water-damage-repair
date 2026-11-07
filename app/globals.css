@@ -302,14 +302,14 @@ p.lead, .lead { font-size: clamp(1.2rem, 2vw, 1.45rem); line-height: 1.65; }
 }
 .faq-list summary { list-style: none; cursor: pointer; padding: 1.1rem 1.25rem; display: flex; align-items: center; gap: 1rem; }
 .faq-list summary::-webkit-details-marker { display: none; }
-.faq-list summary h3 { font-size: 1.25rem; margin: 0; flex: 1; color: var(--blue); }
+.faq-list summary h3 { font-size: 1.125rem; margin: 0; flex: 1; color: var(--blue); }
 .faq-list .faq-toggle {
   width: 2rem; height: 2rem; flex: none; border-radius: 8px; background: var(--pale);
   display: grid; place-items: center; font-size: 1.25rem; font-weight: 700; color: var(--navy);
   transition: transform 0.2s ease;
 }
 .faq-list details[open] .faq-toggle { transform: rotate(45deg); }
-.faq-list .faq-answer { padding: 0 1.25rem 1.25rem; }
+.faq-list .faq-answer { padding: 0 1.25rem 1.25rem; font-size: 1.125rem; }
 .faq-list .faq-answer p:last-child { margin-bottom: 0; }
 
 /* CTA strips + final CTA */
@@ -445,10 +445,10 @@ p.lead, .lead { font-size: clamp(1.2rem, 2vw, 1.45rem); line-height: 1.65; }
 .handle-more { font-size: 1.25rem; font-weight: 700; margin: 0.25rem 0 1.5rem; }
 .handle-more a { color: var(--blue); text-decoration: underline; text-decoration-color: var(--pale); text-underline-offset: 3px; }
 .handle-more a:hover { color: var(--navy); text-decoration-color: var(--cyan); }
-/* Guide (resource) pages: body text 20px, headings unchanged, sitewide text untouched. */
+/* Guide (resource) pages: body text 20px, headings unchanged, sitewide text untouched. FAQ answers stay 18px everywhere. */
 .page-resource .content-block > p,
-.page-resource .content-block li,
-.page-resource .content-block .faq-answer p { font-size: 1.25rem; }
+.page-resource .content-block li { font-size: 1.25rem; }
+.page-resource .content-block .faq-answer p { font-size: 1.125rem; }
 /* Resources hub cards: bigger titles + blurbs. */
 .resource-cards .card-body h3 { font-size: 1.5rem; line-height: 1.3; }
 .resource-cards .card-body p { font-size: 1.25rem; line-height: 1.65; }

@@ -273,69 +273,56 @@
         "t": "table",
         "headers": [
           "<strong>City</strong>",
-          "<strong>Zip codes</strong>",
-          "<strong>Page</strong>"
+          "<strong>Zip codes</strong>"
         ],
         "rows": [
           [
-            "Broken Arrow",
-            "74011, 74012, 74014",
-            "<a href=\"/service-areas/broken-arrow-ok/\" title=\"Water Damage Restoration in Broken Arrow, OK\">Broken Arrow</a>"
+            "<a href=\"/service-areas/broken-arrow-ok/\" title=\"Water Damage Restoration in Broken Arrow, OK\">Broken Arrow</a>",
+            "74011, 74012, 74014"
           ],
           [
-            "Owasso",
-            "74055",
-            "<a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">Owasso</a>"
+            "<a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">Owasso</a>",
+            "74055"
           ],
           [
-            "Bixby",
-            "74008",
-            "<a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">Bixby</a>"
+            "<a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">Bixby</a>",
+            "74008"
           ],
           [
-            "Jenks",
-            "74037",
-            "<a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a>"
+            "<a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a>",
+            "74037"
           ],
           [
-            "Sand Springs",
-            "74063",
-            "<a href=\"/service-areas/sand-springs-ok/\" title=\"Water Damage Restoration in Sand Springs, OK\">Sand Springs</a>"
+            "<a href=\"/service-areas/sand-springs-ok/\" title=\"Water Damage Restoration in Sand Springs, OK\">Sand Springs</a>",
+            "74063"
           ],
           [
-            "Glenpool",
-            "74033",
-            "<a href=\"/service-areas/glenpool-ok/\" title=\"Water Damage Restoration in Glenpool, OK\">Glenpool</a>"
+            "<a href=\"/service-areas/glenpool-ok/\" title=\"Water Damage Restoration in Glenpool, OK\">Glenpool</a>",
+            "74033"
           ],
           [
-            "Claremore",
-            "74017, 74019",
-            "<a href=\"/service-areas/claremore-ok/\" title=\"Water Damage Restoration in Claremore, OK\">Claremore</a>"
+            "<a href=\"/service-areas/claremore-ok/\" title=\"Water Damage Restoration in Claremore, OK\">Claremore</a>",
+            "74017, 74019"
           ],
           [
             "<a href=\"/service-areas/catoosa-ok/\" title=\"Water Damage Restoration in Catoosa, OK\">Catoosa</a>",
-            "74015",
-            ""
+            "74015"
           ],
           [
             "<a href=\"/service-areas/collinsville-ok/\" title=\"Water Damage Restoration in Collinsville, OK\">Collinsville</a>",
-            "74021",
-            ""
+            "74021"
           ],
           [
             "<a href=\"/service-areas/skiatook-ok/\" title=\"Water Damage Restoration in Skiatook, OK\">Skiatook</a>",
-            "74070",
-            ""
+            "74070"
           ],
           [
             "<a href=\"/service-areas/coweta-ok/\" title=\"Water Damage Restoration in Coweta, OK\">Coweta</a>",
-            "74429",
-            ""
+            "74429"
           ],
           [
             "<a href=\"/service-areas/sapulpa-ok/\" title=\"Water Damage Restoration in Sapulpa, OK\">Sapulpa</a>",
-            "74066",
-            ""
+            "74066"
           ]
         ]
       },
@@ -535,11 +522,11 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying for any active water loss: burst pipes, appliance failures, overflows</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation</strong> IICRC S500 structural drying with daily moisture monitoring, moisture mapping and full documentation for your adjuster</a> ",
-          "<strong>Flood damage restoration</strong> Category 3 floodwater from rivers, creeks and storm runoff; <a href=\"/services/flood-damage-restoration\">contaminated material removal, disinfection and drying</a> ",
-          "<a href=\"/services/flooded-basement-cleanup\"><strong>Flooded basement and crawlspace cleanup</strong> pump-out, extraction, drying and mold prevention for below-grade and crawlspace water</a> ",
-          "<a href=\"/services/sewage-backup-cleanup\"><strong>Sewage backup cleanup</strong> Category 3 black water removal, full disinfection and structural drying</a> "
+          "<strong>Emergency water damage restoration</strong> 24/7 extraction and drying for any active water loss: burst pipes, appliance failures, overflows ",
+          "<strong>Water mitigation</strong> IICRC S500 structural drying with daily moisture monitoring, moisture mapping and full documentation for your adjuster ",
+          "<strong>Flood damage restoration</strong> Category 3 floodwater from rivers, creeks and storm runoff; contaminated material removal, disinfection and drying ",
+          "<strong>Flooded basement and crawlspace cleanup</strong> pump-out, extraction, drying and mold prevention for below-grade and crawlspace water ",
+          "<strong>Sewage backup cleanup</strong> Category 3 black water removal, full disinfection and structural drying "
         ]
       },
       {
@@ -556,12 +543,12 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/burst-pipe-water-damage\"><strong>Burst pipe water damage</strong> attic, garage and exterior-wall lines that split during freezes or from age</a> ",
-          "<a href=\"/services/slab-leak-water-damage/\"><strong>Slab leak water damage</strong> buried supply lines under slab-on-grade foundations stressed by Oklahoma&#x27;s clay soil</a> ",
-          "<a href=\"/services/water-heater-leak-cleanup/\"><strong>Water heater leak cleanup</strong> tank failures that release 40-50 gallons overnight</a> ",
-          "<a href=\"/services/appliance-leak-water-damage/\"><strong>Appliance leak water damage</strong> washer hoses, dishwashers, refrigerator ice maker lines</a> ",
-          "<a href=\"/services/ac-drain-line-overflow-cleanup/\"><strong>AC drain line overflow cleanup</strong> clogged condensate lines in attic-mounted air handlers</a> ",
-          "<a href=\"/services/roof-leak-water-damage/\"><strong>Roof leak water damage</strong> hail, wind and age-related roof failures that let rain into attic insulation</a> "
+          "<strong><a href=\"/services/burst-pipe-water-damage\">Burst pipe water damage</a></strong> attic, garage and exterior-wall lines that split during freezes or from age ",
+          "<strong><a href=\"/services/slab-leak-water-damage/\">Slab leak water damage</a></strong> buried supply lines under slab-on-grade foundations stressed by Oklahoma&#x27;s clay soil ",
+          "<strong><a href=\"/services/water-heater-leak-cleanup/\">Water heater leak cleanup</a></strong> tank failures that release 40-50 gallons overnight ",
+          "<strong><a href=\"/services/appliance-leak-water-damage/\">Appliance leak water damage</a></strong> washer hoses, dishwashers, refrigerator ice maker lines ",
+          "<strong><a href=\"/services/ac-drain-line-overflow-cleanup/\">AC drain line overflow cleanup</a></strong> clogged condensate lines in attic-mounted air handlers ",
+          "<strong><a href=\"/services/roof-leak-water-damage/\">Roof leak water damage</a></strong> hail, wind and age-related roof failures that let rain into attic insulation "
         ]
       },
       {
@@ -578,8 +565,8 @@
       {
         "t": "ul",
         "items": [
-          "<strong>Ceiling and drywall water damage</strong> controlled drying, knowing when drywall can be saved vs. <a href=\"/services/ceiling-water-damage\">removed, ceiling sag assessment</a> ",
-          "<strong>Hardwood floor drying</strong> mat drying systems, cupping assessment, refinish vs. <a href=\"/services/hardwood-floor-drying\" title=\"Hardwood Floor Water Damage &amp; Drying in Tulsa, OK\">replacement decisions</a> "
+          "<a href=\"/services/ceiling-water-damage\"><strong>Ceiling and drywall water damage</strong></a> controlled drying, knowing when drywall can be saved vs. removed, ceiling sag assessment ",
+          "<a href=\"/services/hardwood-floor-drying\" title=\"Hardwood Floor Water Damage &amp; Drying in Tulsa, OK\"><strong>Hardwood floor drying</strong></a> mat drying systems, cupping assessment, refinish vs. replacement decisions "
         ]
       },
       {
@@ -596,10 +583,10 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> find the moisture source, contain the area, remove contaminated materials, verify clean air</a> ",
-          "<a href=\"/services/storm-damage-repair\"><strong>Storm damage repair</strong> emergency board-up and tarping, interior water extraction and drying from storm breaches</a> ",
-          "<a href=\"/services/fire-damage-restoration\"><strong>Fire damage restoration</strong> structural cleaning, odor removal and rebuild after fire and suppression water</a> ",
-          "<a href=\"/services/smoke-soot-damage-cleanup\"><strong>Smoke and soot cleanup</strong> surface cleaning, air filtration and deodorization</a> "
+          "<strong>Mold remediation</strong> find the moisture source, contain the area, remove contaminated materials, verify clean air ",
+          "<strong>Storm damage repair</strong> emergency board-up and tarping, interior water extraction and drying from storm breaches ",
+          "<strong><a href=\"/services/fire-damage-restoration\">Fire damage restoration</a></strong> structural cleaning, odor removal and rebuild after fire and suppression water ",
+          "<strong><a href=\"/services/smoke-soot-damage-cleanup\">Smoke and soot cleanup</a></strong> surface cleaning, air filtration and deodorization "
         ]
       },
       {
@@ -616,7 +603,7 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/commercial-water-damage\"><strong>Commercial water damage restoration</strong> offices, retail, warehouses, multi-family apartments and specialty properties across Tulsa County</a> "
+          "<strong>Commercial water damage restoration</strong> offices, retail, warehouses, multi-family apartments and specialty properties across Tulsa County "
         ]
       },
       {
@@ -640,7 +627,7 @@
       },
       {
         "t": "p",
-        "html": "Both phases can be handled as one project one crew, one point of contact, one documentation package with separate scopes so your adjuster can review each phase clearly. <a href=\"/services/water-mitigation\">Learn more about the mitigation phase:</a> "
+        "html": "Both phases can be handled as one project one crew, one point of contact, one documentation package with separate scopes so your adjuster can review each phase clearly. Learn more about the mitigation phase: "
       },
       {
         "t": "hr"
@@ -673,7 +660,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/resources/how-to-file-water-damage-insurance-claim-tulsa\">Walk through the full process:</a> "
+        "html": "Walk through the full process: "
       },
       {
         "t": "hr"
@@ -696,7 +683,7 @@
     "faqs": [
       {
         "q": "Do you do both the drying and the rebuild?",
-        "a_html": "Yes. Mitigation (extraction and drying) and restoration (drywall, flooring, paint) can be handled as one project with one point of contact. Each phase gets a separate written scope so your adjuster can review and approve them independently. <a href=\"/services/water-mitigation\">Full details on how we structure mitigation:</a> ",
+        "a_html": "Yes. Mitigation (extraction and drying) and restoration (drywall, flooring, paint) can be handled as one project with one point of contact. Each phase gets a separate written scope so your adjuster can review and approve them independently. Full details on how we structure mitigation: ",
         "a_text": "Yes. Mitigation (extraction and drying) and restoration (drywall, flooring, paint) can be handled as one project with one point of contact. Each phase gets a separate written scope so your adjuster can review and approve them independently. Full details on how we structure mitigation:"
       },
       {
@@ -706,7 +693,7 @@
       },
       {
         "q": "What areas do your services cover?",
-        "a_html": "<a href=\"/service-areas/owasso-ok/\">All of Tulsa and Tulsa County, plus Broken Arrow, Owasso</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Bixby, Jenks</a> , <a href=\"/service-areas/claremore-ok/\">Sand Springs, Glenpool, Claremore</a> , Catoosa, Collinsville, Skiatook, Coweta and Sapulpa. See the full list with zip codes on our <a href=\"/\"> homepage service area</a> section.",
+        "a_html": "All of Tulsa and Tulsa County, plus Broken Arrow, <a href=\"/service-areas/owasso-ok/\">Owasso</a> , Bixby, <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a> , Sand Springs, Glenpool, <a href=\"/service-areas/claremore-ok/\">Claremore</a> , Catoosa, Collinsville, Skiatook, Coweta and Sapulpa. See the full list with zip codes on our <a href=\"/\"> homepage service area</a> section.",
         "a_text": "All of Tulsa and Tulsa County, plus Broken Arrow, Owasso , Bixby, Jenks , Sand Springs, Glenpool, Claremore , Catoosa, Collinsville, Skiatook, Coweta and Sapulpa. See the full list with zip codes on our homepage service area section."
       },
       {
@@ -869,11 +856,11 @@
       },
       {
         "t": "p",
-        "html": "Readings are taken daily at every mapped point. Equipment is repositioned as drying progresses wet spots that weren&#x27;t exposed yesterday become the focus today. Drying continues until every material reaches its documented dry target, set against unaffected reference materials in the same home per IICRC S500 protocol. <a href=\"/services/water-mitigation\">Full details on the drying process:</a> "
+        "html": "Readings are taken daily at every mapped point. Equipment is repositioned as drying progresses wet spots that weren&#x27;t exposed yesterday become the focus today. Drying continues until every material reaches its documented dry target, set against unaffected reference materials in the same home per IICRC S500 protocol. Full details on the <a href=\"/services/water-mitigation\">drying</a> process: "
       },
       {
         "t": "p",
-        "html": "<strong>Sanitizing and mold prevention</strong><br>Every affected surface receives EPA-registered antimicrobial treatment. This step is essential because mold spores are always present in indoor air they only need moisture and food (drywall paper, wood) to colonize. By treating surfaces before mold has a chance to establish, we close the window. <a href=\"/services/mold-remediation\">If mold growth is already visible when we arrive, our</a> <a href=\"/services/mold-remediation\"> team handles it</a> within the same project under IICRC S520 containment protocols."
+        "html": "<strong>Sanitizing and mold prevention</strong><br>Every affected surface receives EPA-registered antimicrobial treatment. This step is essential because mold spores are always present in indoor air they only need moisture and food (drywall paper, wood) to colonize. By treating surfaces before mold has a chance to establish, we close the window. If <a href=\"/services/mold-remediation\">mold growth</a> is already visible when we arrive, our  team handles it within the same project under IICRC S520 containment protocols."
       },
       {
         "t": "p",
@@ -945,7 +932,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/service-areas/owasso-ok/\"><strong>Surrounding communities:</strong> Broken Arrow, Owasso</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Bixby, Jenks</a> , <a href=\"/service-areas/claremore-ok/\">Sand Springs, Glenpool, Claremore</a> , Catoosa, Collinsville and Sapulpa."
+        "html": "<strong>Surrounding communities:</strong> Broken Arrow, <a href=\"/service-areas/owasso-ok/\">Owasso</a> , Bixby, <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a> , Sand Springs, Glenpool, <a href=\"/service-areas/claremore-ok/\">Claremore</a> , Catoosa, Collinsville and Sapulpa."
       },
       {
         "t": "p",
@@ -989,7 +976,7 @@
       },
       {
         "t": "p",
-        "html": "Only an on-site assessment can determine the actual cost for your specific situation. <a href=\"/resources/water-damage-restoration-cost-tulsa\">Full cost breakdown by material and category:</a> "
+        "html": "Only an on-site assessment can determine the actual cost for your specific situation. Full <a href=\"/resources/water-damage-restoration-cost-tulsa\">cost breakdown</a> by material and category: "
       },
       {
         "t": "hr"
@@ -1022,7 +1009,7 @@
       },
       {
         "q": "Should I call my insurance company or a restoration company first?",
-        "a_html": "If water is still spreading or sitting, call a restoration company first. Your policy requires you to take reasonable steps to prevent further damage that&#x27;s mitigation, and delaying it can jeopardize your claim. Open the claim with your carrier the same day. <a href=\"/resources/how-to-file-water-damage-insurance-claim-tulsa\">Our step-by-step guide:</a> ",
+        "a_html": "If water is still spreading or sitting, call a restoration company first. Your policy requires you to take reasonable steps to prevent further damage that&#x27;s mitigation, and delaying it can jeopardize your claim. Open the claim with your carrier the same day. Our step-by-step guide: ",
         "a_text": "If water is still spreading or sitting, call a restoration company first. Your policy requires you to take reasonable steps to prevent further damage that&#x27;s mitigation, and delaying it can jeopardize your claim. Open the claim with your carrier the same day. Our step-by-step guide:"
       },
       {
@@ -1032,7 +1019,7 @@
       },
       {
         "q": "What does emergency water extraction cost?",
-        "a_html": "Most clean-water mitigation in Tulsa runs from about $1,300 to $5,000. Contaminated water, larger areas and multiple floors push it higher. <a href=\"/resources/water-damage-restoration-cost-tulsa\" title=\"How Much Does Water Damage Restoration Cost in Tulsa, OK?\">Full breakdown:</a> ",
+        "a_html": "Most clean-water mitigation in Tulsa runs from about $1,300 to $5,000. Contaminated water, larger areas and multiple floors push it higher. Full breakdown: ",
         "a_text": "Most clean-water mitigation in Tulsa runs from about $1,300 to $5,000. Contaminated water, larger areas and multiple floors push it higher. Full breakdown:"
       }
     ],
@@ -1090,7 +1077,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/services/emergency-water-damage-restoration\">If water is still active or spreading, start with</a> <a href=\"/services/emergency-water-damage-restoration\"> mitigation begins as</a> part of the emergency response."
+        "html": "If water is still active or spreading, start with  mitigation begins as part of the emergency response."
       },
       {
         "t": "hr"
@@ -1228,7 +1215,7 @@
       },
       {
         "t": "p",
-        "html": "We follow IICRC S500 on every Tulsa job. <a href=\"/resources/water-damage-categories-and-classes-explained\">Category and class details:</a> "
+        "html": "We follow IICRC S500 on every Tulsa job. Category and class details: "
       },
       {
         "t": "hr"
@@ -1361,7 +1348,7 @@
           "<a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">Owasso</a> ",
           "<a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">Bixby</a> ",
           "<a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a> ",
-          "<a href=\"/service-areas/claremore-ok/\">Sand Springs, Glenpool, Claremore</a> , Catoosa, Collinsville and Sapulpa"
+          "Sand Springs, Glenpool, <a href=\"/service-areas/claremore-ok/\">Claremore</a> , Catoosa, Collinsville and Sapulpa"
         ]
       },
       {
@@ -1410,7 +1397,7 @@
       },
       {
         "q": "Can I rent fans and a dehumidifier instead?",
-        "a_html": "For a small spill caught immediately on a hard floor with no wall or carpet contact, consumer equipment may be adequate. For anything that soaked into carpet, drywall, subfloor or insulation, consumer equipment cannot reach the moisture trapped inside wall cavities and under flooring and without daily meter readings, there is no way to verify the structure is dry. <a href=\"/services/mold-remediation\">The mold remediation cost that follows incomplete drying almost always exceeds the cost of doing mitigation correctly the first time</a> .",
+        "a_html": "For a small spill caught immediately on a hard floor with no wall or carpet contact, consumer equipment may be adequate. For anything that soaked into carpet, drywall, subfloor or insulation, consumer equipment cannot reach the moisture trapped inside wall cavities and under flooring and without daily meter readings, there is no way to verify the structure is dry. The <a href=\"/services/mold-remediation\">mold remediation</a> cost that follows incomplete drying almost always exceeds the cost of doing mitigation correctly the first time .",
         "a_text": "For a small spill caught immediately on a hard floor with no wall or carpet contact, consumer equipment may be adequate. For anything that soaked into carpet, drywall, subfloor or insulation, consumer equipment cannot reach the moisture trapped inside wall cavities and under flooring and without daily meter readings, there is no way to verify the structure is dry. The mold remediation cost that follows incomplete drying almost always exceeds the cost of doing mitigation correctly the first time ."
       },
       {
@@ -1470,7 +1457,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>2019 Arkansas River flood</strong> in May and June 2019, Keystone Dam releases pushed the Arkansas River to levels not recorded since 1986. <a href=\"/service-areas/jenks-ok/\">Homes in Sand Springs, West Tulsa, Jenks</a>  and Bixby that had never flooded before took on water. Levee breaches and overtopping extended the flood zone beyond FEMA&#x27;s mapped floodplain."
+        "html": "<strong>2019 Arkansas River flood</strong> in May and June 2019, Keystone Dam releases pushed the Arkansas River to levels not recorded since 1986. Homes in Sand Springs, West Tulsa, <a href=\"/service-areas/jenks-ok/\">Jenks</a>  and Bixby that had never flooded before took on water. Levee breaches and overtopping extended the flood zone beyond FEMA&#x27;s mapped floodplain."
       },
       {
         "t": "p",
@@ -1585,7 +1572,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>7. Mold check and rebuild</strong><br>Before rebuild begins, every exposed surface is inspected for mold growth. <a href=\"/services/mold-remediation\">If mold is found which is common when the time between flooding and cleanup exceeds 48 hours our</a> <a href=\"/services/mold-remediation\"> team handles containment</a> and removal within the same project. Once the structure is clean and dry, drywall, insulation, flooring, trim and paint go back in."
+        "html": "<strong>7. Mold check and rebuild</strong><br>Before rebuild begins, every exposed surface is inspected for mold growth. If <a href=\"/services/mold-remediation\">mold</a> is found which is common when the time between flooding and cleanup exceeds 48 hours our  team handles containment and removal within the same project. Once the structure is clean and dry, drywall, insulation, flooring, trim and paint go back in."
       },
       {
         "t": "hr"
@@ -1650,7 +1637,7 @@
       },
       {
         "q": "My basement flooded from rain is that a flood claim?",
-        "a_html": "Usually yes. Groundwater or storm runoff entering from outside the home even through a basement wall or floor drain is typically treated as flood damage by insurers and excluded from standard homeowners coverage. A burst pipe in the basement is a standard water damage claim. The distinction depends on the source, not the location. <a href=\"/resources/oklahoma-water-damage-insurance-guide\" title=\"Does Homeowners Insurance Cover Water Damage in Oklahoma?\">Our</a> <a href=\"/resources/oklahoma-water-damage-insurance-guide\"> explains each scenario</a>.",
+        "a_html": "Usually yes. Groundwater or storm runoff entering from outside the home even through a basement wall or floor drain is typically treated as flood damage by insurers and excluded from standard homeowners coverage. A burst pipe in the basement is a standard water damage claim. The distinction depends on the source, not the location. Our  explains each scenario.",
         "a_text": "Usually yes. Groundwater or storm runoff entering from outside the home even through a basement wall or floor drain is typically treated as flood damage by insurers and excluded from standard homeowners coverage. A burst pipe in the basement is a standard water damage claim. The distinction depends on the source, not the location. Our explains each scenario."
       },
       {
@@ -1717,9 +1704,9 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/ac-drain-line-overflow-cleanup/\"><strong>Hidden leaks</strong> slow supply-line drips behind walls, attic AC condensate overflows</a> , <a href=\"/services/roof-leak-water-damage/\">and roof leaks that soak insulation for weeks before a stain appears</a> ",
+          "<strong>Hidden leaks</strong> slow supply-line drips behind walls, attic <a href=\"/services/ac-drain-line-overflow-cleanup/\">AC condensate overflows</a> , and <a href=\"/services/roof-leak-water-damage/\">roof leaks</a> that soak insulation for weeks before a stain appears ",
           "<strong>Wet crawlspaces</strong> pier-and-beam homes sitting over damp clay soil with no vapor barrier, creating a permanent moisture source under the floor",
-          "<a href=\"/service-areas/jenks-ok/\"><strong>Post-flood mold</strong> homes in Sand Springs, West Tulsa, Jenks</a>  <a href=\"/services/flood-damage-restoration\">and Bixby that were affected by the 2019 Arkansas River flood</a>  and weren&#x27;t professionally dried",
+          "<strong>Post-flood mold</strong> homes in Sand Springs, West Tulsa, <a href=\"/service-areas/jenks-ok/\">Jenks</a>  and Bixby that were affected by the <a href=\"/services/flood-damage-restoration\">2019 Arkansas River flood</a>  and weren&#x27;t professionally dried",
           "<strong>Water damage &quot;dried&quot; with fans</strong> surfaces look dry within a day, but moisture readings inside the wall cavity haven&#x27;t changed; mold grows on the hidden side of the drywall",
           "<strong>Poor bathroom and kitchen ventilation</strong> exhaust fans vented into the attic instead of outside, or not used at all, trapping moisture in the wall and ceiling cavities"
         ]
@@ -1763,7 +1750,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/resources/signs-of-hidden-water-damage\">More warning signs and what they mean:</a> "
+        "html": "More <a href=\"/resources/signs-of-hidden-water-damage\">warning signs</a> and what they mean: "
       },
       {
         "t": "hr"
@@ -1892,7 +1879,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/service-areas/owasso-ok/\">All Tulsa neighborhoods Midtown, Brookside, Maple Ridge, South Tulsa, East Tulsa, West Tulsa and North Tulsa plus Broken Arrow, Owasso</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a> , <a href=\"/service-areas/claremore-ok/\">Bixby, Sand Springs, Claremore</a>  and Glenpool."
+        "html": "All Tulsa neighborhoods Midtown, Brookside, Maple Ridge, South Tulsa, East Tulsa, West Tulsa and North Tulsa plus Broken Arrow, <a href=\"/service-areas/owasso-ok/\">Owasso</a> , Jenks , Bixby, Sand Springs, <a href=\"/service-areas/claremore-ok/\">Claremore</a>  and Glenpool."
       },
       {
         "t": "p",
@@ -1993,7 +1980,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Retail and restaurants</strong><br><a href=\"/service-areas/owasso-ok/\">Strip centers and pad sites across Broken Arrow, Owasso</a> , <a href=\"/service-areas/jenks-ok/\">Bixby and Jenks</a> . Retail losses involve inventory protection, customer-facing finishes and the pressure to reopen fast. Restaurants add food safety and health department concerns to the timeline."
+        "html": "<strong>Retail and restaurants</strong><br>Strip centers and pad sites across Broken Arrow, <a href=\"/service-areas/owasso-ok/\">Owasso</a> , Bixby and <a href=\"/service-areas/jenks-ok/\">Jenks</a> . Retail losses involve inventory protection, customer-facing finishes and the pressure to reopen fast. Restaurants add food safety and health department concerns to the timeline."
       },
       {
         "t": "p",
@@ -2059,7 +2046,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Drying around operations</strong><br>Work zones are defined and physically separated from occupied areas. Air movers and dehumidifiers are positioned to minimize noise, foot traffic and disruption to operating areas. When the loudest work has to happen in occupied space, it&#x27;s scheduled after hours, on weekends or during planned closures. <a href=\"/services/water-mitigation\">Drying follows IICRC S500 standards with daily moisture readings at every mapped point see</a> ."
+        "html": "<strong>Drying around operations</strong><br>Work zones are defined and physically separated from occupied areas. Air movers and dehumidifiers are positioned to minimize noise, foot traffic and disruption to operating areas. When the loudest work has to happen in occupied space, it&#x27;s scheduled after hours, on weekends or during planned closures. <a href=\"/services/water-mitigation\">Drying</a> follows IICRC S500 standards with daily moisture readings at every mapped point see ."
       },
       {
         "t": "p",
@@ -2088,7 +2075,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Mold prevention</strong><br>Antimicrobial treatment on all affected structure. <a href=\"/services/mold-remediation\">If growth is found common in concealed spaces like above drop ceilings and inside wall cavities our</a> <a href=\"/services/mold-remediation\"> team handles containment</a> and removal within the same project."
+        "html": "<strong>Mold prevention</strong><br>Antimicrobial treatment on all affected structure. If <a href=\"/services/mold-remediation\">growth</a> is found common in concealed spaces like above drop ceilings and inside wall cavities our  team handles containment and removal within the same project."
       },
       {
         "t": "hr"
@@ -2233,12 +2220,12 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying for any active water loss</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> IICRC S500 monitored drying with daily readings</a> ",
-          "<a href=\"/services/flooded-basement-cleanup\"><strong>Flooded basement and crawlspace cleanup</strong> pump-out, extraction, drying and mold prevention</a> ",
-          "<a href=\"/services/sewage-backup-cleanup\"><strong>Sewage and septic backup cleanup</strong> Category 3 removal and disinfection</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines</a> ",
-          "<a href=\"/services/commercial-water-damage\"><strong>Commercial water damage</strong> Claremore businesses, the RSU campus area and Rogers County commercial properties</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying for any active water loss ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> IICRC S500 monitored drying with daily readings ",
+          "<strong><a href=\"/services/flooded-basement-cleanup\">Flooded basement and crawlspace cleanup</a></strong> pump-out, extraction, drying and mold prevention ",
+          "<strong><a href=\"/services/sewage-backup-cleanup\">Sewage and septic backup cleanup</a></strong> Category 3 removal and disinfection ",
+          "<strong><a href=\"/services/mold-remediation\">Mold remediation</a></strong> containment and removal under IICRC S520 guidelines ",
+          "<strong><a href=\"/services/commercial-water-damage\">Commercial water damage</a></strong> Claremore businesses, the RSU campus area and Rogers County commercial properties "
         ]
       },
       {
@@ -2260,7 +2247,7 @@
           "<strong>Chelsea-direction rural routes</strong> north of Claremore",
           "<strong>Oologah-direction addresses</strong> northwest of Claremore",
           "<strong>Properties around Claremore Lake</strong>",
-          "<a href=\"/service-areas/owasso-ok/\"><strong>Nearby communities:</strong> Catoosa (74015), Collinsville (74021) and Owasso</a> "
+          "<strong>Nearby communities:</strong> Catoosa (74015), Collinsville (74021) and <a href=\"/service-areas/owasso-ok/\">Owasso</a> "
         ]
       },
       {
@@ -2329,7 +2316,7 @@
       },
       {
         "q": "What should I do if a pipe bursts in my Claremore home?",
-        "a_html": "Shut off the main valve immediately, cut power to wet rooms if safe, photograph the damage thoroughly and call <a href=\"tel:+19183959320\">(918) 395-9320</a>. Don&#x27;t try to dry it with fans that dries surfaces but not wall cavities, and moisture left inside walls leads to mold in 24 to 48 hours. <a href=\"/resources/first-24-hours-after-water-damage\" title=\"What to Do in the First 24 Hours After Water Damage\">Full checklist:</a> ",
+        "a_html": "Shut off the main valve immediately, cut power to wet rooms if safe, photograph the damage thoroughly and call <a href=\"tel:+19183959320\">(918) 395-9320</a>. Don&#x27;t try to dry it with fans that dries surfaces but not wall cavities, and moisture left inside walls leads to mold in 24 to 48 hours. Full checklist: ",
         "a_text": "Shut off the main valve immediately, cut power to wet rooms if safe, photograph the damage thoroughly and call (918) 395-9320. Don&#x27;t try to dry it with fans that dries surfaces but not wall cavities, and moisture left inside walls leads to mold in 24 to 48 hours. Full checklist:"
       },
       {
@@ -2425,12 +2412,12 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying for any active water loss</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> IICRC S500 monitored drying with daily readings</a> ",
-          "<a href=\"/services/ceiling-water-damage\"><strong>Ceiling and drywall water damage</strong> controlled drying, sag assessment, flood cuts and replacement</a> ",
-          "<a href=\"/services/hardwood-floor-drying\"><strong>Hardwood floor drying</strong> mat drying systems for cupped or swollen hardwood</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines</a> ",
-          "<a href=\"/services/commercial-water-damage\"><strong>Commercial water damage</strong> Owasso businesses along 76th Street North, Highway 169 and the 96th Street commercial corridor</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying for any active water loss ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> IICRC S500 monitored drying with daily readings ",
+          "<strong><a href=\"/services/ceiling-water-damage\">Ceiling and drywall water damage</a></strong> controlled drying, sag assessment, flood cuts and replacement ",
+          "<strong><a href=\"/services/hardwood-floor-drying\">Hardwood floor drying</a></strong> mat drying systems for cupped or swollen hardwood ",
+          "<strong><a href=\"/services/mold-remediation\">Mold remediation</a></strong> containment and removal under IICRC S520 guidelines ",
+          "<strong><a href=\"/services/commercial-water-damage\">Commercial water damage</a></strong> Owasso businesses along 76th Street North, Highway 169 and the 96th Street commercial corridor "
         ]
       },
       {
@@ -2448,7 +2435,7 @@
         "t": "ul",
         "items": [
           "<strong>Residential neighborhoods</strong> off 86th Street North, 96th Street North, 116th Street North and all subdivisions east and west of Highway 169",
-          "<a href=\"/service-areas/claremore-ok/\"><strong>Nearby communities</strong> Collinsville (74021), Claremore</a>  and North Tulsa",
+          "<strong>Nearby communities</strong> Collinsville (74021), <a href=\"/service-areas/claremore-ok/\">Claremore</a>  and North Tulsa",
           "<strong>Commercial areas</strong> 76th Street North corridor, Highway 169 frontage and 96th Street North businesses"
         ]
       },
@@ -2483,7 +2470,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/resources/how-to-prevent-frozen-pipes-tulsa\" title=\"How to Prevent Frozen Pipes in Tulsa, OK\">Full checklist:</a> "
+        "html": "Full checklist: "
       },
       {
         "t": "p",
@@ -2642,12 +2629,12 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying for any active water loss</a> ",
-          "<a href=\"/services/flood-damage-restoration\"><strong>Flood damage restoration</strong> Category 3 floodwater removal, material disposal, disinfection and structural drying</a> ",
-          "<a href=\"/services/sewage-backup-cleanup\"><strong>Sewage backup cleanup</strong> Category 3 contaminated water removal and structural disinfection</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> IICRC S500 monitored drying with daily moisture readings</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines</a> ",
-          "<a href=\"/services/commercial-water-damage\"><strong>Commercial water damage</strong> Riverwalk-area businesses, Main Street retail and restaurants, and Jenks commercial properties</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying for any active water loss ",
+          "<strong><a href=\"/services/flood-damage-restoration\">Flood damage restoration</a></strong> Category 3 floodwater removal, material disposal, disinfection and structural drying ",
+          "<strong><a href=\"/services/sewage-backup-cleanup\">Sewage backup cleanup</a></strong> Category 3 contaminated water removal and structural disinfection ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> IICRC S500 monitored drying with daily moisture readings ",
+          "<strong><a href=\"/services/mold-remediation\">Mold remediation</a></strong> containment and removal under IICRC S520 guidelines ",
+          "<strong><a href=\"/services/commercial-water-damage\">Commercial water damage</a></strong> Riverwalk-area businesses, Main Street retail and restaurants, and Jenks commercial properties "
         ]
       },
       {
@@ -2983,7 +2970,7 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/mold-remediation\">Removing mold from affected framing and subfloor under</a>  containment protocols",
+          "Removing <a href=\"/services/mold-remediation\">mold</a> from affected framing and subfloor under  containment protocols",
           "Removing and replacing wet or moldy insulation",
           "Installing a vapor barrier over the exposed soil",
           "Addressing drainage and ventilation to reduce future moisture intrusion"
@@ -3007,7 +2994,7 @@
           "<strong>Midtown and Brookside</strong> pier-and-beam homes with crawlspaces over damp clay",
           "<strong>North Tulsa</strong> older construction with crawlspaces",
           "<strong>Sand Springs</strong> river-area homes and older crawlspace construction",
-          "<a href=\"/service-areas/owasso-ok/\"><strong>Broken Arrow, Owasso</strong></a> , <a href=\"/service-areas/jenks-ok/\"><strong>Jenks</strong></a>  and <strong>Bixby</strong> utility-area flooding and slab-level water intrusion"
+          "<strong>Broken Arrow, <a href=\"/service-areas/owasso-ok/\">Owasso</a></strong> , <a href=\"/service-areas/jenks-ok/\"><strong>Jenks</strong></a>  and <strong>Bixby</strong> utility-area flooding and slab-level water intrusion"
         ]
       },
       {
@@ -3267,7 +3254,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/services/mold-remediation\">If mold growth is found during mitigation which is common when the loss is more than 48 hours old or when hidden leaks have been running mold remediation</a>  adds containment, HEPA filtration, material removal and clearance testing to the project. Mold remediation typically adds from $1,500 to $6,000 or more depending on the size of the affected area."
+        "html": "If mold growth is found during mitigation which is common when the loss is more than 48 hours old or when hidden leaks have been running <a href=\"/services/mold-remediation\">mold remediation</a>  adds containment, HEPA filtration, material removal and clearance testing to the project. Mold remediation typically adds from $1,500 to $6,000 or more depending on the size of the affected area."
       },
       {
         "t": "hr"
@@ -3500,7 +3487,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Hail</strong> is the most common and widespread storm damage cause in the Tulsa metro. <a href=\"/service-areas/owasso-ok/\">A single hailstorm can damage thousands of roofs across Broken Arrow, Owasso</a> , <a href=\"/service-areas/bixby-ok/\">South Tulsa and Bixby</a>  in one evening. Unlike tornadoes, which cut narrow paths, hail swaths can be miles wide."
+        "html": "<strong>Hail</strong> is the most common and widespread storm damage cause in the Tulsa metro. A single hailstorm can damage thousands of roofs across Broken Arrow, <a href=\"/service-areas/owasso-ok/\">Owasso</a> , South Tulsa and <a href=\"/service-areas/bixby-ok/\">Bixby</a>  in one evening. Unlike tornadoes, which cut narrow paths, hail swaths can be miles wide."
       },
       {
         "t": "p",
@@ -3532,7 +3519,7 @@
       {
         "t": "ul",
         "items": [
-          "<strong>Hail-damaged roofs</strong> cracked, displaced and bruised shingles that allow rain to penetrate during subsequent storms; <a href=\"/services/roof-leak-water-damage/\">this is the most common storm damage call in the Tulsa metro</a> ",
+          "<a href=\"/services/roof-leak-water-damage/\"><strong>Hail-damaged roofs</strong></a> cracked, displaced and bruised shingles that allow rain to penetrate during subsequent storms; this is the most common storm damage call in the Tulsa metro ",
           "<strong>Wind-lifted shingles and decking</strong> tornado and derecho winds that peel roofing materials and expose the roof deck or attic space directly to rain",
           "<strong>Fallen trees and limbs</strong> large branches and whole trees that punch through roofs, break rafters and create open pathways for rain and debris",
           "<strong>Broken windows and doors</strong> wind-driven rain entering through shattered or breached openings, soaking carpet, drywall and flooring",
@@ -3573,7 +3560,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Step 6 Prevent mold and rebuild</strong><br>EPA-registered antimicrobial treatment is applied to all affected framing, sheathing and remaining drywall. <a href=\"/services/mold-remediation\">If mold growth is already present common when the roof breach went undetected through multiple rains our</a> <a href=\"/services/mold-remediation\"> team handles containment</a> and removal within the same project. Then new insulation, drywall, texture and paint go back in."
+        "html": "<strong>Step 6 Prevent mold and rebuild</strong><br>EPA-registered antimicrobial treatment is applied to all affected framing, sheathing and remaining drywall. If <a href=\"/services/mold-remediation\">mold growth</a> is already present common when the roof breach went undetected through multiple rains our  team handles containment and removal within the same project. Then new insulation, drywall, texture and paint go back in."
       },
       {
         "t": "hr"
@@ -3683,8 +3670,8 @@
         "t": "ul",
         "items": [
           "<a href=\"/service-areas/broken-arrow-ok/\" title=\"Water Damage Restoration in Broken Arrow, OK\">Broken Arrow</a>  in the northeast Oklahoma hail corridor",
-          "<a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">Owasso</a>  frequent hail and wind events",
-          "<a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">Bixby</a>  <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">and Jenks</a>  south Tulsa County storm track",
+          "Owasso  frequent hail and wind events",
+          "Bixby  <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">and Jenks</a>  south Tulsa County storm track",
           "<a href=\"/service-areas/claremore-ok/\" title=\"Water Damage Restoration in Claremore, OK\">Claremore</a>  Rogers County hail and wind",
           "<a href=\"/service-areas/sand-springs-ok/\" title=\"Water Damage Restoration in Sand Springs, OK\">Sand Springs</a>  storm damage plus river-corridor flooding",
           "<a href=\"/service-areas/glenpool-ok/\" title=\"Water Damage Restoration in Glenpool, OK\">Glenpool</a> , Sapulpa, Catoosa and Collinsville"
@@ -3786,7 +3773,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>The February 2021 winter storm</strong> demonstrated this vulnerability at scale. Temperatures across Green Country dropped below zero for multiple consecutive days far beyond what Tulsa&#x27;s housing stock was built to handle. <a href=\"/service-areas/broken-arrow-ok/\">Thousands of pipes burst across Tulsa, Broken Arrow</a> , <a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">Owasso</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a> , <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">Bixby</a>  and surrounding communities, overwhelming plumbers and restoration companies for weeks."
+        "html": "<strong>The February 2021 winter storm</strong> demonstrated this vulnerability at scale. Temperatures across Green Country dropped below zero for multiple consecutive days far beyond what Tulsa&#x27;s housing stock was built to handle. Thousands of pipes burst across Tulsa, <a href=\"/service-areas/broken-arrow-ok/\">Broken Arrow</a> , <a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">Owasso</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a> , <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">Bixby</a>  and surrounding communities, overwhelming plumbers and restoration companies for weeks."
       },
       {
         "t": "p",
@@ -3795,7 +3782,7 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/service-areas/claremore-ok/\"><strong>Corroded galvanized lines</strong> homes built before the 1970s in Midtown, North Tulsa, Brookside and older Claremore</a>  neighborhoods often still have galvanized steel supply lines that corrode from the inside over decades, weakening the pipe wall until it fails",
+          "<strong>Corroded galvanized lines</strong> homes built before the 1970s in Midtown, North Tulsa, Brookside and older <a href=\"/service-areas/claremore-ok/\">Claremore</a>  neighborhoods often still have galvanized steel supply lines that corrode from the inside over decades, weakening the pipe wall until it fails",
           "<strong>Failed fittings</strong> soldered copper joints and push-fit connections can fail from age, vibration or thermal cycling",
           "<strong>Water hammer</strong> sudden pressure surges from fast-closing valves (washing machines, dishwashers) that stress joints and fittings over time",
           "<strong>Polybutylene (PB) pipe</strong> homes built in the 1980s and early 1990s may have polybutylene supply lines, a material known for brittleness and failure at fittings"
@@ -3888,7 +3875,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/services/ceiling-water-damage\"><strong>For ceiling damage from attic bursts:</strong> see</a> <br><a href=\"/services/hardwood-floor-drying\"><strong>For hardwood floors:</strong> see</a> "
+        "html": "<strong>For <a href=\"/services/ceiling-water-damage\">ceiling damage</a> from attic bursts:</strong> see <br><a href=\"/services/hardwood-floor-drying\"><strong>For hardwood floors:</strong> see</a> "
       },
       {
         "t": "hr"
@@ -3964,7 +3951,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/service-areas/owasso-ok/\">All of Tulsa Midtown, Brookside, South, East, West and North Tulsa plus Owasso</a> , <a href=\"/service-areas/claremore-ok/\" title=\"Water Damage Restoration in Claremore, OK\">Claremore</a> , <a href=\"/service-areas/broken-arrow-ok/\">Collinsville, Broken Arrow</a> , <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">Bixby</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a> , <a href=\"/service-areas/glenpool-ok/\" title=\"Water Damage Restoration in Glenpool, OK\">Glenpool</a>  <a href=\"/service-areas/sand-springs-ok/\">and Sand Springs</a> ."
+        "html": "All of Tulsa Midtown, Brookside, South, East, West and North Tulsa plus Owasso , Claremore , Collinsville, Broken Arrow , Bixby , Jenks , <a href=\"/service-areas/glenpool-ok/\" title=\"Water Damage Restoration in Glenpool, OK\">Glenpool</a>  <a href=\"/service-areas/sand-springs-ok/\">and Sand Springs</a> ."
       },
       {
         "t": "hr"
@@ -4101,7 +4088,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Flood events</strong><br><a href=\"/service-areas/sand-springs-ok/\">During major flooding like the 2019 Arkansas River flood that hit Sand Springs</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a>  <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">and Bixby</a>  floodwater enters the sewer system from the river side, overwhelming capacity and pushing sewage up through every connected low point. See "
+        "html": "<strong>Flood events</strong><br>During major flooding like the 2019 Arkansas River flood that hit <a href=\"/service-areas/sand-springs-ok/\">Sand Springs</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a>  and <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">Bixby</a>  floodwater enters the sewer system from the river side, overwhelming capacity and pushing sewage up through every connected low point. See "
       },
       {
         "t": "hr"
@@ -4216,8 +4203,8 @@
         "t": "ul",
         "items": [
           "<strong>Midtown, North Tulsa and West Tulsa</strong> older sewer infrastructure, cast-iron laterals, mature tree root intrusion",
-          "<a href=\"/service-areas/sand-springs-ok/\"><strong>Sand Springs</strong></a>  flood-related sewer overloads along the Arkansas River corridor",
-          "<a href=\"/service-areas/jenks-ok/\"><strong>Jenks</strong></a>  <a href=\"/service-areas/bixby-ok/\">and <strong>Bixby</strong></a>  flood-related sewer overloads and newer-subdivision lateral issues",
+          "<strong>Sand Springs</strong>  flood-related sewer overloads along the Arkansas River corridor",
+          "<strong>Jenks</strong>  and <strong>Bixby</strong>  flood-related sewer overloads and newer-subdivision lateral issues",
           "<a href=\"/service-areas/broken-arrow-ok/\"><strong>Broken Arrow</strong></a> , Skiatook and Sapulpa including homes on septic systems",
           "<a href=\"/services/flooded-basement-cleanup\"><strong>Basement backups:</strong> see</a> "
         ]
@@ -4258,7 +4245,7 @@
       },
       {
         "q": "Will sewage cause mold?",
-        "a_html": "It can sewage brings moisture and mold spores together. However, because porous materials are removed quickly during Category 3 cleanup, the mold risk is managed by the removal process itself. <a href=\"/services/mold-remediation\">If growth is found on framing or subfloor during material removal, it&#x27;s handled through our</a> <a href=\"/services/mold-remediation\"> process within the</a> same project.",
+        "a_html": "It can sewage brings moisture and mold spores together. However, because porous materials are removed quickly during Category 3 cleanup, the mold risk is managed by the removal process itself. If <a href=\"/services/mold-remediation\">growth</a> is found on framing or subfloor during material removal, it&#x27;s handled through our  process within the same project.",
         "a_text": "It can sewage brings moisture and mold spores together. However, because porous materials are removed quickly during Category 3 cleanup, the mold risk is managed by the removal process itself. If growth is found on framing or subfloor during material removal, it&#x27;s handled through our process within the same project."
       },
       {
@@ -4436,7 +4423,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>1. Find and stop the source</strong><br>No ceiling repair begins until the leak is fixed. If the source is a plumbing issue, the plumber handles the pipe repair. <a href=\"/services/storm-damage-repair\">If it&#x27;s a roof issue, tarping</a>  stops new water from entering. If it&#x27;s an AC condensate overflow, the drain line is cleared. We can identify the source; the repair may involve another trade."
+        "html": "<strong>1. Find and stop the source</strong><br>No ceiling repair begins until the leak is fixed. If the source is a plumbing issue, the plumber handles the pipe repair. If it&#x27;s a roof issue, <a href=\"/services/storm-damage-repair\">tarping</a>  stops new water from entering. If it&#x27;s an AC condensate overflow, the drain line is cleared. We can identify the source; the repair may involve another trade."
       },
       {
         "t": "p",
@@ -4505,7 +4492,7 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/service-areas/broken-arrow-ok/\"><strong>South Tulsa, Broken Arrow</strong></a> , <a href=\"/service-areas/owasso-ok/\"><strong>Owasso</strong></a>  <a href=\"/service-areas/bixby-ok/\">and <strong>Bixby</strong></a>  newer homes with attic-mounted air handlers",
+          "<strong>South Tulsa, <a href=\"/service-areas/broken-arrow-ok/\">Broken Arrow</a></strong> , <a href=\"/service-areas/owasso-ok/\"><strong>Owasso</strong></a>  <a href=\"/service-areas/bixby-ok/\">and <strong>Bixby</strong></a>  newer homes with attic-mounted air handlers",
           "<strong>Midtown, Brookside and Maple Ridge</strong> older homes with plaster ceilings (slower drying, more specialized repair)",
           "<a href=\"/service-areas/jenks-ok/\"><strong>Jenks</strong></a>  <a href=\"/service-areas/glenpool-ok/\">and <strong>Glenpool</strong></a>  rapid-growth suburbs with attic HVAC"
         ]
@@ -4680,7 +4667,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Step 3 Dry the room and below</strong><br>Dehumidifiers control the room-level humidity to accelerate moisture release from the wood surface. <a href=\"/services/flooded-basement-cleanup\">Equally important: if the floor is over a crawlspace</a>  or basement, that space must be dried simultaneously. Moisture feeding up from below will re-cup the floor even after mat drying has equalized the boards."
+        "html": "<strong>Step 3 Dry the room and below</strong><br>Dehumidifiers control the room-level humidity to accelerate moisture release from the wood surface. Equally important: if the floor is over a <a href=\"/services/flooded-basement-cleanup\">crawlspace</a>  or basement, that space must be dried simultaneously. Moisture feeding up from below will re-cup the floor even after mat drying has equalized the boards."
       },
       {
         "t": "p",
@@ -4711,7 +4698,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Slab homes in South Tulsa, Broken Arrow and Bixby</strong><br><a href=\"/services/slab-leak-water-damage/\">Modern hardwood or engineered hardwood installed over concrete slabs faces a different risk: a slab leak</a>  can wet the wood from below for weeks before cupping becomes visible on the surface. By the time the homeowner notices, the subfloor adhesive may have failed and the wood may be too saturated to save."
+        "html": "<strong>Slab homes in South Tulsa, Broken Arrow and Bixby</strong><br>Modern hardwood or engineered hardwood installed over concrete slabs faces a different risk: <a href=\"/services/slab-leak-water-damage/\">a slab leak</a>  can wet the wood from below for weeks before cupping becomes visible on the surface. By the time the homeowner notices, the subfloor adhesive may have failed and the wood may be too saturated to save."
       },
       {
         "t": "hr"
@@ -4875,12 +4862,12 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying for any active water loss</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> IICRC S500 monitored drying with daily moisture readings</a> ",
-          "<a href=\"/services/ceiling-water-damage\"><strong>Ceiling and drywall water damage</strong> controlled cavity drying, sag assessment, texture-matched repair</a> ",
-          "<a href=\"/services/hardwood-floor-drying\"><strong>Hardwood floor drying</strong> mat drying systems for cupped or swollen hardwood</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines</a> ",
-          "<a href=\"/services/commercial-water-damage\"><strong>Commercial water damage</strong> Glenpool businesses along US-75 and 141st Street</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying for any active water loss ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> IICRC S500 monitored drying with daily moisture readings ",
+          "<strong><a href=\"/services/ceiling-water-damage\">Ceiling and drywall water damage</a></strong> controlled cavity drying, sag assessment, texture-matched repair ",
+          "<strong><a href=\"/services/hardwood-floor-drying\">Hardwood floor drying</a></strong> mat drying systems for cupped or swollen hardwood ",
+          "<strong><a href=\"/services/mold-remediation\">Mold remediation</a></strong> containment and removal under IICRC S520 guidelines ",
+          "<strong><a href=\"/services/commercial-water-damage\">Commercial water damage</a></strong> Glenpool businesses along US-75 and 141st Street "
         ]
       },
       {
@@ -4914,7 +4901,7 @@
       },
       {
         "t": "p",
-        "html": "Costs in Glenpool are consistent with the broader Tulsa market. A typical clean-water mitigation (extraction and drying) runs from about $1,300 to $5,000. Slab leaks, contaminated water and hail-related roof leaks that went undetected can push costs higher. <a href=\"/resources/water-damage-restoration-cost-tulsa\">Full cost breakdown with ranges by category and material:</a> "
+        "html": "Costs in Glenpool are consistent with the broader Tulsa market. A typical clean-water mitigation (extraction and drying) runs from about $1,300 to $5,000. Slab leaks, contaminated water and hail-related roof leaks that went undetected can push costs higher. Full <a href=\"/resources/water-damage-restoration-cost-tulsa\">cost breakdown</a> with ranges by category and material: "
       },
       {
         "t": "hr"
@@ -5032,13 +5019,13 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> IICRC S500 monitored drying with daily readings</a> ",
-          "<a href=\"/services/flood-damage-restoration\"><strong>Flood damage restoration</strong> Category 3 floodwater removal, disinfection and structural drying</a> ",
-          "<a href=\"/services/sewage-backup-cleanup\"><strong>Sewage backup cleanup</strong> Category 3 contaminated water removal and structural disinfection</a> ",
-          "<a href=\"/services/hardwood-floor-drying\"><strong>Hardwood floor drying</strong> mat drying systems for cupped hardwood</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines</a> ",
-          "<a href=\"/services/commercial-water-damage\"><strong>Commercial water damage</strong> Bixby businesses along Memorial Drive and 151st Street</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> IICRC S500 monitored drying with daily readings ",
+          "<strong><a href=\"/services/flood-damage-restoration\">Flood damage restoration</a></strong> Category 3 floodwater removal, disinfection and structural drying ",
+          "<strong><a href=\"/services/sewage-backup-cleanup\">Sewage backup cleanup</a></strong> Category 3 contaminated water removal and structural disinfection ",
+          "<strong><a href=\"/services/hardwood-floor-drying\">Hardwood floor drying</a></strong> mat drying systems for cupped hardwood ",
+          "<strong><a href=\"/services/mold-remediation\">Mold remediation</a></strong> containment and removal under IICRC S520 guidelines ",
+          "<strong><a href=\"/services/commercial-water-damage\">Commercial water damage</a></strong> Bixby businesses along Memorial Drive and 151st Street "
         ]
       },
       {
@@ -5232,12 +5219,12 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> IICRC S500 monitored drying with daily readings</a> ",
-          "<a href=\"/services/ceiling-water-damage\"><strong>Ceiling and drywall water damage</strong> cavity drying, sag assessment, texture-matched repair</a> ",
-          "<a href=\"/services/hardwood-floor-drying\"><strong>Hardwood floor drying</strong> mat drying systems for cupped hardwood</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines</a> ",
-          "<a href=\"/services/commercial-water-damage\"><strong>Commercial water damage</strong> Rose District businesses, the 71st Street and 101st Street commercial corridors</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> IICRC S500 monitored drying with daily readings ",
+          "<strong><a href=\"/services/ceiling-water-damage\">Ceiling and drywall water damage</a></strong> cavity drying, sag assessment, texture-matched repair ",
+          "<strong><a href=\"/services/hardwood-floor-drying\">Hardwood floor drying</a></strong> mat drying systems for cupped hardwood ",
+          "<strong><a href=\"/services/mold-remediation\">Mold remediation</a></strong> containment and removal under IICRC S520 guidelines ",
+          "<strong><a href=\"/services/commercial-water-damage\">Commercial water damage</a></strong> Rose District businesses, the 71st Street and 101st Street commercial corridors "
         ]
       },
       {
@@ -5405,7 +5392,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Older homes near downtown Sand Springs</strong><br>Homes built from the 1920s through the 1960s in and around downtown Sand Springs commonly have galvanized steel supply lines that corrode from the inside, cast-iron drain lines that crack and deteriorate, plaster walls that hold water far longer than modern drywall and pier-and-beam foundations over crawlspaces. Leaks in these homes can run inside walls and under floors for weeks before discovery. See  <a href=\"/services/flooded-basement-cleanup\" title=\"Flooded Basement &amp; Crawlspace Cleanup in Tulsa, OK\">and</a> "
+        "html": "<strong>Older homes near downtown Sand Springs</strong><br>Homes built from the 1920s through the 1960s in and around downtown Sand Springs commonly have galvanized steel supply lines that corrode from the inside, cast-iron drain lines that crack and deteriorate, plaster walls that hold water far longer than modern drywall and pier-and-beam foundations over crawlspaces. Leaks in these homes can run inside walls and under floors for weeks before discovery. See  and "
       },
       {
         "t": "p",
@@ -5429,13 +5416,13 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying for any active water loss</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> IICRC S500 monitored drying with daily readings</a> ",
-          "<a href=\"/services/flood-damage-restoration\"><strong>Flood damage restoration</strong> Category 3 floodwater removal, material disposal, disinfection and structural drying</a> ",
-          "<a href=\"/services/sewage-backup-cleanup\"><strong>Sewage backup cleanup</strong> Category 3 contaminated water removal and structural disinfection</a> ",
-          "<a href=\"/services/flooded-basement-cleanup\"><strong>Flooded basement and crawlspace cleanup</strong> pump-out, drying and mold prevention</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines</a> ",
-          "<a href=\"/services/commercial-water-damage\"><strong>Commercial water damage</strong> Sand Springs businesses along Main Street and the Highway 97 corridor</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying for any active water loss ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> IICRC S500 monitored drying with daily readings ",
+          "<strong><a href=\"/services/flood-damage-restoration\">Flood damage restoration</a></strong> Category 3 floodwater removal, material disposal, disinfection and structural drying ",
+          "<strong><a href=\"/services/sewage-backup-cleanup\">Sewage backup cleanup</a></strong> Category 3 contaminated water removal and structural disinfection ",
+          "<strong><a href=\"/services/flooded-basement-cleanup\">Flooded basement and crawlspace cleanup</a></strong> pump-out, drying and mold prevention ",
+          "<strong><a href=\"/services/mold-remediation\">Mold remediation</a></strong> containment and removal under IICRC S520 guidelines ",
+          "<strong><a href=\"/services/commercial-water-damage\">Commercial water damage</a></strong> Sand Springs businesses along Main Street and the Highway 97 corridor "
         ]
       },
       {
@@ -5628,15 +5615,15 @@
       },
       {
         "t": "p",
-        "html": "<strong>Clay soil</strong><br>Oklahoma&#x27;s expansive clay soil holds moisture against foundations, crawlspaces and slab edges long after the surface looks dry. <a href=\"/service-areas/sand-springs-ok/\">In pier-and-beam homes common in Midtown, Brookside, North Tulsa and older Sand Springs</a>  crawlspace humidity can exceed 80% year-round, creating conditions where mold grows on floor joists and subfloor without any specific water damage event. When a water loss adds additional moisture to an already-humid crawlspace, mold can establish in hours rather than days."
+        "html": "<strong>Clay soil</strong><br>Oklahoma&#x27;s expansive clay soil holds moisture against foundations, crawlspaces and slab edges long after the surface looks dry. In pier-and-beam homes common in Midtown, Brookside, North Tulsa and older <a href=\"/service-areas/sand-springs-ok/\">Sand Springs</a>  crawlspace humidity can exceed 80% year-round, creating conditions where mold grows on floor joists and subfloor without any specific water damage event. When a water loss adds additional moisture to an already-humid crawlspace, mold can establish in hours rather than days."
       },
       {
         "t": "p",
-        "html": "<strong>Hidden water paths</strong><br><a href=\"/services/ac-drain-line-overflow-cleanup/\">Tulsa&#x27;s most common hidden water sources attic AC condensate overflows</a> , <a href=\"/services/slab-leak-water-damage/\" title=\"Slab Leak Water Damage Restoration in Tulsa, OK\">slab leaks</a>  and slow supply-line drips wet materials in concealed spaces where no one can see them. By the time the homeowner notices a stain or smell, the moisture has been sitting for days or weeks, well past the mold growth window."
+        "html": "<strong>Hidden water paths</strong><br>Tulsa&#x27;s most common hidden water sources attic <a href=\"/services/ac-drain-line-overflow-cleanup/\">AC condensate overflows</a> , <a href=\"/services/slab-leak-water-damage/\" title=\"Slab Leak Water Damage Restoration in Tulsa, OK\">slab leaks</a>  and slow supply-line drips wet materials in concealed spaces where no one can see them. By the time the homeowner notices a stain or smell, the moisture has been sitting for days or weeks, well past the mold growth window."
       },
       {
         "t": "p",
-        "html": "<strong>Winter losses give slightly more time</strong><br>In winter, lower temperatures and lower humidity slow mold growth somewhat. <a href=\"/services/burst-pipe-water-damage\">However, clean water from a burst pipe</a>  can still degrade into contaminated water if it sits for 48 to 72 hours, and heated homes maintain interior temperatures that support growth even when outdoor temperatures are low."
+        "html": "<strong>Winter losses give slightly more time</strong><br>In winter, lower temperatures and lower humidity slow mold growth somewhat. However, clean water from a <a href=\"/services/burst-pipe-water-damage\">burst pipe</a>  can still degrade into contaminated water if it sits for 48 to 72 hours, and heated homes maintain interior temperatures that support growth even when outdoor temperatures are low."
       },
       {
         "t": "hr"
@@ -5956,7 +5943,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Crawlspace moisture and mold</strong><br>Older Skiatook homes on pier-and-beam foundations sit over crawlspaces where Oklahoma&#x27;s clay soil holds moisture year-round. Without a vapor barrier, ground moisture evaporates into the crawlspace and condenses on floor joists, subfloor and insulation creating conditions where mold grows continuously without any specific water damage event. A persistent musty smell in ground-floor rooms is the most reliable indicator. See  <a href=\"/services/mold-remediation\" title=\"Mold Remediation in Tulsa, OK\">and</a> "
+        "html": "<strong>Crawlspace moisture and mold</strong><br>Older Skiatook homes on pier-and-beam foundations sit over crawlspaces where Oklahoma&#x27;s clay soil holds moisture year-round. Without a vapor barrier, ground moisture evaporates into the crawlspace and condenses on floor joists, subfloor and insulation creating conditions where mold grows continuously without any specific water damage event. A persistent musty smell in ground-floor rooms is the most reliable indicator. See  and "
       },
       {
         "t": "hr"
@@ -5972,13 +5959,13 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying for any active water loss</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> IICRC S500 monitored drying with daily moisture readings</a> ",
-          "<a href=\"/services/flood-damage-restoration\"><strong>Flood damage restoration</strong> Category 3 floodwater from Bird Creek, Skiatook Lake or storm runoff</a> ",
-          "<a href=\"/services/sewage-backup-cleanup\"><strong>Sewage and septic backup cleanup</strong> Category 3 contaminated water removal and structural disinfection</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines</a> ",
-          "<a href=\"/services/roof-leak-water-damage/\"><strong>Roof leak water damage</strong> hail and storm breaches, insulation replacement, ceiling drying</a> ",
-          "<a href=\"/services/flooded-basement-cleanup\"><strong>Flooded basement and crawlspace cleanup</strong> pump-out, drying and mold prevention</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying for any active water loss ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> IICRC S500 monitored drying with daily moisture readings ",
+          "<strong><a href=\"/services/flood-damage-restoration\">Flood damage restoration</a></strong> Category 3 floodwater from Bird Creek, Skiatook Lake or storm runoff ",
+          "<strong><a href=\"/services/sewage-backup-cleanup\">Sewage and septic backup cleanup</a></strong> Category 3 contaminated water removal and structural disinfection ",
+          "<strong><a href=\"/services/mold-remediation\">Mold remediation</a></strong> containment and removal under IICRC S520 guidelines ",
+          "<strong><a href=\"/services/roof-leak-water-damage/\">Roof leak water damage</a></strong> hail and storm breaches, insulation replacement, ceiling drying ",
+          "<strong><a href=\"/services/flooded-basement-cleanup\">Flooded basement and crawlspace cleanup</a></strong> pump-out, drying and mold prevention "
         ]
       },
       {
@@ -5999,7 +5986,7 @@
           "<strong>Skiatook Lake properties</strong> lakefront and lake-access homes, including cabins on private roads",
           "<strong>Rural Osage County</strong> addresses west and north of town, including properties on wells and septic systems",
           "<strong>Sperry direction</strong> properties between Skiatook and Sperry",
-          "<a href=\"/service-areas/owasso-ok/\"><strong>Nearby communities:</strong> Collinsville (74021), Owasso</a>  and North Tulsa"
+          "<strong>Nearby communities:</strong> Collinsville (74021), <a href=\"/service-areas/owasso-ok/\">Owasso</a>  and North Tulsa"
         ]
       },
       {
@@ -6102,7 +6089,7 @@
       },
       {
         "q": "How do I protect a lake cabin from frozen pipes?",
-        "a_html": "Keep heat at 55°F or above, or shut off the main valve and drain all lines (including the water heater) before leaving for winter. Install leak sensors near the water heater and under sinks. Have someone check the cabin periodically during cold months. <a href=\"/resources/how-to-prevent-frozen-pipes-tulsa\">Full prevention checklist:</a> ",
+        "a_html": "Keep heat at 55°F or above, or shut off the main valve and drain all lines (including the water heater) before leaving for winter. Install leak sensors near the water heater and under sinks. Have someone check the cabin periodically during cold months. Full prevention checklist: ",
         "a_text": "Keep heat at 55°F or above, or shut off the main valve and drain all lines (including the water heater) before leaving for winter. Install leak sensors near the water heater and under sinks. Have someone check the cabin periodically during cold months. Full prevention checklist:"
       },
       {
@@ -6188,11 +6175,11 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying for any active water loss</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> IICRC S500 monitored drying with daily readings</a> ",
-          "<a href=\"/services/ceiling-water-damage\"><strong>Ceiling and drywall water damage</strong> cavity drying, sag assessment, texture-matched repair</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines</a> ",
-          "<a href=\"/services/commercial-water-damage\"><strong>Commercial water damage</strong> Coweta businesses along Highway 51 and the 72nd Street corridor</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying for any active water loss ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> IICRC S500 monitored drying with daily readings ",
+          "<strong><a href=\"/services/ceiling-water-damage\">Ceiling and drywall water damage</a></strong> cavity drying, sag assessment, texture-matched repair ",
+          "<strong><a href=\"/services/mold-remediation\">Mold remediation</a></strong> containment and removal under IICRC S520 guidelines ",
+          "<strong><a href=\"/services/commercial-water-damage\">Commercial water damage</a></strong> Coweta businesses along Highway 51 and the 72nd Street corridor "
         ]
       },
       {
@@ -6234,7 +6221,7 @@
         "items": [
           "<strong>Replace rubber washing machine supply hoses</strong> with braided stainless steel hoses rubber hoses are the single most common appliance failure we respond to in Coweta",
           "<strong>Replace water heaters proactively at 10 to 12 years</strong> don&#x27;t wait for rust, puddles or popping sounds",
-          "<a href=\"/services/ac-drain-line-overflow-cleanup/\"><strong>Flush the AC condensate drain line</strong> with vinegar before cooling season to prevent summer ceiling leaks</a> ",
+          "<strong>Flush the <a href=\"/services/ac-drain-line-overflow-cleanup/\">AC condensate drain line</a></strong> with vinegar before cooling season to prevent summer ceiling leaks ",
           "<strong>Monitor your monthly water bill</strong> for unexplained increases a jump without a change in usage often signals a slab leak",
           "<strong>Inspect the roof after every major hail event</strong> and check the attic for wet insulation after the next rain",
           "<strong>Insulate attic and garage supply lines</strong> and drip exterior-wall faucets during hard freezes. <a href=\"/resources/how-to-prevent-frozen-pipes-tulsa\" title=\"How to Prevent Frozen Pipes in Tulsa, OK\">Full checklist:</a> "
@@ -6373,7 +6360,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Residential storm and plumbing damage</strong><br><a href=\"/services/storm-damage-repair\">Homes along the Route 66 corridor and in Catoosa&#x27;s newer subdivisions south of town face the same damage patterns as the broader Tulsa metro: hail-damaged roofs that leak during subsequent rains</a> , <a href=\"/services/burst-pipe-water-damage\">burst pipes during hard freezes</a> , <a href=\"/services/water-heater-leak-cleanup/\">and water heater and appliance failures</a> ."
+        "html": "<strong>Residential storm and plumbing damage</strong><br>Homes along the Route 66 corridor and in Catoosa&#x27;s newer subdivisions south of town face the same damage patterns as the broader Tulsa metro: <a href=\"/services/storm-damage-repair\">hail-damaged roofs</a> that leak during subsequent rains , <a href=\"/services/burst-pipe-water-damage\">burst pipes during hard freezes</a> , and <a href=\"/services/water-heater-leak-cleanup/\">water heater</a> and appliance failures ."
       },
       {
         "t": "p",
@@ -6393,12 +6380,12 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> IICRC S500 monitored drying with daily readings</a> ",
-          "<a href=\"/services/flood-damage-restoration\"><strong>Flood damage restoration</strong> Category 3 floodwater from the Verdigris River or storm runoff</a> ",
-          "<a href=\"/services/sewage-backup-cleanup\"><strong>Sewage and septic backup cleanup</strong> Category 3 contaminated water removal and disinfection</a> ",
-          "<a href=\"/services/commercial-water-damage\"><strong>Commercial water damage</strong> warehouses, industrial buildings and port-area businesses of all sizes</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> IICRC S500 monitored drying with daily readings ",
+          "<strong><a href=\"/services/flood-damage-restoration\">Flood damage restoration</a></strong> Category 3 floodwater from the Verdigris River or storm runoff ",
+          "<strong><a href=\"/services/sewage-backup-cleanup\">Sewage and septic backup cleanup</a></strong> Category 3 contaminated water removal and disinfection ",
+          "<strong><a href=\"/services/commercial-water-damage\">Commercial water damage</a></strong> warehouses, industrial buildings and port-area businesses of all sizes ",
+          "<strong><a href=\"/services/mold-remediation\">Mold remediation</a></strong> containment and removal under IICRC S520 guidelines "
         ]
       },
       {
@@ -6418,7 +6405,7 @@
           "<strong>In-town Catoosa</strong> neighborhoods along Route 66, Pine Street and Cherokee Street",
           "<strong>Port of Catoosa industrial area</strong> warehouses, distribution centers and industrial sites along the port access roads",
           "<strong>Nearby Rogers and Wagoner County addresses</strong>",
-          "<a href=\"/service-areas/claremore-ok/\"><strong>Nearby communities:</strong> Claremore</a> , <a href=\"/service-areas/broken-arrow-ok/\">East Tulsa and Broken Arrow</a> "
+          "<a href=\"/service-areas/claremore-ok/\"><strong>Nearby communities:</strong> Claremore</a> , East Tulsa and <a href=\"/service-areas/broken-arrow-ok/\">Broken Arrow</a> "
         ]
       },
       {
@@ -6556,7 +6543,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/services/mold-remediation\">Crawlspace mold remediation typically involves removing and replacing wet or moldy insulation, treating affected framing under</a>  containment protocols and installing a vapor barrier to reduce future moisture intrusion. See "
+        "html": "Crawlspace <a href=\"/services/mold-remediation\">mold remediation</a> typically involves removing and replacing wet or moldy insulation, treating affected framing under  containment protocols and installing a vapor barrier to reduce future moisture intrusion. See "
       },
       {
         "t": "p",
@@ -6580,11 +6567,11 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> IICRC S500 monitored drying with daily readings</a> ",
-          "<a href=\"/services/hardwood-floor-drying\"><strong>Hardwood floor drying</strong> mat drying systems for original hardwood over pier-and-beam</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines</a> ",
-          "<a href=\"/services/flooded-basement-cleanup\"><strong>Flooded basement and crawlspace cleanup</strong> pump-out, drying and mold prevention</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> IICRC S500 monitored drying with daily readings ",
+          "<strong><a href=\"/services/hardwood-floor-drying\">Hardwood floor drying</a></strong> mat drying systems for original hardwood over pier-and-beam ",
+          "<strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines ",
+          "<strong><a href=\"/services/flooded-basement-cleanup\">Flooded basement and crawlspace cleanup</a></strong> pump-out, drying and mold prevention "
         ]
       },
       {
@@ -6603,7 +6590,7 @@
         "items": [
           "<strong>In-town Collinsville</strong> all neighborhoods, including downtown and areas along Main Street",
           "<strong>Rural Tulsa and Rogers County</strong> addresses surrounding Collinsville",
-          "<a href=\"/service-areas/owasso-ok/\"><strong>Nearby communities:</strong> Owasso</a> , <a href=\"/service-areas/claremore-ok/\" title=\"Water Damage Restoration in Claremore, OK\">Skiatook, Claremore</a>  and North Tulsa"
+          "<a href=\"/service-areas/owasso-ok/\"><strong>Nearby communities:</strong> Owasso</a> , Skiatook, <a href=\"/service-areas/claremore-ok/\" title=\"Water Damage Restoration in Claremore, OK\">Claremore</a>  and North Tulsa"
         ]
       },
       {
@@ -6729,7 +6716,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Galvanized and cast-iron plumbing</strong><br>Homes built from the 1910s through the 1950s near downtown Sapulpa often still have galvanized steel supply lines and cast-iron drain lines. Galvanized pipe corrodes internally over decades, weakening pipe walls until they fail at joints or thin spots often inside wall cavities. Cast-iron drain lines crack from tree root intrusion, soil shifting and internal corrosion, leading to sewer-line backups. See  <a href=\"/services/sewage-backup-cleanup\" title=\"Sewage Backup Cleanup in Tulsa, OK\">and</a> "
+        "html": "<strong>Galvanized and cast-iron plumbing</strong><br>Homes built from the 1910s through the 1950s near downtown Sapulpa often still have galvanized steel supply lines and cast-iron drain lines. Galvanized pipe corrodes internally over decades, weakening pipe walls until they fail at joints or thin spots often inside wall cavities. Cast-iron drain lines crack from tree root intrusion, soil shifting and internal corrosion, leading to sewer-line backups. See  and "
       },
       {
         "t": "p",
@@ -6772,13 +6759,13 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> IICRC S500 monitored drying with daily readings</a> ",
-          "<a href=\"/services/flooded-basement-cleanup\"><strong>Flooded basement and crawlspace cleanup</strong> pump-out, extraction, drying and mold prevention</a> ",
-          "<a href=\"/services/sewage-backup-cleanup\"><strong>Sewage backup cleanup</strong> Category 3 contaminated water from failed sewer laterals and roots</a> ",
-          "<a href=\"/services/hardwood-floor-drying\"><strong>Hardwood floor drying</strong> mat drying for original hardwood over pier-and-beam</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines</a> ",
-          "<a href=\"/services/commercial-water-damage\"><strong>Commercial water damage</strong> downtown Sapulpa and Route 66 corridor businesses</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> IICRC S500 monitored drying with daily readings ",
+          "<strong><a href=\"/services/flooded-basement-cleanup\">Flooded basement and crawlspace cleanup</a></strong> pump-out, extraction, drying and mold prevention ",
+          "<strong><a href=\"/services/sewage-backup-cleanup\">Sewage backup cleanup</a></strong> Category 3 contaminated water from failed sewer laterals and roots ",
+          "<strong><a href=\"/services/hardwood-floor-drying\">Hardwood floor drying</a></strong> mat drying for original hardwood over pier-and-beam ",
+          "<strong><a href=\"/services/mold-remediation\">Mold remediation</a></strong> containment and removal under IICRC S520 guidelines ",
+          "<strong><a href=\"/services/commercial-water-damage\">Commercial water damage</a></strong> downtown Sapulpa and Route 66 corridor businesses "
         ]
       },
       {
@@ -6826,7 +6813,7 @@
     "faqs": [
       {
         "q": "Who do I call when my Sapulpa basement floods?",
-        "a_html": "A restoration company first to pump out and start drying that&#x27;s us at <a href=\"tel:+19183959320\">(918) 395-9320</a>. If a pipe caused the flooding, a plumber handles the pipe repair. If basement flooding is a recurring problem from groundwater, a waterproofing contractor can address the structural entry point after the immediate water is handled. <a href=\"/services/flooded-basement-cleanup\" title=\"Flooded Basement &amp; Crawlspace Cleanup in Tulsa, OK\">More:</a> ",
+        "a_html": "A restoration company first to pump out and start drying that&#x27;s us at <a href=\"tel:+19183959320\">(918) 395-9320</a>. If a pipe caused the flooding, a plumber handles the pipe repair. If basement flooding is a recurring problem from groundwater, a waterproofing contractor can address the structural entry point after the immediate water is handled. More: ",
         "a_text": "A restoration company first to pump out and start drying that&#x27;s us at (918) 395-9320. If a pipe caused the flooding, a plumber handles the pipe repair. If basement flooding is a recurring problem from groundwater, a waterproofing contractor can address the structural entry point after the immediate water is handled. More:"
       },
       {
@@ -6905,7 +6892,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Aging pipes and tree roots</strong><br>Midtown&#x27;s mature tree canopy oaks, elms and other established trees sends roots directly into clay and cast-iron sewer laterals, creating blockages that eventually produce sewage backups. Galvanized supply lines, still in service in many Midtown homes, corrode internally and fail at joints. Both failures create water damage, but sewage backups (Category 3) require far more aggressive cleanup than supply-line breaks (Category 1). See  <a href=\"/services/sewage-backup-cleanup\" title=\"Sewage Backup Cleanup in Tulsa, OK\">and</a> "
+        "html": "<strong>Aging pipes and tree roots</strong><br>Midtown&#x27;s mature tree canopy oaks, elms and other established trees sends roots directly into clay and cast-iron sewer laterals, creating blockages that eventually produce sewage backups. Galvanized supply lines, still in service in many Midtown homes, corrode internally and fail at joints. Both failures create water damage, but sewage backups (Category 3) require far more aggressive cleanup than supply-line breaks (Category 1). See  and "
       },
       {
         "t": "p",
@@ -6968,13 +6955,13 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> plaster-specific and crawlspace-inclusive drying</a> ",
-          "<a href=\"/services/hardwood-floor-drying\"><strong>Hardwood floor drying</strong> mat drying systems for original oak</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> crawlspace, wall cavity and attic mold under IICRC S520</a> ",
-          "<a href=\"/services/sewage-backup-cleanup\"><strong>Sewage backup cleanup</strong> tree-root-related sewer backups</a> ",
-          "<a href=\"/services/flood-damage-restoration\"><strong>Flood damage restoration</strong> Joe Creek and drainage flooding</a> ",
-          "<a href=\"/services/ceiling-water-damage\"><strong>Ceiling and drywall water damage</strong> including plaster ceilings</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> plaster-specific and crawlspace-inclusive drying ",
+          "<strong><a href=\"/services/hardwood-floor-drying\">Hardwood floor drying</a></strong> mat drying systems for original oak ",
+          "<strong><a href=\"/services/mold-remediation\">Mold remediation</a></strong> crawlspace, wall cavity and attic mold under IICRC S520 ",
+          "<strong><a href=\"/services/sewage-backup-cleanup\">Sewage backup cleanup</a></strong> tree-root-related sewer backups ",
+          "<strong><a href=\"/services/flood-damage-restoration\">Flood damage restoration</a></strong> Joe Creek and drainage flooding ",
+          "<strong><a href=\"/services/ceiling-water-damage\">Ceiling and drywall water damage</a></strong> including plaster ceilings "
         ]
       },
       {
@@ -7008,7 +6995,7 @@
       },
       {
         "q": "Can my original Midtown oak floors be saved after water damage?",
-        "a_html": "Often, yes if professional drying starts within 24 to 48 hours and the water was clean (Category 1). The crawlspace below must be dried simultaneously. Sand only after verified dry readings never while the floor is still cupped. See  <a href=\"/services/hardwood-floor-drying\" title=\"Hardwood Floor Water Damage &amp; Drying in Tulsa, OK\">and</a> ",
+        "a_html": "Often, yes if professional drying starts within 24 to 48 hours and the water was clean (Category 1). The crawlspace below must be dried simultaneously. Sand only after verified dry readings never while the floor is still cupped. See  and ",
         "a_text": "Often, yes if professional drying starts within 24 to 48 hours and the water was clean (Category 1). The crawlspace below must be dried simultaneously. Sand only after verified dry readings never while the floor is still cupped. See and"
       },
       {
@@ -7624,7 +7611,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Flood plus internal loss</strong><br><a href=\"/service-areas/sand-springs-ok/\">When river flooding and a sewer backup happen simultaneously as occurred during the 2019 Arkansas River flood in Sand Springs</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a>  <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">and Bixby</a>  the resulting damage involves two different insurance claims: the NFIP flood policy covers the rising water, and the homeowners policy (with a sewer backup endorsement) covers the sewage. Documentation needs to separate the two damage sources clearly, because each claim is adjusted independently."
+        "html": "<strong>Flood plus internal loss</strong><br>When river flooding and a sewer backup happen simultaneously as occurred during the 2019 Arkansas River flood in <a href=\"/service-areas/sand-springs-ok/\">Sand Springs</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a>  <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">and Bixby</a>  the resulting damage involves two different insurance claims: the NFIP flood policy covers the rising water, and the homeowners policy (with a sewer backup endorsement) covers the sewage. Documentation needs to separate the two damage sources clearly, because each claim is adjusted independently."
       },
       {
         "t": "hr"
@@ -7877,7 +7864,7 @@
           ],
           [
             "Mop or fan sewage",
-            "<a href=\"/services/sewage-backup-cleanup\">Call (918) 395-9320 sewage is Category 3 and requires containment and commercial extraction</a> "
+            "Call (918) 395-9320 <a href=\"/services/sewage-backup-cleanup\">sewage</a> is Category 3 and requires containment and commercial extraction "
           ]
         ]
       },
@@ -8047,7 +8034,7 @@
       },
       {
         "t": "p",
-        "html": "This chronic humidity doesn&#x27;t require a specific water event to cause damage it grows mold on structural wood silently over months and years. A musty smell in ground-floor rooms, soft spots near exterior walls and cupping hardwood floors are the signals homeowners notice. By the time they check underneath, mold on joists and subfloor is often well established. See  <a href=\"/services/mold-remediation\" title=\"Mold Remediation in Tulsa, OK\">and</a> "
+        "html": "This chronic humidity doesn&#x27;t require a specific water event to cause damage it grows mold on structural wood silently over months and years. A musty smell in ground-floor rooms, soft spots near exterior walls and cupping hardwood floors are the signals homeowners notice. By the time they check underneath, mold on joists and subfloor is often well established. See  and "
       },
       {
         "t": "p",
@@ -8086,7 +8073,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Crawlspace the hidden factor</strong><br>Drying the living space above isn&#x27;t enough if the crawlspace below is feeding moisture upward. When a Brookside home takes water damage, the crawlspace must be dried simultaneously otherwise, humidity from below re-wets hardwood and framing even after room-level drying is complete. <a href=\"/services/mold-remediation\">If mold is found on joists or subfloor during the crawlspace inspection (common in Brookside), remediation</a>  runs as part of the same project."
+        "html": "<strong>Crawlspace the hidden factor</strong><br>Drying the living space above isn&#x27;t enough if the crawlspace below is feeding moisture upward. When a Brookside home takes water damage, the crawlspace must be dried simultaneously otherwise, humidity from below re-wets hardwood and framing even after room-level drying is complete. If <a href=\"/services/mold-remediation\">mold</a> is found on joists or subfloor during the crawlspace inspection (common in Brookside), remediation  runs as part of the same project."
       },
       {
         "t": "hr"
@@ -8106,7 +8093,7 @@
           "<strong>Florence Park</strong> 1920s-1940s construction east of Brookside with identical materials and crawlspace conditions",
           "<strong>Lortondale</strong> south of Brookside along Peoria",
           "<strong>Riverview</strong> near the Arkansas River south of 51st",
-          "<a href=\"/service-areas/midtown-tulsa/\"><strong>Nearby neighborhoods:</strong> Midtown</a> , <a href=\"/service-areas/south-tulsa/\">Cherry Street and South Tulsa</a> "
+          "<a href=\"/service-areas/midtown-tulsa/\"><strong>Nearby neighborhoods:</strong> Midtown</a> , Cherry Street and <a href=\"/service-areas/south-tulsa/\">South Tulsa</a> "
         ]
       },
       {
@@ -8316,14 +8303,14 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> IICRC S500 monitored drying including Class 4 concrete</a> ",
-          "<a href=\"/services/slab-leak-water-damage/\"><strong>Slab leak water damage</strong> moisture mapping, flooring removal, concrete drying and wall-bottom drying</a> ",
-          "<a href=\"/services/ac-drain-line-overflow-cleanup/\"><strong>AC drain line overflow cleanup</strong> insulation removal, attic drying, ceiling repair</a> ",
-          "<a href=\"/services/ceiling-water-damage\"><strong>Ceiling and drywall water damage</strong> cavity drying, sag assessment, texture-matched repair</a> ",
-          "<a href=\"/services/hardwood-floor-drying\"><strong>Hardwood floor drying</strong> mat drying for cupped hardwood over slab</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines</a> ",
-          "<a href=\"/services/commercial-water-damage\"><strong>Commercial water damage</strong> offices and retail along the 71st Street and Memorial Drive corridors</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> IICRC S500 monitored drying including Class 4 concrete ",
+          "<strong><a href=\"/services/slab-leak-water-damage/\">Slab leak water damage</a></strong> moisture mapping, flooring removal, concrete drying and wall-bottom drying ",
+          "<strong><a href=\"/services/ac-drain-line-overflow-cleanup/\">AC drain line overflow cleanup</a></strong> insulation removal, attic drying, ceiling repair ",
+          "<strong><a href=\"/services/ceiling-water-damage\">Ceiling and drywall water damage</a></strong> cavity drying, sag assessment, texture-matched repair ",
+          "<strong><a href=\"/services/hardwood-floor-drying\">Hardwood floor drying</a></strong> mat drying for cupped hardwood over slab ",
+          "<strong><a href=\"/services/mold-remediation\">Mold remediation</a></strong> containment and removal under IICRC S520 guidelines ",
+          "<strong><a href=\"/services/commercial-water-damage\">Commercial water damage</a></strong> offices and retail along the 71st Street and Memorial Drive corridors "
         ]
       },
       {
@@ -8500,12 +8487,12 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying</a> ",
-          "<a href=\"/services/flood-damage-restoration\"><strong>Flood damage restoration</strong> Category 3 floodwater removal, disinfection and structural drying</a> ",
-          "<a href=\"/services/sewage-backup-cleanup\"><strong>Sewage backup cleanup</strong> Category 3 contaminated water removal and structural disinfection</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> IICRC S500 monitored drying</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines</a> ",
-          "<a href=\"/services/commercial-water-damage\"><strong>Commercial water damage</strong> Southwest Boulevard corridor businesses and river-area industrial sites</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying ",
+          "<strong><a href=\"/services/flood-damage-restoration\">Flood damage restoration</a></strong> Category 3 floodwater removal, disinfection and structural drying ",
+          "<strong><a href=\"/services/sewage-backup-cleanup\">Sewage backup cleanup</a></strong> Category 3 contaminated water removal and structural disinfection ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> IICRC S500 monitored drying ",
+          "<strong><a href=\"/services/mold-remediation\">Mold remediation</a></strong> containment and removal under IICRC S520 guidelines ",
+          "<strong><a href=\"/services/commercial-water-damage\">Commercial water damage</a></strong> Southwest Boulevard corridor businesses and river-area industrial sites "
         ]
       },
       {
@@ -8524,7 +8511,7 @@
         "items": [
           "<strong>74107</strong> Red Fork, the Westside and residential neighborhoods west of the Arkansas River",
           "<strong>74127</strong> Garden City, Southwest Boulevard corridor and areas toward Sand Springs",
-          "<a href=\"/service-areas/sand-springs-ok/\"><strong>Nearby communities:</strong> Sand Springs</a> , <a href=\"/service-areas/jenks-ok/\">Sapulpa and Jenks</a> "
+          "<a href=\"/service-areas/sand-springs-ok/\"><strong>Nearby communities:</strong> Sand Springs</a> , Sapulpa and <a href=\"/service-areas/jenks-ok/\">Jenks</a> "
         ]
       },
       {
@@ -8677,7 +8664,7 @@
       },
       {
         "t": "p",
-        "html": "The signals homeowners notice: a musty smell in ground-floor rooms, soft spots near walls, cupping hardwood, peeling paint at baseboards. By the time these signs appear, crawlspace mold is often well established. See  <a href=\"/services/mold-remediation\" title=\"Mold Remediation in Tulsa, OK\">and</a> "
+        "html": "The signals homeowners notice: a musty smell in ground-floor rooms, soft spots near walls, cupping hardwood, peeling paint at baseboards. By the time these signs appear, crawlspace mold is often well established. See  and "
       },
       {
         "t": "p",
@@ -8701,12 +8688,12 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> plaster-specific and crawlspace-inclusive drying</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> crawlspace, wall-cavity and attic mold under IICRC S520</a> ",
-          "<a href=\"/services/hardwood-floor-drying\"><strong>Hardwood floor drying</strong> mat drying for original oak over pier-and-beam</a> ",
-          "<a href=\"/services/sewage-backup-cleanup\"><strong>Sewage backup cleanup</strong> root-related sewer backups</a> ",
-          "<a href=\"/services/flood-damage-restoration\"><strong>Flood damage restoration</strong> Bird Creek and drainage flooding</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> plaster-specific and crawlspace-inclusive drying ",
+          "<strong><a href=\"/services/mold-remediation\">Mold remediation</a></strong> crawlspace, wall-cavity and attic mold under IICRC S520 ",
+          "<strong><a href=\"/services/hardwood-floor-drying\">Hardwood floor drying</a></strong> mat drying for original oak over pier-and-beam ",
+          "<strong><a href=\"/services/sewage-backup-cleanup\">Sewage backup cleanup</a></strong> root-related sewer backups ",
+          "<strong><a href=\"/services/flood-damage-restoration\">Flood damage restoration</a></strong> Bird Creek and drainage flooding "
         ]
       },
       {
@@ -8728,7 +8715,7 @@
           "<strong>74126</strong> Owen Park, the North Lewis corridor",
           "<strong>74130</strong> northern residential areas",
           "<strong>74127 (north)</strong> areas north of the river corridor",
-          "<a href=\"/service-areas/owasso-ok/\"><strong>Nearby communities:</strong> Owasso</a> , <a href=\"/service-areas/midtown-tulsa/\">Skiatook and Midtown</a> "
+          "<a href=\"/service-areas/owasso-ok/\"><strong>Nearby communities:</strong> Owasso</a> , Skiatook and <a href=\"/service-areas/midtown-tulsa/\">Midtown</a> "
         ]
       },
       {
@@ -8814,7 +8801,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Attic-mounted air handlers are standard construction.</strong> <a href=\"/service-areas/south-tulsa/\">Most homes in South Tulsa</a> , <a href=\"/service-areas/broken-arrow-ok/\" title=\"Water Damage Restoration in Broken Arrow, OK\">Broken Arrow</a> , <a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">Owasso</a> , <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">Bixby</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a>  <a href=\"/service-areas/glenpool-ok/\" title=\"Water Damage Restoration in Glenpool, OK\">and Glenpool</a>  place the air handler in the attic. This is the most vulnerable possible location because any overflow dumps water directly onto insulation and ceiling drywall with gravity carrying it downward."
+        "html": "<strong>Attic-mounted air handlers are standard construction.</strong> <a href=\"/service-areas/south-tulsa/\">Most homes in South Tulsa</a> , <a href=\"/service-areas/broken-arrow-ok/\" title=\"Water Damage Restoration in Broken Arrow, OK\">Broken Arrow</a> , <a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">Owasso</a> , <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">Bixby</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a>  and <a href=\"/service-areas/glenpool-ok/\" title=\"Water Damage Restoration in Glenpool, OK\">Glenpool</a>  place the air handler in the attic. This is the most vulnerable possible location because any overflow dumps water directly onto insulation and ceiling drywall with gravity carrying it downward."
       },
       {
         "t": "p",
@@ -8957,7 +8944,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/service-areas/south-tulsa/\">Across Tulsa with the highest concentration of calls in the communities where attic air handlers are standard construction: South Tulsa</a> , <a href=\"/service-areas/broken-arrow-ok/\" title=\"Water Damage Restoration in Broken Arrow, OK\">Broken Arrow</a> , <a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">Owasso</a> , <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">Bixby</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a> , <a href=\"/service-areas/glenpool-ok/\" title=\"Water Damage Restoration in Glenpool, OK\">Glenpool</a>  and Coweta."
+        "html": "Across Tulsa with the highest concentration of calls in the communities where attic air handlers are standard construction: South Tulsa , Broken Arrow , Owasso , Bixby , Jenks , Glenpool  and Coweta."
       },
       {
         "t": "hr"
@@ -9056,7 +9043,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Water heaters</strong><br><a href=\"/services/water-heater-leak-cleanup/\">Tank water heaters are covered in detail on our dedicated page see</a> . Summary: tanks typically last 8 to 12 years. Failures release the full tank volume (40 to 80 gallons) plus whatever the supply line feeds until shut off."
+        "html": "<strong>Water heaters</strong><br>Tank <a href=\"/services/water-heater-leak-cleanup/\">water heaters</a> are covered in detail on our dedicated page see . Summary: tanks typically last 8 to 12 years. Failures release the full tank volume (40 to 80 gallons) plus whatever the supply line feeds until shut off."
       },
       {
         "t": "p",
@@ -9353,7 +9340,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/service-areas/south-tulsa/\">Attic water heater installations are common in South Tulsa</a> , <a href=\"/service-areas/broken-arrow-ok/\" title=\"Water Damage Restoration in Broken Arrow, OK\">Broken Arrow</a>  <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">and Bixby</a> . A failed attic water heater is one of the most damaging single-event water losses a home can experience 40 to 80 gallons of water dropping through insulation and ceiling drywall into every room below. See "
+        "html": "Attic water heater installations are common in <a href=\"/service-areas/south-tulsa/\">South Tulsa</a> , <a href=\"/service-areas/broken-arrow-ok/\" title=\"Water Damage Restoration in Broken Arrow, OK\">Broken Arrow</a>  <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">and Bixby</a> . A failed attic water heater is one of the most damaging single-event water losses a home can experience 40 to 80 gallons of water dropping through insulation and ceiling drywall into every room below. See "
       },
       {
         "t": "hr"
@@ -9556,7 +9543,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Hail-cracked or bruised shingles</strong><br>This is the most common roof leak cause in the Tulsa metro. <a href=\"/service-areas/broken-arrow-ok/\">Spring hail events (April through June) damage thousands of roofs across Broken Arrow</a> , <a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">Owasso</a> , <a href=\"/service-areas/south-tulsa/\" title=\"Water Damage Restoration in South Tulsa\">South Tulsa</a> , <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">Bixby</a>  <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">and Jenks</a>  in single storms. Hail cracks shingles, bruises granule coverage, breaks the tab-to-tab seal and damages flashing. These openings don&#x27;t always leak during light rain they leak during heavy, wind-driven rain, which pushes water laterally under the shingle surface."
+        "html": "<strong>Hail-cracked or bruised shingles</strong><br>This is the most common roof leak cause in the Tulsa metro. Spring hail events (April through June) damage thousands of roofs across <a href=\"/service-areas/broken-arrow-ok/\">Broken Arrow</a> , <a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">Owasso</a> , <a href=\"/service-areas/south-tulsa/\" title=\"Water Damage Restoration in South Tulsa\">South Tulsa</a> , <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">Bixby</a>  <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">and Jenks</a>  in single storms. Hail cracks shingles, bruises granule coverage, breaks the tab-to-tab seal and damages flashing. These openings don&#x27;t always leak during light rain they leak during heavy, wind-driven rain, which pushes water laterally under the shingle surface."
       },
       {
         "t": "p",
@@ -9733,7 +9720,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/service-areas/south-tulsa/\"><strong>The geographic pattern:</strong> slab leaks are most frequent in communities built on the highest-expansion clay: South Tulsa</a> , <a href=\"/service-areas/broken-arrow-ok/\" title=\"Water Damage Restoration in Broken Arrow, OK\">Broken Arrow</a> , <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">Bixby</a> , <a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">Owasso</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a> , <a href=\"/service-areas/glenpool-ok/\" title=\"Water Damage Restoration in Glenpool, OK\">Glenpool</a>  and Coweta. These are also the communities with the largest inventory of slab-on-grade homes built since the 1970s."
+        "html": "<strong>The geographic pattern:</strong> slab leaks are most frequent in communities built on the highest-expansion clay: <a href=\"/service-areas/south-tulsa/\">South Tulsa</a> , <a href=\"/service-areas/broken-arrow-ok/\" title=\"Water Damage Restoration in Broken Arrow, OK\">Broken Arrow</a> , <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">Bixby</a> , <a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">Owasso</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a> , <a href=\"/service-areas/glenpool-ok/\" title=\"Water Damage Restoration in Glenpool, OK\">Glenpool</a>  and Coweta. These are also the communities with the largest inventory of slab-on-grade homes built since the 1970s."
       },
       {
         "t": "hr"
@@ -9761,7 +9748,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/resources/signs-of-hidden-water-damage\" title=\"10 Signs of Hidden Water Damage in Your Tulsa Home\">More indicators:</a> "
+        "html": "More <a href=\"/resources/signs-of-hidden-water-damage\" title=\"10 Signs of Hidden Water Damage in Your Tulsa Home\">hidden water damage signs</a> are listed in our guide. "
       },
       {
         "t": "hr"
@@ -9844,7 +9831,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Wall bottoms and mold prevention</strong><br>Baseboards are removed along all wet walls to expose the bottom plate and allow air movement along the base of the wall. <a href=\"/services/mold-remediation\">If mold growth is found at wall bottoms which is common when the leak has been running for weeks remediation</a>  runs as part of the same project."
+        "html": "<strong>Wall bottoms and mold prevention</strong><br>Baseboards are removed along all wet walls to expose the bottom plate and allow air movement along the base of the wall. If <a href=\"/services/mold-remediation\">mold growth</a> is found at wall bottoms which is common when the leak has been running for weeks remediation  runs as part of the same project."
       },
       {
         "t": "hr"
@@ -10038,7 +10025,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/services/burst-pipe-water-damage\">For each of these, see the corresponding service page for details on what&#x27;s involved:</a> , <a href=\"/services/water-heater-leak-cleanup/\">Water Heater Leak Cleanup</a>, <a href=\"/services/appliance-leak-water-damage/\">Appliance Leak Water Damage</a>, <a href=\"/services/ac-drain-line-overflow-cleanup/\">Ac Drain Line Overflow Cleanup</a>, <a href=\"/services/storm-damage-repair\">Storm Damage Repair</a>, <a href=\"/services/slab-leak-water-damage/\">Slab Leak Water Damage</a>"
+        "html": "For each of these, see the corresponding service page for details on what&#x27;s involved: , <a href=\"/services/water-heater-leak-cleanup/\">Water Heater Leak Cleanup</a>, <a href=\"/services/appliance-leak-water-damage/\">Appliance Leak Water Damage</a>, <a href=\"/services/ac-drain-line-overflow-cleanup/\">Ac Drain Line Overflow Cleanup</a>, <a href=\"/services/storm-damage-repair\">Storm Damage Repair</a>, <a href=\"/services/slab-leak-water-damage/\">Slab Leak Water Damage</a>"
       },
       {
         "t": "hr"
@@ -10109,7 +10096,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/service-areas/sand-springs-ok/\">The 2019 Arkansas River flood which hit Sand Springs</a> , <a href=\"/service-areas/west-tulsa/\" title=\"Water Damage Restoration in West Tulsa\">West Tulsa</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a>  <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">and Bixby</a>  left many homeowners without coverage because they didn&#x27;t have flood insurance. Understanding the flood insurance landscape before a flood event is critical."
+        "html": "The 2019 Arkansas River flood which hit <a href=\"/service-areas/sand-springs-ok/\">Sand Springs</a> , <a href=\"/service-areas/west-tulsa/\" title=\"Water Damage Restoration in West Tulsa\">West Tulsa</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a>  <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">and Bixby</a>  left many homeowners without coverage because they didn&#x27;t have flood insurance. Understanding the flood insurance landscape before a flood event is critical."
       },
       {
         "t": "p",
@@ -10318,12 +10305,12 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> IICRC S500 monitored drying with daily readings</a> ",
-          "<a href=\"/services/slab-leak-water-damage/\"><strong>Slab leak water damage</strong> moisture mapping, flooring removal, concrete drying</a> ",
-          "<a href=\"/services/storm-damage-repair\"><strong>Storm damage repair</strong> tarping, insulation replacement, ceiling drying</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines</a> ",
-          "<a href=\"/services/commercial-water-damage\"><strong>Commercial water damage</strong> warehouses, shops and offices along Admiral, Memorial and Sheridan</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> IICRC S500 monitored drying with daily readings ",
+          "<strong><a href=\"/services/slab-leak-water-damage/\">Slab leak water damage</a></strong> moisture mapping, flooring removal, concrete drying ",
+          "<strong><a href=\"/services/storm-damage-repair\">Storm damage repair</a></strong> tarping, insulation replacement, ceiling drying ",
+          "<strong><a href=\"/services/mold-remediation\">Mold remediation</a></strong> containment and removal under IICRC S520 guidelines ",
+          "<strong><a href=\"/services/commercial-water-damage\">Commercial water damage</a></strong> warehouses, shops and offices along Admiral, Memorial and Sheridan "
         ]
       },
       {
@@ -10348,7 +10335,7 @@
           "<strong>74134</strong> south of 51st along Memorial",
           "<strong>74145</strong> 51st to 71st between Sheridan and Memorial",
           "<strong>74146</strong> east of Memorial, toward Broken Arrow line",
-          "<a href=\"/service-areas/broken-arrow-ok/\"><strong>Nearby communities:</strong> Broken Arrow</a> , <a href=\"/service-areas/south-tulsa/\">Catoosa, South Tulsa</a>  <a href=\"/service-areas/midtown-tulsa/\" title=\"Water Damage Restoration in Midtown Tulsa\">and Midtown</a> "
+          "<a href=\"/service-areas/broken-arrow-ok/\"><strong>Nearby communities:</strong> Broken Arrow</a> , Catoosa, <a href=\"/service-areas/south-tulsa/\">South Tulsa</a>  <a href=\"/service-areas/midtown-tulsa/\" title=\"Water Damage Restoration in Midtown Tulsa\">and Midtown</a> "
         ]
       },
       {
@@ -10383,7 +10370,7 @@
           ],
           [
             "Commercial roof leak, warehouse or shop",
-            "<a href=\"/services/commercial-water-damage\">Varies by scale see</a> "
+            "Varies by scale see "
           ]
         ]
       },
@@ -10872,7 +10859,7 @@
           [
             "<strong>Plaster</strong>",
             "Slow denser than drywall, holds moisture deep inside",
-            "<a href=\"/service-areas/north-tulsa/\">Midtown, North Tulsa</a> , Brookside"
+            "Midtown, <a href=\"/service-areas/north-tulsa/\">North Tulsa</a> , Brookside"
           ],
           [
             "<strong>Concrete slab</strong>",
@@ -10888,7 +10875,7 @@
       },
       {
         "t": "p",
-        "html": "See  <a href=\"/services/slab-leak-water-damage/\">for mat drying and</a> <a href=\"/services/slab-leak-water-damage/\" title=\"Slab Leak Water Damage Restoration in Tulsa, OK\"> for concrete</a>."
+        "html": "See  for <a href=\"/services/slab-leak-water-damage/\">mat drying</a> and  for concrete."
       },
       {
         "t": "p",
@@ -10896,7 +10883,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>5. Crawlspace moisture feeding from below</strong><br><a href=\"/service-areas/sand-springs-ok/\">In pier-and-beam homes Midtown, Brookside, North Tulsa, older Sapulpa and Sand Springs</a>  crawlspace humidity feeds moisture upward through subfloor into the living space. The room above can&#x27;t reach its dry target until the crawlspace below is dried simultaneously. Ignoring the crawlspace is the most common reason drying takes longer than expected. See "
+        "html": "<strong>5. Crawlspace moisture feeding from below</strong><br>In pier-and-beam homes Midtown, Brookside, North Tulsa, older Sapulpa and <a href=\"/service-areas/sand-springs-ok/\">Sand Springs</a>  crawlspace humidity feeds moisture upward through subfloor into the living space. The room above can&#x27;t reach its dry target until the crawlspace below is dried simultaneously. Ignoring the crawlspace is the most common reason drying takes longer than expected. See "
       },
       {
         "t": "p",
@@ -11026,7 +11013,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/service-areas/midtown-tulsa/\"><strong>Crawlspace lines</strong> pier-and-beam homes in Midtown</a> , <a href=\"/service-areas/brookside-tulsa/\" title=\"Water Damage Restoration in Brookside, Tulsa\">Brookside</a> , <a href=\"/service-areas/north-tulsa/\" title=\"Water Damage Restoration in North Tulsa\">North Tulsa</a>  and older Sapulpa have water lines running through crawlspaces that lose heat rapidly during freezes."
+        "html": "<strong>Crawlspace lines</strong> pier-and-beam homes in <a href=\"/service-areas/midtown-tulsa/\">Midtown</a> , <a href=\"/service-areas/brookside-tulsa/\" title=\"Water Damage Restoration in Brookside, Tulsa\">Brookside</a> , <a href=\"/service-areas/north-tulsa/\" title=\"Water Damage Restoration in North Tulsa\">North Tulsa</a>  and older Sapulpa have water lines running through crawlspaces that lose heat rapidly during freezes."
       },
       {
         "t": "p",
@@ -11350,7 +11337,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/service-areas/sand-springs-ok/\">The 2019 Arkansas River flood hit Sand Springs</a> , <a href=\"/service-areas/west-tulsa/\" title=\"Water Damage Restoration in West Tulsa\">West Tulsa</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a>  <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">and Bixby</a>  and many affected homeowners discovered they had no flood coverage. Understanding the NFIP landscape before a flood event is essential."
+        "html": "The 2019 Arkansas River flood hit <a href=\"/service-areas/sand-springs-ok/\">Sand Springs</a> , <a href=\"/service-areas/west-tulsa/\" title=\"Water Damage Restoration in West Tulsa\">West Tulsa</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a>  <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">and Bixby</a>  and many affected homeowners discovered they had no flood coverage. Understanding the NFIP landscape before a flood event is essential."
       },
       {
         "t": "p",
@@ -11513,7 +11500,7 @@
       },
       {
         "t": "p",
-        "html": "<strong>Older bungalows (1920s-1940s)</strong><br>The residential streets surrounding Cherry Street and the Pearl District contain Tulsa&#x27;s densest concentration of early-20th-century bungalows. <a href=\"/service-areas/midtown-tulsa/\">These homes have the same material profile as Midtown</a>  <a href=\"/service-areas/brookside-tulsa/\" title=\"Water Damage Restoration in Brookside, Tulsa\">and Brookside</a> : plaster walls that hold moisture far longer than drywall, original narrow-strip oak floors that cup rapidly when wet and can be saved with mat drying, pier-and-beam foundations over crawlspaces where clay-soil moisture feeds mold year-round, and galvanized supply lines and cast-iron drains that are 80 to 100 years old and approaching or past their failure point. See  <a href=\"/services/burst-pipe-water-damage\" title=\"Burst Pipe Water Damage Repair in Tulsa, OK\">and</a> "
+        "html": "<strong>Older bungalows (1920s-1940s)</strong><br>The residential streets surrounding Cherry Street and the Pearl District contain Tulsa&#x27;s densest concentration of early-20th-century bungalows. These homes have the same material profile as <a href=\"/service-areas/midtown-tulsa/\">Midtown</a>  and <a href=\"/service-areas/brookside-tulsa/\" title=\"Water Damage Restoration in Brookside, Tulsa\">Brookside</a> : plaster walls that hold moisture far longer than drywall, original narrow-strip oak floors that cup rapidly when wet and can be saved with mat drying, pier-and-beam foundations over crawlspaces where clay-soil moisture feeds mold year-round, and galvanized supply lines and cast-iron drains that are 80 to 100 years old and approaching or past their failure point. See  <a href=\"/services/burst-pipe-water-damage\" title=\"Burst Pipe Water Damage Repair in Tulsa, OK\">and</a> "
       },
       {
         "t": "p",
@@ -11541,12 +11528,12 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/emergency-water-damage-restoration\"><strong>Emergency water damage restoration</strong> 24/7 extraction and drying</a> ",
-          "<a href=\"/services/water-mitigation\"><strong>Water mitigation and structural drying</strong> plaster-specific and multi-unit-capable drying</a> ",
-          "<a href=\"/services/ceiling-water-damage\"><strong>Ceiling and drywall water damage</strong> multi-unit ceiling leaks with unit-by-unit documentation</a> ",
-          "<a href=\"/services/hardwood-floor-drying\"><strong>Hardwood floor drying</strong> mat drying for original oak</a> ",
-          "<a href=\"/services/mold-remediation\"><strong>Mold remediation</strong> crawlspace and wall-cavity mold under IICRC S520</a> ",
-          "<a href=\"/services/commercial-water-damage\"><strong>Commercial water damage</strong> restaurants, retail and mixed-use along 15th Street</a> "
+          "<strong><a href=\"/services/emergency-water-damage-restoration\">Emergency water damage restoration</a></strong> 24/7 extraction and drying ",
+          "<strong><a href=\"/services/water-mitigation\">Water mitigation</a> and structural drying</strong> plaster-specific and multi-unit-capable drying ",
+          "<strong><a href=\"/services/ceiling-water-damage\">Ceiling and drywall water damage</a></strong> multi-unit ceiling leaks with unit-by-unit documentation ",
+          "<strong><a href=\"/services/hardwood-floor-drying\">Hardwood floor drying</a></strong> mat drying for original oak ",
+          "<strong><a href=\"/services/mold-remediation\">Mold remediation</a></strong> crawlspace and wall-cavity mold under IICRC S520 ",
+          "<strong><a href=\"/services/commercial-water-damage\">Commercial water damage</a></strong> restaurants, retail and mixed-use along 15th Street "
         ]
       },
       {
@@ -11567,7 +11554,7 @@
           "<strong>Pearl District</strong> the mixed-use area south of Cherry Street toward 18th and 21st Streets",
           "<strong>Swan Lake</strong> the residential neighborhood west of Cherry Street",
           "<strong>Surrounding residential streets</strong> bungalows and small apartments on both sides of the commercial corridor",
-          "<a href=\"/service-areas/midtown-tulsa/\"><strong>Nearby neighborhoods:</strong> Midtown</a> , <a href=\"/service-areas/brookside-tulsa/\" title=\"Water Damage Restoration in Brookside, Tulsa\">Brookside</a>  and the Kendall-Whittier area"
+          "<strong>Nearby neighborhoods:</strong> Midtown , Brookside  and the Kendall-Whittier area"
         ]
       },
       {
@@ -11666,8 +11653,8 @@
       {
         "t": "ul",
         "items": [
-          "<a href=\"/services/commercial-water-damage\"><strong>Commercial water damage restoration</strong> extraction and drying for offices, retail, warehouses and multi-family buildings</a> ",
-          "<a href=\"/services/flood-damage-restoration\"><strong>Flood damage restoration</strong> Category 3 floodwater cleanup, contaminated-material removal and structural disinfection</a> ",
+          "<strong><a href=\"/services/commercial-water-damage\">Commercial water damage</a> restoration</strong> extraction and drying for offices, retail, warehouses and multi-family buildings ",
+          "<strong><a href=\"/services/flood-damage-restoration\">Flood damage restoration</a></strong> Category 3 floodwater cleanup, contaminated-material removal and structural disinfection ",
           "<strong>Sewage backup cleanup</strong> restroom overflows, floor drain backups and lower-level unit contamination",
           "<strong>Mold remediation</strong> containment and removal under IICRC S520 guidelines for commercial spaces",
           "<strong>Storm damage repair</strong> emergency tarping, board-up and interior drying after wind, hail and tornado damage",
@@ -11702,12 +11689,12 @@
           [
             "<strong>Retail and restaurants</strong>",
             "Roof drain failures, HVAC condensate, restroom and kitchen supply/drain failures",
-            "<a href=\"/service-areas/broken-arrow-ok/\" title=\"Water Damage Restoration in Broken Arrow, OK\">Broken Arrow</a> , <a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">Owasso</a> , <a href=\"/service-areas/jenks-ok/\">Cherry Street, Jenks</a> "
+            "<a href=\"/service-areas/broken-arrow-ok/\" title=\"Water Damage Restoration in Broken Arrow, OK\">Broken Arrow</a> , <a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">Owasso</a> , Cherry Street, <a href=\"/service-areas/jenks-ok/\">Jenks</a> "
           ],
           [
             "<strong>Warehouses and industrial</strong>",
             "Flat-roof hail damage, freeze breaks in unheated spaces, sprinkler activations",
-            "<a href=\"/service-areas/sand-springs-ok/\">Port of Catoosa, East Tulsa, Admiral corridor, Sand Springs</a> "
+            "Port of Catoosa, East Tulsa, Admiral corridor, <a href=\"/service-areas/sand-springs-ok/\">Sand Springs</a> "
           ],
           [
             "<strong>Multi-family</strong>",
@@ -11766,7 +11753,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/service-areas/midtown-tulsa/\">Downtown Tulsa, Midtown</a> , <a href=\"/service-areas/south-tulsa/\">Cherry Street, South Tulsa</a> , <a href=\"/service-areas/broken-arrow-ok/\">East Tulsa, Broken Arrow</a> , <a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">Owasso</a> , <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">Bixby</a> , <a href=\"/service-areas/jenks-ok/\" title=\"Water Damage Restoration in Jenks, OK\">Jenks</a> , <a href=\"/service-areas/sand-springs-ok/\" title=\"Water Damage Restoration in Sand Springs, OK\">Sand Springs</a> , <a href=\"/service-areas/claremore-ok/\">Catoosa (Port of Catoosa area), Claremore</a> , <a href=\"/service-areas/glenpool-ok/\">Sapulpa and Glenpool</a> ."
+        "html": "<a href=\"/service-areas/midtown-tulsa/\">Downtown Tulsa, Midtown</a> , Cherry Street, <a href=\"/service-areas/south-tulsa/\">South Tulsa</a> , East Tulsa, Broken Arrow , Owasso , <a href=\"/service-areas/bixby-ok/\" title=\"Water Damage Restoration in Bixby, OK\">Bixby</a> , Jenks , Sand Springs , Catoosa (Port of Catoosa area), <a href=\"/service-areas/claremore-ok/\">Claremore</a> , Sapulpa and <a href=\"/service-areas/glenpool-ok/\">Glenpool</a> ."
       },
       {
         "t": "hr"
@@ -11884,7 +11871,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/services/sewage-backup-cleanup\">Common sources: sewage backup through drains or toilets</a> , <a href=\"/services/flood-damage-restoration\">river or creek floodwater</a> , toilet overflow with fecal matter, any Category 1 or 2 water that has been sitting long enough to degrade (typically 72+ hours in warm conditions)."
+        "html": "Common sources: <a href=\"/services/sewage-backup-cleanup\">sewage backup</a> through drains or toilets , <a href=\"/services/flood-damage-restoration\">river or creek floodwater</a> , toilet overflow with fecal matter, any Category 1 or 2 water that has been sitting long enough to degrade (typically 72+ hours in warm conditions)."
       },
       {
         "t": "p",
@@ -11942,7 +11929,7 @@
       },
       {
         "t": "p",
-        "html": "See  <a href=\"/services/water-mitigation\">for Class 4 hardwood drying and</a> <a href=\"/services/water-mitigation\"> for the full</a> drying process."
+        "html": "See  for <a href=\"/services/water-mitigation\">Class 4 hardwood drying</a> and  for the full drying process."
       },
       {
         "t": "hr"
@@ -12120,7 +12107,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/services/roof-leak-water-damage/\">The most common sources: a roof leak that was never repaired</a> , <a href=\"/services/ac-drain-line-overflow-cleanup/\">an AC condensate overflow that recurs every summer</a>  or a slow upstairs plumbing leak. See "
+        "html": "The most common sources: a <a href=\"/services/roof-leak-water-damage/\">roof leak</a> that was never repaired , an <a href=\"/services/ac-drain-line-overflow-cleanup/\">AC condensate overflow</a> that recurs every summer  or a slow upstairs plumbing leak. See "
       },
       {
         "t": "hr"
@@ -12135,7 +12122,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/service-areas/south-tulsa/\">Paint bubbling near the floor on an interior wall in a South Tulsa</a> , <a href=\"/service-areas/broken-arrow-ok/\" title=\"Water Damage Restoration in Broken Arrow, OK\">Broken Arrow</a>  <a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">or Owasso</a>  slab home is a strong indicator of a slab leak."
+        "html": "Paint bubbling near the floor on an interior wall in a <a href=\"/service-areas/south-tulsa/\">South Tulsa</a> , <a href=\"/service-areas/broken-arrow-ok/\" title=\"Water Damage Restoration in Broken Arrow, OK\">Broken Arrow</a>  <a href=\"/service-areas/owasso-ok/\" title=\"Water Damage Restoration in Owasso, OK\">or Owasso</a>  slab home is a strong indicator of a slab leak."
       },
       {
         "t": "hr"
@@ -12146,7 +12133,7 @@
       },
       {
         "t": "p",
-        "html": "Drywall that feels soft when pressed especially near the floor indicates it has been absorbing moisture. <a href=\"/services/slab-leak-water-damage/\">Soft drywall near the floor line points to water entering from below: a slab leak</a> , <a href=\"/services/appliance-leak-water-damage/\">an appliance leak running beneath cabinets</a>  or crawlspace moisture wicking upward."
+        "html": "Drywall that feels soft when pressed especially near the floor indicates it has been absorbing moisture. Soft drywall near the floor line points to water entering from below: <a href=\"/services/slab-leak-water-damage/\">a slab leak</a> , an <a href=\"/services/appliance-leak-water-damage/\">appliance leak</a> running beneath cabinets  or crawlspace moisture wicking upward."
       },
       {
         "t": "p",
@@ -12165,7 +12152,7 @@
       },
       {
         "t": "p",
-        "html": "Buckling where boards lift entirely off the subfloor indicates severe moisture saturation. See  <a href=\"/services/slab-leak-water-damage/\" title=\"Slab Leak Water Damage Restoration in Tulsa, OK\">and</a> "
+        "html": "Buckling where boards lift entirely off the subfloor indicates severe moisture saturation. See  and "
       },
       {
         "t": "hr"
@@ -12236,7 +12223,7 @@
       },
       {
         "t": "p",
-        "html": "<a href=\"/service-areas/midtown-tulsa/\">Spongy spots in flooring particularly in pier-and-beam homes in Midtown</a> , <a href=\"/service-areas/brookside-tulsa/\" title=\"Water Damage Restoration in Brookside, Tulsa\">Brookside</a>  <a href=\"/service-areas/north-tulsa/\">and North Tulsa</a>  indicate deterioration of the subfloor or floor joists from long-term moisture. The cause is usually chronic crawlspace humidity attacking structural wood from below, or a slow leak that&#x27;s been dripping onto the subfloor for months."
+        "html": "Spongy spots in flooring particularly in pier-and-beam homes in <a href=\"/service-areas/midtown-tulsa/\">Midtown</a> , <a href=\"/service-areas/brookside-tulsa/\" title=\"Water Damage Restoration in Brookside, Tulsa\">Brookside</a>  <a href=\"/service-areas/north-tulsa/\">and North Tulsa</a>  indicate deterioration of the subfloor or floor joists from long-term moisture. The cause is usually chronic crawlspace humidity attacking structural wood from below, or a slow leak that&#x27;s been dripping onto the subfloor for months."
       },
       {
         "t": "p",
