@@ -1,26 +1,21 @@
 #!/usr/bin/env python3
-"""Lovely favicon generator — Tulsa Water Damage Repair (round 2).
+"""Classic favicon generator — Tulsa Water Damage Repair (round 3).
 
-Redraws the brand mark from scratch (PIL, supersampled) using the header's
-teardrop geometry, refined for tiny-size legibility AND warmth:
-  - cream rounded-square tile with a whisper of radial glow (bright warm
-    centre fading to cream at the edges) + hairline navy edge (tile reads on
-    white tab bars)
-  - navy drop with a soft vertical gradient: brand navy #073B66 at the tip
-    flowing to a luminous deep blue at the belly — like light through water
-  - cyan inner drop with its own gentle gradient (bright sky top, deeper
-    cyan bottom) so it reads as water, not a flat sticker
-  - drop silhouette a touch more graceful than the header path: slightly
-    fuller belly + a softly rounded tip (tiny quadratic at the apex instead
-    of a needle point)
-  - white highlight: a SOFT sheen (radial alpha disc, bright core fading to
-    transparent, fully inside the cyan drop) at 48px and up; a clean 2px
-    hard disc at 32px; none at 16px (a 1px speck reads as dirt)
+The user asked for a CLASSIC favicon (2026-11-08): the "lovely" round-2
+mark (navy gradient drop + cyan inner drop + warm glow + soft sheen) was
+too decorative. The classic mark is the HEADER's own brand mark, flat:
+  - flat cream tile (solid #F7F3EA, NO radial glow) + hairline navy edge
+    (tile reads on white tab bars)
+  - ONE flat cyan drop (#00BFFF, solid, NO gradient) — the header SVG path
+    exactly: M12 2.5 ... 6.5 12a6.5 ... (viewBox 24x24)
+  - small SOLID white circle highlight (header: cx 9.4, cy 15.2, r 1.7 in
+    viewBox units) — a flat disc, never a soft sheen; at 32px a clean 2px
+    disc; none at 16px (a 1px speck reads as dirt)
 
-Legibility guardrails (unchanged from round 1):
-  - 16px is a hand-tuned native render, flat fills, no highlight, slightly
-    larger cyan so both drops read at real size
-  - no text, no letters, no extra icons — cream tile + navy drop + cyan drop
+Legibility guardrails (unchanged):
+  - 16px is a hand-tuned native render, flat fills, no highlight, sharp apex
+    (a rounded tip blunts into a flat top at 16px)
+  - no text, no letters, no extra icons — cream tile + cyan drop + white dot
 
 Outputs (into site/public/):
   favicon-master.png (512), favicon-192x192.png, favicon-512x512.png (manifest),
@@ -31,13 +26,8 @@ import math
 import os
 from PIL import Image, ImageDraw
 
-NAVY_TOP = (7, 59, 102, 255)      # brand navy #073B66
-NAVY_BOT = (15, 110, 168, 255)    # luminous deep blue
-CYAN_TOP = (31, 200, 255, 255)    # bright sky cyan
-CYAN_BOT = (0, 168, 232, 255)     # deeper cyan
-CREAM = (247, 243, 234, 255)
-GLOW_CENTRE = (252, 250, 243, 255)  # warm bright centre of the tile
-GLOW_EDGE = (245, 241, 229, 255)    # tile edge, a whisper darker than cream
+CYAN = (0, 191, 255, 255)        # header brand cyan #00BFFF, flat
+CREAM = (247, 243, 234, 255)     # flat cream tile #F7F3EA
 WHITE = (255, 255, 255, 255)
 EDGE = (7, 59, 102, 38)          # hairline tile edge, ~15% navy
 OUT = os.path.expanduser("~/workspace/tulsa-water-damage-repair/site/public")
@@ -66,157 +56,64 @@ def quad(p0, c, p2, n=10):
 
 
 def drop_polygon(cx, top_y, width, height, tip_round=True):
-    """Teardrop path (header geometry, gently refined): point at top,
-    circular bottom, slightly fuller belly + softly rounded tip.
-    tip_round=False gives the original sharp apex (used at 16px, where a
-    rounded tip blunts into a flat top). Mirrors the header SVG:
-    M12 2.5 ... 6.5 12a6.5 ... (viewBox 24x24)."""
-    s = width / 13.0          # drop width 13 units, height 18.5 units in viewBox
+    """Teardrop path — the header SVG geometry exactly: point at top,
+    circular bottom, drop width 13 units, height 18.5 units in viewBox.
+    tip_round=False gives the original sharp apex (used at 16px)."""
+    s = width / 13.0
     top = top_y
     left = (cx - 6.5 * s, top_y + 12.0 * s)
     right = (cx + 6.5 * s, top_y + 12.0 * s)
-    # rounded tip: flanks at +/-0.85s, quadratic control just above the apex
     lf = (cx - 0.85 * s, top + 1.2 * s) if tip_round else (cx, top)
     rf = (cx + 0.85 * s, top + 1.2 * s) if tip_round else (cx, top)
     apex_c = (cx, top - 0.15 * s)
-    # left side cubic: P0=lf, C1=lf, C2=(cx-6.7s, top+8.0s) fuller belly, end=left
     pts = cubic(lf, lf, (cx - 6.7 * s, top_y + 8.0 * s), left)
-    # bottom semicircle: center (cx, top+12s), radius 6.5s.
-    # Image coords are y-DOWN, so the BOTTOM of the circle is at angle 90deg:
-    # sweep 180deg (left) -> 90deg (bottom) -> 0deg (right).
     cy = top_y + 12.0 * s
     r = 6.5 * s
     for deg in range(180, -1, -3):
         a = math.radians(deg)
         pts.append((cx + r * math.cos(a), cy + r * math.sin(a)))
-    # right side cubic back up: P0=right, C1=(cx+6.7s, top+8.0s), C2=rf, end=rf
     pts += cubic(right, (cx + 6.7 * s, top_y + 8.0 * s), rf, rf)
-    # rounded tip back to the left flank (skipped when the apex is sharp)
     if tip_round:
         pts += quad(rf, apex_c, lf)
     return pts
 
 
-def drop_mask(size, cx, top, w, tip_round=True):
-    """L-mode mask of the drop shape at canvas `size`."""
-    m = Image.new("L", (size, size), 0)
-    d = ImageDraw.Draw(m)
-    d.polygon(drop_polygon(cx, top, w, w * 18.5 / 13.0, tip_round), fill=255)
-    return m
-
-
-def soft_disc(diameter):
-    """White disc with a radial alpha falloff (bright core, fading to
-    transparent at the edge) — a sheen, not a sticker. Built small and
-    upscaled: smooth, and its fading edge never leaves a grey fringe where
-    it crosses a colour boundary."""
-    g0 = 128
-    g = Image.new("RGBA", (g0, g0), (0, 0, 0, 0))
-    px = g.load()
-    cx = cy = (g0 - 1) / 2.0
-    r = (g0 - 1) / 2.0
-    for y in range(g0):
-        for x in range(g0):
-            t = min(1.0, math.hypot(x - cx, y - cy) / r)
-            a = int(255 * max(0.0, 1.0 - t * t))
-            px[x, y] = (255, 255, 255, a)
-    return g.resize((max(1, diameter), max(1, diameter)), Image.BICUBIC)
-
-
-def vgrad(size, top_rgb, bot_rgb):
-    """Vertical RGBA gradient image, size x size."""
-    g = Image.new("RGBA", (1, size))
-    px = g.load()
-    for y in range(size):
-        t = y / max(1, size - 1)
-        px[0, y] = tuple(int(top_rgb[i] + (bot_rgb[i] - top_rgb[i]) * t)
-                         for i in range(3)) + (255,)
-    return g.resize((size, size))
-
-
-def radial_glow(size, centre_rgb, edge_rgb):
-    """Radial glow: bright warm centre fading to the edge colour.
-    Computed small (256px) and upscaled — a smooth radial gradient
-    upscales invisibly, and the per-pixel loop at full size is slow."""
-    g0 = 256
-    g = Image.new("RGBA", (g0, g0))
-    px = g.load()
-    cx = cy = (g0 - 1) / 2.0
-    maxd = math.hypot(cx, cy)
-    for y in range(g0):
-        for x in range(g0):
-            t = min(1.0, math.hypot(x - cx, y - cy) / maxd)
-            # ease the falloff so the glow hugs the centre
-            t = t * t * (3 - 2 * t)
-            px[x, y] = tuple(int(centre_rgb[i] + (edge_rgb[i] - centre_rgb[i]) * t)
-                             for i in range(3)) + (255,)
-    return g.resize((size, size), Image.BICUBIC)
-
-
-def tile(img, size, radius_frac=0.22):
-    """Paint the glowing cream tile onto RGBA image `img` (in place)."""
-    glow = radial_glow(size, GLOW_CENTRE, GLOW_EDGE)
-    mask = Image.new("L", (size, size), 0)
-    d = ImageDraw.Draw(mask)
-    d.rounded_rectangle([0, 0, size - 1, size - 1], radius=size * radius_frac, fill=255)
-    img.paste(glow, (0, 0), mask)
-    d2 = ImageDraw.Draw(img)
-    d2.rounded_rectangle([0, 0, size - 1, size - 1], radius=size * radius_frac,
-                         outline=EDGE, width=max(1, size // 256))
-
-
-def render(size, highlight="soft", cyan_scale=0.48, drop_scale=1.0, ss=4):
-    """Render one favicon at `size` px (supersampled ss× then downsampled).
-    highlight: 'soft' (blurred sheen), 'hard' (clean disc), 'none'."""
+def render(size, highlight=True, drop_scale=1.0, ss=4):
+    """Render one classic favicon at `size` px (supersampled ssx then
+    downsampled). Flat fills only — no gradients, no glow, no sheen."""
     S = size * ss
     img = Image.new("RGBA", (S, S), (0, 0, 0, 0))
-    tile(img, S)
-    # navy drop: vertical gradient through the drop mask
-    w = S * 0.52 * drop_scale
-    top = S * 0.115
-    navy_h = w * 18.5 / 13.0
-    img.paste(vgrad(S, NAVY_TOP, NAVY_BOT), (0, 0),
-              drop_mask(S, S / 2, top, w))
-    # cyan inner drop: scaled, centre ~63% down the navy drop
-    cw = w * cyan_scale
-    cheight = cw * 18.5 / 13.0
-    ctop = top + navy_h * 0.63 - cheight * 0.42
-    img.paste(vgrad(S, CYAN_TOP, CYAN_BOT), (0, 0),
-              drop_mask(S, S / 2, ctop, cw))
-    # white highlight: fully inside cyan drop, upper-left — a soft sheen
-    # (radial alpha disc: bright core fading to transparent, so no grey
-    # fringe where it meets the cyan edge). Small and deep inside the cyan.
-    if highlight != "none":
-        hr = cw * 0.14
-        hcx = S / 2 - cw * 0.13
-        hcy = ctop + cheight * 0.33
-        if highlight == "soft":
-            disc = soft_disc(int(hr * 2))
-            img.paste(disc, (int(hcx - hr), int(hcy - hr)), disc)
-        else:
-            d = ImageDraw.Draw(img)
-            d.ellipse([hcx - hr, hcy - hr, hcx + hr, hcy + hr], fill=WHITE)
+    d = ImageDraw.Draw(img)
+    # flat cream tile
+    d.rounded_rectangle([0, 0, S - 1, S - 1], radius=S * 0.22, fill=CREAM,
+                        outline=EDGE, width=max(1, S // 256))
+    # single flat cyan drop (header mark), slightly larger than the old
+    # navy drop since there is no outer drop any more
+    w = S * 0.56 * drop_scale
+    top = S * 0.10
+    h = w * 18.5 / 13.0
+    d.polygon(drop_polygon(S / 2, top, w, h), fill=CYAN)
+    # solid white circle, header proportions: centre (-2.6u, 0.686h) from
+    # the drop apex, radius 0.131w (viewBox: cx 9.4, cy 15.2, r 1.7)
+    if highlight:
+        s = w / 13.0
+        hcx = S / 2 - 2.6 * s
+        hcy = top + 0.686 * h
+        hr = 0.131 * w
+        d.ellipse([hcx - hr, hcy - hr, hcx + hr, hcy + hr], fill=WHITE)
     return img.resize((size, size), Image.LANCZOS)
 
 
 def render_16():
-    """Hand-tuned 16px: no highlight (1px speck reads as dirt); bolder drop,
-    larger cyan so both read at real size. Drawn natively, pixel-aligned.
-    Flat fills stay — gradients would muddy at this size."""
+    """Hand-tuned 16px: flat fills, sharp apex, no highlight."""
     S = 16
     img = Image.new("RGBA", (S, S), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
     d.rounded_rectangle([0, 0, S - 1, S - 1], radius=3, fill=CREAM,
                         outline=(7, 59, 102, 45), width=1)
-    w = 9.0
+    w = 9.5
     top = 1.0
-    # sharp apex here: the rounded tip blunts into a flat top at 16px
-    d.polygon(drop_polygon(S / 2, top, w, w * 18.5 / 13.0, tip_round=False), fill=NAVY_TOP)
-    cw = w * 0.55
-    cheight = cw * 18.5 / 13.0
-    navy_h = w * 18.5 / 13.0
-    ctop = top + navy_h * 0.63 - cheight * 0.42
-    d.polygon(drop_polygon(S / 2, ctop, cw, cheight, tip_round=False), fill=(0, 191, 255, 255))
+    d.polygon(drop_polygon(S / 2, top, w, w * 18.5 / 13.0, tip_round=False), fill=CYAN)
     return img
 
 
@@ -228,11 +125,10 @@ def main():
     render(192).save(f"{OUT}/favicon-192x192.png")
     render(180).save(f"{OUT}/apple-touch-icon.png")
     render(48).save(f"{OUT}/favicon-48x48.png")
-    render(32, highlight="hard").save(f"{OUT}/favicon-32x32.png")
+    render(32).save(f"{OUT}/favicon-32x32.png")
     render_16().save(f"{OUT}/favicon-16x16.png")
-    # maskable: same tile, drop at 78% scale for the safe zone
-    mask = render(512, drop_scale=0.78)
-    mask.save(f"{OUT}/favicon-512x512-maskable.png")
+    # maskable: same mark, drop at 78% scale for the safe zone
+    render(512, drop_scale=0.78).save(f"{OUT}/favicon-512x512-maskable.png")
     # .ico with 16/32/48
     im16 = Image.open(f"{OUT}/favicon-16x16.png")
     im32 = Image.open(f"{OUT}/favicon-32x32.png")
