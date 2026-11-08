@@ -83,7 +83,11 @@ function parseServiceItem(html) {
       .replace(/<strong>[\s\S]*?<\/strong>/, '')
       .replace(/<\/?a[^>]*>/g, '')
       .trim();
-    return { href: hrefs[0], titleHtml: strong[1], descHtml: desc };
+    // titleHtml must NOT contain its own <a>: ServiceListCards wraps it in a
+    // <Link>, and a nested <a> is invalid HTML (browsers split it into two
+    // links to the same target — 120 duplicate card links sitewide).
+    // Strip the anchor tags, keep the title words verbatim.
+    return { href: hrefs[0], titleHtml: strong[1].replace(/<\/?a[^>]*>/g, ''), descHtml: desc };
   }
   // Homepage shape: the whole item is one link with no <strong> separator.
   // Title = the doc's service name for this href (from the hub's grouped
@@ -92,10 +96,13 @@ function parseServiceItem(html) {
   const titleHtml = SERVICE_TITLES[hrefs[0]] || SERVICE_TITLES[normSlug(hrefs[0])];
   if (!titleHtml) return null;
   const text = html.replace(/<\/?a[^>]*>/g, '').trim();
-  const desc = text.toLowerCase().startsWith(titleHtml.toLowerCase())
-    ? text.slice(titleHtml.length).trim()
+  const desc = text.toLowerCase().startsWith(titleHtml.replace(/<[^>]*>/g, '').toLowerCase())
+    ? text.slice(titleHtml.replace(/<[^>]*>/g, '').length).trim()
     : text;
-  return { href: hrefs[0], titleHtml, descHtml: desc };
+  // SERVICE_TITLES values come from the hub's <strong> items and may contain
+  // their own <a> — strip it here too (same nested-<a> blunder as the hub
+  // branch above); the card's <Link> is the single link.
+  return { href: hrefs[0], titleHtml: titleHtml.replace(/<\/?a[^>]*>/g, ''), descHtml: desc };
 }
 
 export function serviceListItems(items) {
