@@ -162,6 +162,7 @@ function groupBlocks(blocks, page) {
 
 function jsonLd(page) {
   const url = SITE.url + page.slug;
+  const heroImg = pageImage(page.slug).hero;
   const parent = parentOf(page);
   /* BreadcrumbList must match the visible breadcrumb trail exactly:
      - homepage: a single Home item (it renders no visible trail, and a
@@ -179,6 +180,8 @@ function jsonLd(page) {
     '@type': 'HomeAndConstructionBusiness',
     '@id': SITE.url + '/#business',
     name: SITE.brand,
+    description:
+      "We're a water damage restoration team based at 400 S 129th E Ave in Tulsa, OK 74108.",
     telephone: SITE.phone,
     url: SITE.url + '/',
     address: {
@@ -189,7 +192,59 @@ function jsonLd(page) {
       postalCode: '74108',
       addressCountry: 'US',
     },
-    areaServed: { '@type': 'City', name: 'Tulsa' },
+    /* GeoCoordinates from a real map lookup of the business address
+       (36.15467, -95.83348 — FULL_ADDRESS match); hasMap is the exact
+       Google Maps URL the site's own footer embed uses. */
+    geo: { '@type': 'GeoCoordinates', latitude: 36.15467, longitude: -95.83348 },
+    hasMap:
+      'https://www.google.com/maps?q=400%20S%20129th%20E%20Ave%2C%20Tulsa%2C%20OK%2074108&output=embed',
+    /* areaServed: every real service area on the site — Tulsa + the 12
+       suburb cities + the 7 Tulsa neighborhoods (area-page H1s verbatim,
+       location prefix stripped). No invented place. */
+    areaServed: [
+      { '@type': 'City', name: 'Tulsa' },
+      { '@type': 'City', name: 'Broken Arrow' },
+      { '@type': 'City', name: 'Bixby' },
+      { '@type': 'City', name: 'Catoosa' },
+      { '@type': 'City', name: 'Claremore' },
+      { '@type': 'City', name: 'Collinsville' },
+      { '@type': 'City', name: 'Coweta' },
+      { '@type': 'City', name: 'Glenpool' },
+      { '@type': 'City', name: 'Jenks' },
+      { '@type': 'City', name: 'Owasso' },
+      { '@type': 'City', name: 'Sand Springs' },
+      { '@type': 'City', name: 'Sapulpa' },
+      { '@type': 'City', name: 'Skiatook' },
+      { '@type': 'Place', name: 'Midtown Tulsa' },
+      { '@type': 'Place', name: 'Brookside, Tulsa' },
+      { '@type': 'Place', name: 'South Tulsa' },
+      { '@type': 'Place', name: 'West Tulsa' },
+      { '@type': 'Place', name: 'North Tulsa' },
+      { '@type': 'Place', name: 'East Tulsa' },
+      { '@type': 'Place', name: 'Cherry Street & the Pearl District' },
+    ],
+    /* knowsAbout: the 18 real services — service-page H1s verbatim with
+       only the " in Tulsa, OK" location suffix stripped. */
+    knowsAbout: [
+      'Emergency Water Damage Restoration',
+      'Water Mitigation Services',
+      'Flood Damage Restoration',
+      'Mold Remediation',
+      'Commercial Water Damage Restoration',
+      'Flooded Basement & Crawlspace Cleanup',
+      'Storm Damage Repair',
+      'Burst Pipe Water Damage Repair',
+      'Sewage Backup Cleanup',
+      'Ceiling & Drywall Water Damage Repair',
+      'Hardwood Floor Water Damage & Drying',
+      'AC Drain Line Overflow Cleanup',
+      'Appliance Leak Water Damage',
+      'Water Heater Leak Cleanup',
+      'Roof Leak Water Damage Repair',
+      'Slab Leak Water Damage Restoration',
+      'Smoke & Soot Damage Cleanup',
+      'Fire Damage Restoration',
+    ],
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
@@ -219,6 +274,10 @@ function jsonLd(page) {
                   areaServed: { '@type': 'City', name: 'Tulsa' },
                 },
                 localBusiness,
+                /* WebPage alongside Service: service pages previously had
+                   no WebPage node at all (35/53); the page node is now
+                   present on every page. */
+                webPage,
               ]
             : [webPage, localBusiness]),
         ...(page.faqs && page.faqs.length
@@ -244,10 +303,15 @@ function jsonLd(page) {
               {
                 '@type': 'Article',
                 headline: page.h1,
+                /* image = the guide's real hero (same file the page shows);
+                   inLanguage + mainEntityOfPage tie the Article to its page. */
+                ...(heroImg ? { image: SITE.url + heroImg.file } : {}),
                 author: { '@id': SITE.url + '/#business' },
                 publisher: { '@id': SITE.url + '/#business' },
                 datePublished: '2026-11-07',
                 dateModified: '2026-11-07',
+                inLanguage: 'en-US',
+                mainEntityOfPage: { '@id': url },
               },
             ]
           : []),
