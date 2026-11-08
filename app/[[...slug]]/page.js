@@ -176,7 +176,7 @@ function jsonLd(page) {
     crumbs.push({ '@type': 'ListItem', position: crumbs.length + 1, name: shortName(page.slug), item: url });
   }
   const localBusiness = {
-    '@type': 'LocalBusiness',
+    '@type': 'HomeAndConstructionBusiness',
     '@id': SITE.url + '/#business',
     name: SITE.brand,
     telephone: SITE.phone,
@@ -197,7 +197,7 @@ function jsonLd(page) {
       closes: '23:59',
     },
   };
-  /* LocalBusiness belongs on EVERY page, not just homepage/service pages:
+  /* HomeAndConstructionBusiness belongs on EVERY page, not just homepage/service pages:
      the 34 area/resource/hub/about/contact/commercial pages had no business
      entity at all. WebPage is likewise present on every page. */
   const webPage = { '@type': 'WebPage', '@id': url, url, name: page.h1, isPartOf: { '@id': SITE.url + '/#website' } };
@@ -230,6 +230,24 @@ function jsonLd(page) {
                   name: f.q,
                   acceptedAnswer: { '@type': 'Answer', text: f.a_text },
                 })),
+              },
+            ]
+          : []),
+        /* Article schema on guide pages only (type 'resource' — the 10
+           /resources/ guides; the /resources/ hub is 'resources-hub').
+           headline = H1 verbatim; author/publisher = the business itself
+           (never a person name); dates from the sitemap lastmod
+           (2026-11-07, the site publish date — pages.json carries no
+           per-page dates, so no earlier date is invented). */
+        ...(page.type === 'resource'
+          ? [
+              {
+                '@type': 'Article',
+                headline: page.h1,
+                author: { '@id': SITE.url + '/#business' },
+                publisher: { '@id': SITE.url + '/#business' },
+                datePublished: '2026-11-07',
+                dateModified: '2026-11-07',
               },
             ]
           : []),
