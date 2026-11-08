@@ -6,18 +6,15 @@ import json, os
 BASE = os.path.expanduser('~/workspace/tulsa-water-damage-repair/site')
 pages = json.load(open(os.path.join(BASE, 'content', 'pages.json')))
 DOMAIN = 'https://www.tulsawaterdamagerepair.com'
-# lastmod is DATE-ONLY (YYYY-MM-DD, no time component). Split across the two
-# work days, from the rounds' records (never invented):
-# - 2026-11-08: the 51 pages whose content/links changed on 2026-11-08 —
-#   48 pages via the dedupe/doc-audit round (commit 4f51b09, verified by
-#   diffing content/pages.json 0b822f6 -> HEAD); /about-us/,
-#   /services/fire-damage-restoration and /services/smoke-soot-damage-cleanup
-#   via this round's See cuts; homepage via cards + See cuts; the 10 guides
-#   via Tier 1 Article schema (all 10 are inside the 48).
-# - 2026-11-07: the only 2 pages with NO content/link change on 2026-11-08:
-#   /contact/ and /resources/ (no dedupe/doc-audit edit, no See cut, no cards).
+# lastmod is DATE-ONLY (YYYY-MM-DD, no time component). Rule (2026-11-08
+# no-slash round): EVERY page's URL and/or links changed in this round —
+# the 29 flipped pages changed URL, and the other 24 changed because the
+# header/footer/hub links on every page flipped to no-slash forms — so all
+# 53 pages carry 2026-11-08. Verified by diffing the rendered output of
+# every page against the pre-round build (see
+# FINDINGS-url-noslash-technical-seo-2x.md, word-diff section).
 LASTMOD_DEFAULT = '2026-11-08'
-LASTMOD_2026_11_07 = {'/contact/', '/resources/'}
+LASTMOD_2026_11_07 = set()
 urls = sorted({p['slug'] for p in pages})
 assert len(urls) == 53, f'expected 53 urls, got {len(urls)}'
 lines = ['<?xml version="1.0" encoding="UTF-8"?>',

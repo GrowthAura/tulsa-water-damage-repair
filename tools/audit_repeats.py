@@ -17,7 +17,7 @@ BASE = os.path.expanduser('~/workspace/tulsa-water-damage-repair/site')
 OUT = os.path.join(BASE, 'out')
 
 sitemap = open(os.path.join(BASE, 'public', 'sitemap.xml')).read()
-urls = re.findall(r'<loc>(https://tulsawaterdamagerepair\.com([^<]*))</loc>', sitemap)
+urls = re.findall(r'<loc>(https://www\.tulsawaterdamagerepair\.com([^<]*))</loc>', sitemap)
 print(f'routes in sitemap: {len(urls)}')
 
 

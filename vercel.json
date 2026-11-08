@@ -1,0 +1,151 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "comment": "Slash -> no-slash 308 redirects (2026-11-08 round, user decision resolving open F1). Vercel serves permanent:true as 308. Every flipped page's old slash form redirects exactly once to its no-slash canonical; the no-slash canonical serves 200 directly with no hop. Homepage '/' is NOT redirected (keeps its trailing slash).",
+  "redirects": [
+    {
+      "source": "/about-us/",
+      "destination": "/about-us",
+      "permanent": true
+    },
+    {
+      "source": "/commercial/",
+      "destination": "/commercial",
+      "permanent": true
+    },
+    {
+      "source": "/contact/",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/resources/",
+      "destination": "/resources",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/bixby-ok/",
+      "destination": "/service-areas/bixby-ok",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/broken-arrow-ok/",
+      "destination": "/service-areas/broken-arrow-ok",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/brookside-tulsa/",
+      "destination": "/service-areas/brookside-tulsa",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/catoosa-ok/",
+      "destination": "/service-areas/catoosa-ok",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/cherry-street-tulsa/",
+      "destination": "/service-areas/cherry-street-tulsa",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/claremore-ok/",
+      "destination": "/service-areas/claremore-ok",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/collinsville-ok/",
+      "destination": "/service-areas/collinsville-ok",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/coweta-ok/",
+      "destination": "/service-areas/coweta-ok",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/east-tulsa/",
+      "destination": "/service-areas/east-tulsa",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/glenpool-ok/",
+      "destination": "/service-areas/glenpool-ok",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/jenks-ok/",
+      "destination": "/service-areas/jenks-ok",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/midtown-tulsa/",
+      "destination": "/service-areas/midtown-tulsa",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/north-tulsa/",
+      "destination": "/service-areas/north-tulsa",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/owasso-ok/",
+      "destination": "/service-areas/owasso-ok",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/sand-springs-ok/",
+      "destination": "/service-areas/sand-springs-ok",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/sapulpa-ok/",
+      "destination": "/service-areas/sapulpa-ok",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/skiatook-ok/",
+      "destination": "/service-areas/skiatook-ok",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/south-tulsa/",
+      "destination": "/service-areas/south-tulsa",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/west-tulsa/",
+      "destination": "/service-areas/west-tulsa",
+      "permanent": true
+    },
+    {
+      "source": "/services/",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/services/ac-drain-line-overflow-cleanup/",
+      "destination": "/services/ac-drain-line-overflow-cleanup",
+      "permanent": true
+    },
+    {
+      "source": "/services/appliance-leak-water-damage/",
+      "destination": "/services/appliance-leak-water-damage",
+      "permanent": true
+    },
+    {
+      "source": "/services/roof-leak-water-damage/",
+      "destination": "/services/roof-leak-water-damage",
+      "permanent": true
+    },
+    {
+      "source": "/services/slab-leak-water-damage/",
+      "destination": "/services/slab-leak-water-damage",
+      "permanent": true
+    },
+    {
+      "source": "/services/water-heater-leak-cleanup/",
+      "destination": "/services/water-heater-leak-cleanup",
+      "permanent": true
+    }
+  ]
+}

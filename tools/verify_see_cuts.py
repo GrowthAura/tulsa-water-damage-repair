@@ -53,7 +53,7 @@ for x in bare_and:
     print('  ', x)
 
 # Collinsville mold link present?
-col = [x for x in d if x['slug'] == '/service-areas/collinsville-ok/'][0]
+col = [x for x in d if x['slug'] == '/service-areas/collinsville-ok'][0]
 print('Collinsville offer items with hrefs:',
       sum(1 for it in col['blocks'][16]['items'] if 'href=' in it), '/', len(col['blocks'][16]['items']))
 print('Collinsville mold item:', col['blocks'][16]['items'][3][:120])

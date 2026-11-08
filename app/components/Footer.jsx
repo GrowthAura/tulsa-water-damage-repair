@@ -38,7 +38,7 @@ export default function Footer({ showMap = true }) {
                 </li>
               ))}
               <li>
-                <Link href="/services/" className="footer-more">
+                <Link href="/services" className="footer-more">
                   View all services
                 </Link>
               </li>
@@ -65,7 +65,7 @@ export default function Footer({ showMap = true }) {
             <p>Guides and cost information from Tulsa Water Damage Repair.</p>
             <ul>
               <li>
-                <Link href="/resources/" className="footer-more">
+                <Link href="/resources" className="footer-more">
                   Blog
                 </Link>
               </li>
@@ -89,7 +89,7 @@ export default function Footer({ showMap = true }) {
               <span>{SITE.phone}</span>
             </a>
             <br />
-            <a className="btn btn-cream" href="/contact/">
+            <a className="btn btn-cream" href="/contact">
               Request Emergency Service
             </a>
           </div>
@@ -97,11 +97,11 @@ export default function Footer({ showMap = true }) {
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} Tulsa Water Damage Repair</span>
           <span>
-            <Link href="/about-us/">About Us</Link>
+            <Link href="/about-us">About Us</Link>
             {' · '}
-            <Link href="/resources/">Blog</Link>
+            <Link href="/resources">Blog</Link>
             {' · '}
-            <Link href="/contact/">Contact</Link>
+            <Link href="/contact">Contact</Link>
             {' · '}
             {/* Plain <a>: /sitemap.xml is a static file, not a Next route — a
                 next/link here makes the router prefetch /sitemap.xml.txt (RSC)

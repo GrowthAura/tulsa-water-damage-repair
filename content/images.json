@@ -6,34 +6,6 @@
   },
   "body": null
  },
- "/services/": {
-  "hero": {
-   "file": "/images/services-tulsa-water-damage-repair.webp",
-   "alt": "Three cleaners in work clothes standing in a living room with a vacuum cleaner, a mop and a bucket"
-  },
-  "body": null
- },
- "/commercial/": {
-  "hero": {
-   "file": "/images/commercial-tulsa-water-damage-repair.webp",
-   "alt": "Three workers in white hard hats and face masks talking inside an unfinished building"
-  },
-  "body": null
- },
- "/about-us/": {
-  "hero": {
-   "file": "/images/about-us-tulsa-water-damage-repair.webp",
-   "alt": "Two workers in hard hats and high-visibility vests talking on a job site, one holding a clipboard"
-  },
-  "body": null
- },
- "/contact/": {
-  "hero": {
-   "file": "/images/contact-tulsa-water-damage-repair.webp",
-   "alt": "A woman wearing a headset speaking while working at a laptop in an office"
-  },
-  "body": null
- },
  "/services/emergency-water-damage-restoration": {
   "hero": {
    "file": "/images/services-emergency-water-damage-restoration-tulsa-water-damage-repair.webp",
@@ -144,56 +116,6 @@
    "alt": "Close-up of water droplets sitting on wet brown wood grain"
   }
  },
- "/services/ac-drain-line-overflow-cleanup/": {
-  "hero": {
-   "file": "/images/services-ac-drain-line-overflow-cleanup-tulsa-water-damage-repair.webp",
-   "alt": "Water dripping from a wall-mounted air conditioner into a bucket, with a stained wall below"
-  },
-  "body": {
-   "file": "/images/services-ac-drain-line-overflow-cleanup-tulsa-water-damage-repair-ac-overflow.webp",
-   "alt": "A water-stained ceiling and wall under an air conditioner drain line, with a towel on the wet floor"
-  }
- },
- "/services/appliance-leak-water-damage/": {
-  "hero": {
-   "file": "/images/services-appliance-leak-water-damage-tulsa-water-damage-repair.webp",
-   "alt": "A washing machine leaking water onto the laundry room floor"
-  },
-  "body": {
-   "file": "/images/services-appliance-leak-water-damage-tulsa-water-damage-repair-appliance-leak.webp",
-   "alt": "A technician pulling out a leaking dishwasher with water on the kitchen floor"
-  }
- },
- "/services/water-heater-leak-cleanup/": {
-  "hero": {
-   "file": "/images/services-water-heater-leak-cleanup-tulsa-water-damage-repair.webp",
-   "alt": "A water heater in a garage with water pooling around its base"
-  },
-  "body": {
-   "file": "/images/services-water-heater-leak-cleanup-tulsa-water-damage-repair-water-heater-leak.webp",
-   "alt": "Hands tightening a valve on a leaking water heater with a wrench, water dripping into a bucket"
-  }
- },
- "/services/roof-leak-water-damage/": {
-  "hero": {
-   "file": "/images/services-roof-leak-water-damage-tulsa-water-damage-repair.webp",
-   "alt": "Two roofing workers on a house roof carrying buckets under a clear blue sky"
-  },
-  "body": {
-   "file": "/images/services-roof-leak-water-damage-tulsa-water-damage-repair-roof-repair.webp",
-   "alt": "A roofer in a red hard hat kneeling on a roof, prying up a wavy roof sheet with a hand tool"
-  }
- },
- "/services/slab-leak-water-damage/": {
-  "hero": {
-   "file": "/images/services-slab-leak-water-damage-tulsa-water-damage-repair.webp",
-   "alt": "A worker kneeling beside a jackhammered opening in a concrete slab floor with a leaking pipe and water inside"
-  },
-  "body": {
-   "file": "/images/services-slab-leak-water-damage-tulsa-water-damage-repair-slab-repair.webp",
-   "alt": "Water seeping through a crack in a concrete floor with a damp stain spreading across the concrete"
-  }
- },
  "/services/smoke-soot-damage-cleanup": {
   "hero": {
    "file": "/images/services-smoke-soot-damage-cleanup-tulsa-water-damage-repair.webp",
@@ -213,139 +135,6 @@
    "file": "/images/services-fire-damage-restoration-tulsa-water-damage-repair-drying-equipment.webp",
    "alt": "Firefighter on an extended aerial ladder spraying water into thick white smoke under a blue sky"
   }
- },
- "/service-areas/claremore-ok/": {
-  "hero": {
-   "file": "/images/service-areas-claremore-ok-tulsa-water-damage-repair.webp",
-   "alt": "Two-story red brick house with white garage door, arched windows and green lawn framed by trees"
-  },
-  "body": null
- },
- "/service-areas/owasso-ok/": {
-  "hero": {
-   "file": "/images/service-areas-owasso-ok-tulsa-water-damage-repair.webp",
-   "alt": "A light grey two-story house with a double front porch and balcony, green lawn and trees behind"
-  },
-  "body": null
- },
- "/service-areas/jenks-ok/": {
-  "hero": {
-   "file": "/images/service-areas-jenks-ok-tulsa-water-damage-repair.webp",
-   "alt": "Two-story red brick house with double white garage doors, bay window and grey front door, evergreen shrubs and tall pine trees"
-  },
-  "body": null
- },
- "/service-areas/glenpool-ok/": {
-  "hero": {
-   "file": "/images/service-areas-glenpool-ok-tulsa-water-damage-repair.webp",
-   "alt": "Single-story bright blue house with white trim and covered front porch, white railings, concrete walkway and patchy lawn"
-  },
-  "body": null
- },
- "/service-areas/bixby-ok/": {
-  "hero": {
-   "file": "/images/service-areas-bixby-ok-tulsa-water-damage-repair.webp",
-   "alt": "Two-story grey house with double white garage doors and covered porch with chairs, green lawn and wide concrete driveway at dusk"
-  },
-  "body": null
- },
- "/service-areas/broken-arrow-ok/": {
-  "hero": {
-   "file": "/images/service-areas-broken-arrow-ok-tulsa-water-damage-repair.webp",
-   "alt": "Row of new two-story siding houses with white garage doors and concrete driveways, brown dormant lawn in front"
-  },
-  "body": null
- },
- "/service-areas/sand-springs-ok/": {
-  "hero": {
-   "file": "/images/service-areas-sand-springs-ok-tulsa-water-damage-repair.webp",
-   "alt": "White modern house with brown wood beams and steep roof, green lawn, brick walkway and yellow autumn leaves on a tree branch"
-  },
-  "body": null
- },
- "/service-areas/skiatook-ok/": {
-  "hero": {
-   "file": "/images/service-areas-skiatook-ok-tulsa-water-damage-repair.webp",
-   "alt": "Grey siding house with stone chimney and stone front, white garage door, dark car in driveway and yellow flowering shrubs"
-  },
-  "body": null
- },
- "/service-areas/coweta-ok/": {
-  "hero": {
-   "file": "/images/service-areas-coweta-ok-tulsa-water-damage-repair.webp",
-   "alt": "Two-story grey and beige house with stone base, covered front porch with rocking chairs, small shed and driveway at the side"
-  },
-  "body": null
- },
- "/service-areas/catoosa-ok/": {
-  "hero": {
-   "file": "/images/service-areas-catoosa-ok-tulsa-water-damage-repair.webp",
-   "alt": "Two-story red brick house with teal front door and shutters, double white garage doors, green lawn and tall pine trees"
-  },
-  "body": null
- },
- "/service-areas/collinsville-ok/": {
-  "hero": {
-   "file": "/images/service-areas-collinsville-ok-tulsa-water-damage-repair.webp",
-   "alt": "Single-story beige bungalow with wide covered porch, white railings, brick walkway, potted plants and a flag on the porch"
-  },
-  "body": null
- },
- "/service-areas/sapulpa-ok/": {
-  "hero": {
-   "file": "/images/service-areas-sapulpa-ok-tulsa-water-damage-repair.webp",
-   "alt": "A blue-grey two-story suburban house with white trim and a garage, neighbouring houses on both sides"
-  },
-  "body": null
- },
- "/service-areas/midtown-tulsa/": {
-  "hero": {
-   "file": "/images/service-areas-midtown-tulsa-tulsa-water-damage-repair.webp",
-   "alt": "Large pale green two-story house with red shutters, wide front porch with white columns, brick steps and green lawn"
-  },
-  "body": null
- },
- "/service-areas/brookside-tulsa/": {
-  "hero": {
-   "file": "/images/service-areas-brookside-tulsa-tulsa-water-damage-repair.webp",
-   "alt": "Grey two-story house with white trim, double porch with balcony above, dark blue front door and small evergreen shrubs"
-  },
-  "body": null
- },
- "/service-areas/south-tulsa/": {
-  "hero": {
-   "file": "/images/service-areas-south-tulsa-tulsa-water-damage-repair.webp",
-   "alt": "A white house with blue double garage doors, paved driveway and garden beds under a cloudy sky"
-  },
-  "body": null
- },
- "/service-areas/west-tulsa/": {
-  "hero": {
-   "file": "/images/service-areas-west-tulsa-tulsa-water-damage-repair.webp",
-   "alt": "Light blue two-story house with red front door, white double garage door, flowering trees and concrete driveway"
-  },
-  "body": null
- },
- "/service-areas/north-tulsa/": {
-  "hero": {
-   "file": "/images/service-areas-north-tulsa-tulsa-water-damage-repair.webp",
-   "alt": "A row of modern three-story townhouses with garages and concrete driveways under a blue sky"
-  },
-  "body": null
- },
- "/service-areas/east-tulsa/": {
-  "hero": {
-   "file": "/images/service-areas-east-tulsa-tulsa-water-damage-repair.webp",
-   "alt": "A light blue-grey two-story suburban house with white-trimmed windows behind a trimmed hedge"
-  },
-  "body": null
- },
- "/service-areas/cherry-street-tulsa/": {
-  "hero": {
-   "file": "/images/service-areas-cherry-street-tulsa-tulsa-water-damage-repair.webp",
-   "alt": "Tan two-story house with white garage door and dark front door between two neighbouring houses, mulch beds and small trees"
-  },
-  "body": null
  },
  "/resources/water-damage-restoration-cost-tulsa": {
   "hero": {
@@ -417,7 +206,218 @@
   },
   "body": null
  },
- "/resources/": {
+ "/services": {
+  "hero": {
+   "file": "/images/services-tulsa-water-damage-repair.webp",
+   "alt": "Three cleaners in work clothes standing in a living room with a vacuum cleaner, a mop and a bucket"
+  },
+  "body": null
+ },
+ "/service-areas/claremore-ok": {
+  "hero": {
+   "file": "/images/service-areas-claremore-ok-tulsa-water-damage-repair.webp",
+   "alt": "Two-story red brick house with white garage door, arched windows and green lawn framed by trees"
+  },
+  "body": null
+ },
+ "/service-areas/owasso-ok": {
+  "hero": {
+   "file": "/images/service-areas-owasso-ok-tulsa-water-damage-repair.webp",
+   "alt": "A light grey two-story house with a double front porch and balcony, green lawn and trees behind"
+  },
+  "body": null
+ },
+ "/service-areas/jenks-ok": {
+  "hero": {
+   "file": "/images/service-areas-jenks-ok-tulsa-water-damage-repair.webp",
+   "alt": "Two-story red brick house with double white garage doors, bay window and grey front door, evergreen shrubs and tall pine trees"
+  },
+  "body": null
+ },
+ "/service-areas/glenpool-ok": {
+  "hero": {
+   "file": "/images/service-areas-glenpool-ok-tulsa-water-damage-repair.webp",
+   "alt": "Single-story bright blue house with white trim and covered front porch, white railings, concrete walkway and patchy lawn"
+  },
+  "body": null
+ },
+ "/service-areas/bixby-ok": {
+  "hero": {
+   "file": "/images/service-areas-bixby-ok-tulsa-water-damage-repair.webp",
+   "alt": "Two-story grey house with double white garage doors and covered porch with chairs, green lawn and wide concrete driveway at dusk"
+  },
+  "body": null
+ },
+ "/service-areas/broken-arrow-ok": {
+  "hero": {
+   "file": "/images/service-areas-broken-arrow-ok-tulsa-water-damage-repair.webp",
+   "alt": "Row of new two-story siding houses with white garage doors and concrete driveways, brown dormant lawn in front"
+  },
+  "body": null
+ },
+ "/service-areas/sand-springs-ok": {
+  "hero": {
+   "file": "/images/service-areas-sand-springs-ok-tulsa-water-damage-repair.webp",
+   "alt": "White modern house with brown wood beams and steep roof, green lawn, brick walkway and yellow autumn leaves on a tree branch"
+  },
+  "body": null
+ },
+ "/service-areas/skiatook-ok": {
+  "hero": {
+   "file": "/images/service-areas-skiatook-ok-tulsa-water-damage-repair.webp",
+   "alt": "Grey siding house with stone chimney and stone front, white garage door, dark car in driveway and yellow flowering shrubs"
+  },
+  "body": null
+ },
+ "/service-areas/coweta-ok": {
+  "hero": {
+   "file": "/images/service-areas-coweta-ok-tulsa-water-damage-repair.webp",
+   "alt": "Two-story grey and beige house with stone base, covered front porch with rocking chairs, small shed and driveway at the side"
+  },
+  "body": null
+ },
+ "/service-areas/catoosa-ok": {
+  "hero": {
+   "file": "/images/service-areas-catoosa-ok-tulsa-water-damage-repair.webp",
+   "alt": "Two-story red brick house with teal front door and shutters, double white garage doors, green lawn and tall pine trees"
+  },
+  "body": null
+ },
+ "/service-areas/collinsville-ok": {
+  "hero": {
+   "file": "/images/service-areas-collinsville-ok-tulsa-water-damage-repair.webp",
+   "alt": "Single-story beige bungalow with wide covered porch, white railings, brick walkway, potted plants and a flag on the porch"
+  },
+  "body": null
+ },
+ "/service-areas/sapulpa-ok": {
+  "hero": {
+   "file": "/images/service-areas-sapulpa-ok-tulsa-water-damage-repair.webp",
+   "alt": "A blue-grey two-story suburban house with white trim and a garage, neighbouring houses on both sides"
+  },
+  "body": null
+ },
+ "/service-areas/midtown-tulsa": {
+  "hero": {
+   "file": "/images/service-areas-midtown-tulsa-tulsa-water-damage-repair.webp",
+   "alt": "Large pale green two-story house with red shutters, wide front porch with white columns, brick steps and green lawn"
+  },
+  "body": null
+ },
+ "/about-us": {
+  "hero": {
+   "file": "/images/about-us-tulsa-water-damage-repair.webp",
+   "alt": "Two workers in hard hats and high-visibility vests talking on a job site, one holding a clipboard"
+  },
+  "body": null
+ },
+ "/contact": {
+  "hero": {
+   "file": "/images/contact-tulsa-water-damage-repair.webp",
+   "alt": "A woman wearing a headset speaking while working at a laptop in an office"
+  },
+  "body": null
+ },
+ "/service-areas/brookside-tulsa": {
+  "hero": {
+   "file": "/images/service-areas-brookside-tulsa-tulsa-water-damage-repair.webp",
+   "alt": "Grey two-story house with white trim, double porch with balcony above, dark blue front door and small evergreen shrubs"
+  },
+  "body": null
+ },
+ "/service-areas/south-tulsa": {
+  "hero": {
+   "file": "/images/service-areas-south-tulsa-tulsa-water-damage-repair.webp",
+   "alt": "A white house with blue double garage doors, paved driveway and garden beds under a cloudy sky"
+  },
+  "body": null
+ },
+ "/service-areas/west-tulsa": {
+  "hero": {
+   "file": "/images/service-areas-west-tulsa-tulsa-water-damage-repair.webp",
+   "alt": "Light blue two-story house with red front door, white double garage door, flowering trees and concrete driveway"
+  },
+  "body": null
+ },
+ "/service-areas/north-tulsa": {
+  "hero": {
+   "file": "/images/service-areas-north-tulsa-tulsa-water-damage-repair.webp",
+   "alt": "A row of modern three-story townhouses with garages and concrete driveways under a blue sky"
+  },
+  "body": null
+ },
+ "/services/ac-drain-line-overflow-cleanup": {
+  "hero": {
+   "file": "/images/services-ac-drain-line-overflow-cleanup-tulsa-water-damage-repair.webp",
+   "alt": "Water dripping from a wall-mounted air conditioner into a bucket, with a stained wall below"
+  },
+  "body": {
+   "file": "/images/services-ac-drain-line-overflow-cleanup-tulsa-water-damage-repair-ac-overflow.webp",
+   "alt": "A water-stained ceiling and wall under an air conditioner drain line, with a towel on the wet floor"
+  }
+ },
+ "/services/appliance-leak-water-damage": {
+  "hero": {
+   "file": "/images/services-appliance-leak-water-damage-tulsa-water-damage-repair.webp",
+   "alt": "A washing machine leaking water onto the laundry room floor"
+  },
+  "body": {
+   "file": "/images/services-appliance-leak-water-damage-tulsa-water-damage-repair-appliance-leak.webp",
+   "alt": "A technician pulling out a leaking dishwasher with water on the kitchen floor"
+  }
+ },
+ "/services/water-heater-leak-cleanup": {
+  "hero": {
+   "file": "/images/services-water-heater-leak-cleanup-tulsa-water-damage-repair.webp",
+   "alt": "A water heater in a garage with water pooling around its base"
+  },
+  "body": {
+   "file": "/images/services-water-heater-leak-cleanup-tulsa-water-damage-repair-water-heater-leak.webp",
+   "alt": "Hands tightening a valve on a leaking water heater with a wrench, water dripping into a bucket"
+  }
+ },
+ "/services/roof-leak-water-damage": {
+  "hero": {
+   "file": "/images/services-roof-leak-water-damage-tulsa-water-damage-repair.webp",
+   "alt": "Two roofing workers on a house roof carrying buckets under a clear blue sky"
+  },
+  "body": {
+   "file": "/images/services-roof-leak-water-damage-tulsa-water-damage-repair-roof-repair.webp",
+   "alt": "A roofer in a red hard hat kneeling on a roof, prying up a wavy roof sheet with a hand tool"
+  }
+ },
+ "/services/slab-leak-water-damage": {
+  "hero": {
+   "file": "/images/services-slab-leak-water-damage-tulsa-water-damage-repair.webp",
+   "alt": "A worker kneeling beside a jackhammered opening in a concrete slab floor with a leaking pipe and water inside"
+  },
+  "body": {
+   "file": "/images/services-slab-leak-water-damage-tulsa-water-damage-repair-slab-repair.webp",
+   "alt": "Water seeping through a crack in a concrete floor with a damp stain spreading across the concrete"
+  }
+ },
+ "/service-areas/east-tulsa": {
+  "hero": {
+   "file": "/images/service-areas-east-tulsa-tulsa-water-damage-repair.webp",
+   "alt": "A light blue-grey two-story suburban house with white-trimmed windows behind a trimmed hedge"
+  },
+  "body": null
+ },
+ "/service-areas/cherry-street-tulsa": {
+  "hero": {
+   "file": "/images/service-areas-cherry-street-tulsa-tulsa-water-damage-repair.webp",
+   "alt": "Tan two-story house with white garage door and dark front door between two neighbouring houses, mulch beds and small trees"
+  },
+  "body": null
+ },
+ "/commercial": {
+  "hero": {
+   "file": "/images/commercial-tulsa-water-damage-repair.webp",
+   "alt": "Three workers in white hard hats and face masks talking inside an unfinished building"
+  },
+  "body": null
+ },
+ "/resources": {
   "hero": {
    "file": "/images/resources-hub-tulsa-water-damage-repair.webp",
    "alt": "Technician measuring moisture on a water-stained wall while air movers and drying equipment dry a water-damaged living room"

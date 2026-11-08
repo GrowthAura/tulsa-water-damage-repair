@@ -6,34 +6,6 @@
   },
   "body": null
  },
- "/services/": {
-  "hero": {
-   "file": "/images/services-tulsa-water-damage-repair.webp",
-   "alt": "Three cleaners in work clothes standing in a living room with a vacuum cleaner, a mop and a bucket"
-  },
-  "body": null
- },
- "/commercial/": {
-  "hero": {
-   "file": "/images/commercial-tulsa-water-damage-repair.webp",
-   "alt": "Three workers in white hard hats and face masks talking inside an unfinished building"
-  },
-  "body": null
- },
- "/about-us/": {
-  "hero": {
-   "file": "/images/about-us-tulsa-water-damage-repair.webp",
-   "alt": "Two workers in hard hats and high-visibility vests talking on a job site, one holding a clipboard"
-  },
-  "body": null
- },
- "/contact/": {
-  "hero": {
-   "file": "/images/contact-tulsa-water-damage-repair.webp",
-   "alt": "A woman wearing a headset speaking while working at a laptop in an office"
-  },
-  "body": null
- },
  "/services/emergency-water-damage-restoration": {
   "hero": {
    "file": "/images/services-emergency-water-damage-restoration-tulsa-water-damage-repair.webp",
@@ -126,38 +98,6 @@
   },
   "body": null
  },
- "/services/ac-drain-line-overflow-cleanup/": {
-  "hero": {
-   "file": "/images/services-ac-drain-line-overflow-cleanup-tulsa-water-damage-repair.webp",
-   "alt": "A worker in a hat using a power drill to repair a large rooftop air conditioning unit"
-  },
-  "body": null
- },
- "/services/appliance-leak-water-damage/": {
-  "hero": {
-   "file": "/images/services-appliance-leak-water-damage-tulsa-water-damage-repair.webp",
-   "alt": "A white-tiled laundry area with a front-loading washing machine under a wooden counter"
-  },
-  "body": null
- },
- "/services/water-heater-leak-cleanup/": {
-  "hero": {
-   "file": "/images/services-water-heater-leak-cleanup-tulsa-water-damage-repair.webp",
-   "alt": "A white wall-mounted water heater installed inside a cabinet beside a brick wall"
-  },
-  "body": null
- },
- "/services/roof-leak-water-damage/": {
-  "hero": {
-   "file": "/images/services-roof-leak-water-damage-tulsa-water-damage-repair.webp",
-   "alt": "Workers on the roof of a large brick house installing shingles under a clear blue sky"
-  },
-  "body": null
- },
- "/services/slab-leak-water-damage/": {
-  "hero": null,
-  "body": null
- },
  "/services/smoke-soot-damage-cleanup": {
   "hero": {
    "file": "/images/services-smoke-soot-damage-cleanup-tulsa-water-damage-repair.webp",
@@ -177,5 +117,65 @@
    "slug": "/services/sewage-backup-cleanup",
    "reason": "No genuinely relevant Pexels photo found after searching drain/sewer cleaning, flooded bathroom and street-drain terms; the only candidates were a street drain worker beside a branded bin and parked car, a sink-cleaning close-up and a toilet-flush close-up, none showing a home sewage backup. Slot left empty rather than forcing an irrelevant filler."
   }
- ]
+ ],
+ "/services": {
+  "hero": {
+   "file": "/images/services-tulsa-water-damage-repair.webp",
+   "alt": "Three cleaners in work clothes standing in a living room with a vacuum cleaner, a mop and a bucket"
+  },
+  "body": null
+ },
+ "/about-us": {
+  "hero": {
+   "file": "/images/about-us-tulsa-water-damage-repair.webp",
+   "alt": "Two workers in hard hats and high-visibility vests talking on a job site, one holding a clipboard"
+  },
+  "body": null
+ },
+ "/contact": {
+  "hero": {
+   "file": "/images/contact-tulsa-water-damage-repair.webp",
+   "alt": "A woman wearing a headset speaking while working at a laptop in an office"
+  },
+  "body": null
+ },
+ "/services/ac-drain-line-overflow-cleanup": {
+  "hero": {
+   "file": "/images/services-ac-drain-line-overflow-cleanup-tulsa-water-damage-repair.webp",
+   "alt": "A worker in a hat using a power drill to repair a large rooftop air conditioning unit"
+  },
+  "body": null
+ },
+ "/services/appliance-leak-water-damage": {
+  "hero": {
+   "file": "/images/services-appliance-leak-water-damage-tulsa-water-damage-repair.webp",
+   "alt": "A white-tiled laundry area with a front-loading washing machine under a wooden counter"
+  },
+  "body": null
+ },
+ "/services/water-heater-leak-cleanup": {
+  "hero": {
+   "file": "/images/services-water-heater-leak-cleanup-tulsa-water-damage-repair.webp",
+   "alt": "A white wall-mounted water heater installed inside a cabinet beside a brick wall"
+  },
+  "body": null
+ },
+ "/services/roof-leak-water-damage": {
+  "hero": {
+   "file": "/images/services-roof-leak-water-damage-tulsa-water-damage-repair.webp",
+   "alt": "Workers on the roof of a large brick house installing shingles under a clear blue sky"
+  },
+  "body": null
+ },
+ "/services/slab-leak-water-damage": {
+  "hero": null,
+  "body": null
+ },
+ "/commercial": {
+  "hero": {
+   "file": "/images/commercial-tulsa-water-damage-repair.webp",
+   "alt": "Three workers in white hard hats and face masks talking inside an unfinished building"
+  },
+  "body": null
+ }
 }

@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Structural verification of the built site (Round 1).
 Serves out/ on :8317, then checks every canonical URL + variant:
-200 direct, H1=1, title/description verbatim vs doc, canonical self-match,
+200 direct on the canonical, slash variant NOT 200 (308 to the canonical
+on a redirect layer, 404 on plain http.server), H1=1, title/description
+verbatim vs doc, canonical self-match,
 sitemap/robots, all internal hrefs resolve, no old-brand strings,
 no leftover link notation, FAQ schema matches visible Q&A.
 Writes site/FINDINGS-round1.md. Exit 1 on any failure.
@@ -25,6 +27,25 @@ def fetch(path, expect=200):
         return e.code, e.read().decode('utf-8', 'replace')
     except Exception as e:
         return 0, str(e)
+
+
+class _NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        return None
+
+
+_NR_OPENER = urllib.request.build_opener(_NoRedirect)
+
+
+def fetch_raw(path):
+    """Fetch WITHOUT following redirects; returns (status, headers, body)."""
+    try:
+        with _NR_OPENER.open(ROOT + path, timeout=20) as r:
+            return r.status, dict(r.headers), r.read().decode('utf-8', 'replace')
+    except urllib.error.HTTPError as e:
+        return e.code, dict(e.headers), e.read().decode('utf-8', 'replace')
+    except Exception as e:
+        return 0, {}, str(e)
 
 class LinkParser(HTMLParser):
     def __init__(self):
@@ -63,11 +84,22 @@ for p in pages:
     if st != 200:
         problems.append(f'{slug}: canonical status {st}')
         continue
-    # variant form must also serve 200 (dual-file guarantee)
-    variant = slug[:-1] if slug.endswith('/') and slug != '/' else slug + '/'
-    st2, _ = fetch(variant)
-    if st2 != 200:
-        problems.append(f'{slug}: variant {variant} status {st2}')
+    # No-slash URL form (2026-11-08 round): the slash variant must NOT serve
+    # 200 (no dual-200 forms / no duplicate content). On plain http.server it
+    # 404s; on Vercel (vercel.json) — and on tools/audit_noslash.py's server,
+    # which simulates that redirect layer — it 308s to the canonical. urllib
+    # follows redirects, so the variant is fetched WITHOUT following them.
+    # (Homepage '/' has no variant: its slash form IS its canonical form.)
+    if slug == '/':
+        variant = None
+    else:
+        variant = slug + '/'
+    if variant:
+        st2, hdr2, _ = fetch_raw(variant)
+        if st2 == 200:
+            problems.append(f'{slug}: slash variant {variant} serves 200 (dual-form duplicate content)')
+        elif st2 == 308 and hdr2.get('Location') != slug:
+            problems.append(f"{slug}: slash variant Location {hdr2.get('Location')!r} != {slug!r}")
     lp = LinkParser()
     lp.feed(html)
     h1s = [h for h in lp.h1 if h]

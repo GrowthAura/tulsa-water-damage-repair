@@ -33,11 +33,11 @@ export function shortName(slug) {
 }
 
 export function parentOf(page) {
-  if (page.type === 'service') return { label: 'Services', href: '/services/' };
+  if (page.type === 'service') return { label: 'Services', href: '/services' };
   /* No /service-areas/ hub route exists, so area pages have no parent crumb:
      linking "Service Areas" to "/" was a duplicate Home link with a wrong name. */
   if (page.type === 'area') return null;
-  if (page.type === 'resource') return { label: 'Resources', href: '/resources/' };
+  if (page.type === 'resource') return { label: 'Resources', href: '/resources' };
   return null;
 }
 
@@ -57,11 +57,11 @@ export const SERVICE_GROUPS = [
     label: 'Water Damage by Source',
     slugs: [
       '/services/burst-pipe-water-damage',
-      '/services/slab-leak-water-damage/',
-      '/services/water-heater-leak-cleanup/',
-      '/services/appliance-leak-water-damage/',
-      '/services/ac-drain-line-overflow-cleanup/',
-      '/services/roof-leak-water-damage/',
+      '/services/slab-leak-water-damage',
+      '/services/water-heater-leak-cleanup',
+      '/services/appliance-leak-water-damage',
+      '/services/ac-drain-line-overflow-cleanup',
+      '/services/roof-leak-water-damage',
     ],
   },
   {
@@ -99,16 +99,16 @@ export const SERVICE_SLUGS = SERVICE_GROUPS.flatMap((g) => g.slugs);
    inner HTML, plus the normSlug(href) key. */
 export const SERVICE_TITLES = {
   '/services/burst-pipe-water-damage': '<a href="/services/burst-pipe-water-damage">Burst pipe water damage</a>',
-  '/services/slab-leak-water-damage/': '<a href="/services/slab-leak-water-damage/">Slab leak water damage</a>',
-  '/services/slab-leak-water-damage': '<a href="/services/slab-leak-water-damage/">Slab leak water damage</a>',
-  '/services/water-heater-leak-cleanup/': '<a href="/services/water-heater-leak-cleanup/">Water heater leak cleanup</a>',
-  '/services/water-heater-leak-cleanup': '<a href="/services/water-heater-leak-cleanup/">Water heater leak cleanup</a>',
-  '/services/appliance-leak-water-damage/': '<a href="/services/appliance-leak-water-damage/">Appliance leak water damage</a>',
-  '/services/appliance-leak-water-damage': '<a href="/services/appliance-leak-water-damage/">Appliance leak water damage</a>',
-  '/services/ac-drain-line-overflow-cleanup/': '<a href="/services/ac-drain-line-overflow-cleanup/">AC drain line overflow cleanup</a>',
-  '/services/ac-drain-line-overflow-cleanup': '<a href="/services/ac-drain-line-overflow-cleanup/">AC drain line overflow cleanup</a>',
-  '/services/roof-leak-water-damage/': '<a href="/services/roof-leak-water-damage/">Roof leak water damage</a>',
-  '/services/roof-leak-water-damage': '<a href="/services/roof-leak-water-damage/">Roof leak water damage</a>',
+  '/services/slab-leak-water-damage': '<a href="/services/slab-leak-water-damage">Slab leak water damage</a>',
+  '/services/slab-leak-water-damage': '<a href="/services/slab-leak-water-damage">Slab leak water damage</a>',
+  '/services/water-heater-leak-cleanup': '<a href="/services/water-heater-leak-cleanup">Water heater leak cleanup</a>',
+  '/services/water-heater-leak-cleanup': '<a href="/services/water-heater-leak-cleanup">Water heater leak cleanup</a>',
+  '/services/appliance-leak-water-damage': '<a href="/services/appliance-leak-water-damage">Appliance leak water damage</a>',
+  '/services/appliance-leak-water-damage': '<a href="/services/appliance-leak-water-damage">Appliance leak water damage</a>',
+  '/services/ac-drain-line-overflow-cleanup': '<a href="/services/ac-drain-line-overflow-cleanup">AC drain line overflow cleanup</a>',
+  '/services/ac-drain-line-overflow-cleanup': '<a href="/services/ac-drain-line-overflow-cleanup">AC drain line overflow cleanup</a>',
+  '/services/roof-leak-water-damage': '<a href="/services/roof-leak-water-damage">Roof leak water damage</a>',
+  '/services/roof-leak-water-damage': '<a href="/services/roof-leak-water-damage">Roof leak water damage</a>',
   '/services/ceiling-water-damage': 'Ceiling and drywall water damage',
   '/services/hardwood-floor-drying': 'Hardwood floor drying',
   '/services/fire-damage-restoration': '<a href="/services/fire-damage-restoration">Fire damage restoration</a>',
@@ -130,30 +130,30 @@ export const AREA_GROUPS = [
   {
     label: 'Tulsa Neighborhoods',
     slugs: [
-      '/service-areas/midtown-tulsa/',
-      '/service-areas/brookside-tulsa/',
-      '/service-areas/south-tulsa/',
-      '/service-areas/west-tulsa/',
-      '/service-areas/north-tulsa/',
-      '/service-areas/east-tulsa/',
-      '/service-areas/cherry-street-tulsa/',
+      '/service-areas/midtown-tulsa',
+      '/service-areas/brookside-tulsa',
+      '/service-areas/south-tulsa',
+      '/service-areas/west-tulsa',
+      '/service-areas/north-tulsa',
+      '/service-areas/east-tulsa',
+      '/service-areas/cherry-street-tulsa',
     ],
   },
   {
     label: 'Nearby Communities',
     slugs: [
-      '/service-areas/broken-arrow-ok/',
-      '/service-areas/owasso-ok/',
-      '/service-areas/bixby-ok/',
-      '/service-areas/jenks-ok/',
-      '/service-areas/sand-springs-ok/',
-      '/service-areas/glenpool-ok/',
-      '/service-areas/claremore-ok/',
-      '/service-areas/catoosa-ok/',
-      '/service-areas/collinsville-ok/',
-      '/service-areas/skiatook-ok/',
-      '/service-areas/coweta-ok/',
-      '/service-areas/sapulpa-ok/',
+      '/service-areas/broken-arrow-ok',
+      '/service-areas/owasso-ok',
+      '/service-areas/bixby-ok',
+      '/service-areas/jenks-ok',
+      '/service-areas/sand-springs-ok',
+      '/service-areas/glenpool-ok',
+      '/service-areas/claremore-ok',
+      '/service-areas/catoosa-ok',
+      '/service-areas/collinsville-ok',
+      '/service-areas/skiatook-ok',
+      '/service-areas/coweta-ok',
+      '/service-areas/sapulpa-ok',
     ],
   },
 ];
@@ -171,12 +171,12 @@ export const FOOTER_SERVICES = [
 ];
 
 export const FOOTER_AREAS = [
-  '/service-areas/broken-arrow-ok/',
-  '/service-areas/owasso-ok/',
-  '/service-areas/bixby-ok/',
-  '/service-areas/jenks-ok/',
-  '/service-areas/sand-springs-ok/',
-  '/service-areas/midtown-tulsa/',
+  '/service-areas/broken-arrow-ok',
+  '/service-areas/owasso-ok',
+  '/service-areas/bixby-ok',
+  '/service-areas/jenks-ok',
+  '/service-areas/sand-springs-ok',
+  '/service-areas/midtown-tulsa',
 ];
 
 /* Resource pages, in doc order. The /resources/ hub lists all ten, so no

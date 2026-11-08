@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Classic favicon generator — Tulsa Water Damage Repair (round 3).
+"""Classic favicon generator — Tulsa Water Damage Repair (round 4: HEAVY classic).
 
 The user asked for a CLASSIC favicon (2026-11-08): the "lovely" round-2
 mark (navy gradient drop + cyan inner drop + warm glow + soft sheen) was
@@ -11,6 +11,21 @@ too decorative. The classic mark is the HEADER's own brand mark, flat:
   - small SOLID white circle highlight (header: cx 9.4, cy 15.2, r 1.7 in
     viewBox units) — a flat disc, never a soft sheen; at 32px a clean 2px
     disc; none at 16px (a 1px speck reads as dirt)
+
+ROUND 4 — HEAVY (2026-11-08, his order: "bhtu heavy sa koi classic"):
+same mark, same geometry, same flat rules — the drop is simply BIGGER so it
+fills more of the tile and reads bolder at every size:
+  - drop width 0.56S -> 0.62S, top 0.10S -> 0.08S (height 0.882S, bottom
+    margin ~0.04S; cyan coverage 27.6% -> 33.8% at 32px, 42.2% -> 46.1% at
+    16px). Candidate 0.66S was REJECTED (drop touched the tile top AND
+    bottom edges — cramped, corners cut).
+  - 16px hand-tune: width 9.5 -> 10.0, top 1.0 -> 0.5 (apex near the top
+    edge, bottom margin ~1.3px; the w10/t1.0 variant was REJECTED — its
+    round bottom merged flat into the tile's bottom edge).
+  - white dot scales with the drop (r = 0.131w, same proportions); the
+    HEADER SVG got the same heavier drop (see app/components/Header.jsx).
+    The header tile stays NAVY and the wordmark is unchanged — only the
+    drop inside got heavier, so header icon and favicon are the same mark.
 
 Legibility guardrails (unchanged):
   - 16px is a hand-tuned native render, flat fills, no highlight, sharp apex
@@ -87,10 +102,11 @@ def render(size, highlight=True, drop_scale=1.0, ss=4):
     # flat cream tile
     d.rounded_rectangle([0, 0, S - 1, S - 1], radius=S * 0.22, fill=CREAM,
                         outline=EDGE, width=max(1, S // 256))
-    # single flat cyan drop (header mark), slightly larger than the old
-    # navy drop since there is no outer drop any more
-    w = S * 0.56 * drop_scale
-    top = S * 0.10
+    # single flat cyan drop (header mark) — HEAVY round 4: width 0.62S
+    # (was 0.56S), top 0.08S (was 0.10S); same exact teardrop geometry,
+    # just scaled up so the drop fills more of the tile.
+    w = S * 0.62 * drop_scale
+    top = S * 0.08
     h = w * 18.5 / 13.0
     d.polygon(drop_polygon(S / 2, top, w, h), fill=CYAN)
     # solid white circle, header proportions: centre (-2.6u, 0.686h) from
@@ -111,8 +127,8 @@ def render_16():
     d = ImageDraw.Draw(img)
     d.rounded_rectangle([0, 0, S - 1, S - 1], radius=3, fill=CREAM,
                         outline=(7, 59, 102, 45), width=1)
-    w = 9.5
-    top = 1.0
+    w = 10.0  # HEAVY round 4 (was 9.5); top 0.5 (was 1.0) — see docstring
+    top = 0.5
     d.polygon(drop_polygon(S / 2, top, w, w * 18.5 / 13.0, tip_round=False), fill=CYAN)
     return img
 

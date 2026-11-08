@@ -1,137 +1,4 @@
 {
- "/service-areas/claremore-ok/": {
-  "hero": {
-   "file": "/images/service-areas-claremore-ok-tulsa-water-damage-repair.webp",
-   "alt": "Two-story red brick house with white garage door, arched windows and green lawn framed by trees"
-  },
-  "body": null
- },
- "/service-areas/owasso-ok/": {
-  "hero": {
-   "file": "/images/service-areas-owasso-ok-tulsa-water-damage-repair.webp",
-   "alt": "Light blue two-story house with white front porch, steps and railings, tall pine trees behind and green lawn"
-  },
-  "body": null
- },
- "/service-areas/jenks-ok/": {
-  "hero": {
-   "file": "/images/service-areas-jenks-ok-tulsa-water-damage-repair.webp",
-   "alt": "Two-story red brick house with double white garage doors, bay window and grey front door, evergreen shrubs and tall pine trees"
-  },
-  "body": null
- },
- "/service-areas/glenpool-ok/": {
-  "hero": {
-   "file": "/images/service-areas-glenpool-ok-tulsa-water-damage-repair.webp",
-   "alt": "Single-story bright blue house with white trim and covered front porch, white railings, concrete walkway and patchy lawn"
-  },
-  "body": null
- },
- "/service-areas/bixby-ok/": {
-  "hero": {
-   "file": "/images/service-areas-bixby-ok-tulsa-water-damage-repair.webp",
-   "alt": "Two-story grey house with double white garage doors and covered porch with chairs, green lawn and wide concrete driveway at dusk"
-  },
-  "body": null
- },
- "/service-areas/broken-arrow-ok/": {
-  "hero": {
-   "file": "/images/service-areas-broken-arrow-ok-tulsa-water-damage-repair.webp",
-   "alt": "Row of new two-story siding houses with white garage doors and concrete driveways, brown dormant lawn in front"
-  },
-  "body": null
- },
- "/service-areas/sand-springs-ok/": {
-  "hero": {
-   "file": "/images/service-areas-sand-springs-ok-tulsa-water-damage-repair.webp",
-   "alt": "White modern house with brown wood beams and steep roof, green lawn, brick walkway and yellow autumn leaves on a tree branch"
-  },
-  "body": null
- },
- "/service-areas/skiatook-ok/": {
-  "hero": {
-   "file": "/images/service-areas-skiatook-ok-tulsa-water-damage-repair.webp",
-   "alt": "Grey siding house with stone chimney and stone front, white garage door, dark car in driveway and yellow flowering shrubs"
-  },
-  "body": null
- },
- "/service-areas/coweta-ok/": {
-  "hero": {
-   "file": "/images/service-areas-coweta-ok-tulsa-water-damage-repair.webp",
-   "alt": "Two-story grey and beige house with stone base, covered front porch with rocking chairs, small shed and driveway at the side"
-  },
-  "body": null
- },
- "/service-areas/catoosa-ok/": {
-  "hero": {
-   "file": "/images/service-areas-catoosa-ok-tulsa-water-damage-repair.webp",
-   "alt": "Two-story red brick house with teal front door and shutters, double white garage doors, green lawn and tall pine trees"
-  },
-  "body": null
- },
- "/service-areas/collinsville-ok/": {
-  "hero": {
-   "file": "/images/service-areas-collinsville-ok-tulsa-water-damage-repair.webp",
-   "alt": "Single-story beige bungalow with wide covered porch, white railings, brick walkway, potted plants and a flag on the porch"
-  },
-  "body": null
- },
- "/service-areas/sapulpa-ok/": {
-  "hero": {
-   "file": "/images/service-areas-sapulpa-ok-tulsa-water-damage-repair.webp",
-   "alt": "Light green single-story house with brown garage door, covered porch, concrete driveway and neighbouring houses on both sides"
-  },
-  "body": null
- },
- "/service-areas/midtown-tulsa/": {
-  "hero": {
-   "file": "/images/service-areas-midtown-tulsa-tulsa-water-damage-repair.webp",
-   "alt": "Large pale green two-story house with red shutters, wide front porch with white columns, brick steps and green lawn"
-  },
-  "body": null
- },
- "/service-areas/brookside-tulsa/": {
-  "hero": {
-   "file": "/images/service-areas-brookside-tulsa-tulsa-water-damage-repair.webp",
-   "alt": "Grey two-story house with white trim, double porch with balcony above, dark blue front door and small evergreen shrubs"
-  },
-  "body": null
- },
- "/service-areas/south-tulsa/": {
-  "hero": {
-   "file": "/images/service-areas-south-tulsa-tulsa-water-damage-repair.webp",
-   "alt": "Beige two-story house with black shutters, stone base around the entrance, double white garage door and wide concrete driveway"
-  },
-  "body": null
- },
- "/service-areas/west-tulsa/": {
-  "hero": {
-   "file": "/images/service-areas-west-tulsa-tulsa-water-damage-repair.webp",
-   "alt": "Light blue two-story house with red front door, white double garage door, flowering trees and concrete driveway"
-  },
-  "body": null
- },
- "/service-areas/north-tulsa/": {
-  "hero": {
-   "file": "/images/service-areas-north-tulsa-tulsa-water-damage-repair.webp",
-   "alt": "Row of brick townhouses with tan garage doors, concrete driveways and brown dormant grass, black car parked at the right"
-  },
-  "body": null
- },
- "/service-areas/east-tulsa/": {
-  "hero": {
-   "file": "/images/service-areas-east-tulsa-tulsa-water-damage-repair.webp",
-   "alt": "Beige two-story house with light blue front door, white double garage door, small shrubs and brown dormant lawn"
-  },
-  "body": null
- },
- "/service-areas/cherry-street-tulsa/": {
-  "hero": {
-   "file": "/images/service-areas-cherry-street-tulsa-tulsa-water-damage-repair.webp",
-   "alt": "Tan two-story house with white garage door and dark front door between two neighbouring houses, mulch beds and small trees"
-  },
-  "body": null
- },
  "/resources/water-damage-restoration-cost-tulsa": {
   "hero": {
    "file": "/images/resources-water-damage-restoration-cost-tulsa-tulsa-water-damage-repair.webp",
@@ -242,5 +109,138 @@
    "slug": "/services/flooded-basement-cleanup",
    "reason": "No genuine flooded-basement interior photo found on Pexels or Unsplash after a real search; candidates were a shower spray and an aerial photo of a flooded village in Malaysia with palm trees."
   }
- ]
+ ],
+ "/service-areas/claremore-ok": {
+  "hero": {
+   "file": "/images/service-areas-claremore-ok-tulsa-water-damage-repair.webp",
+   "alt": "Two-story red brick house with white garage door, arched windows and green lawn framed by trees"
+  },
+  "body": null
+ },
+ "/service-areas/owasso-ok": {
+  "hero": {
+   "file": "/images/service-areas-owasso-ok-tulsa-water-damage-repair.webp",
+   "alt": "Light blue two-story house with white front porch, steps and railings, tall pine trees behind and green lawn"
+  },
+  "body": null
+ },
+ "/service-areas/jenks-ok": {
+  "hero": {
+   "file": "/images/service-areas-jenks-ok-tulsa-water-damage-repair.webp",
+   "alt": "Two-story red brick house with double white garage doors, bay window and grey front door, evergreen shrubs and tall pine trees"
+  },
+  "body": null
+ },
+ "/service-areas/glenpool-ok": {
+  "hero": {
+   "file": "/images/service-areas-glenpool-ok-tulsa-water-damage-repair.webp",
+   "alt": "Single-story bright blue house with white trim and covered front porch, white railings, concrete walkway and patchy lawn"
+  },
+  "body": null
+ },
+ "/service-areas/bixby-ok": {
+  "hero": {
+   "file": "/images/service-areas-bixby-ok-tulsa-water-damage-repair.webp",
+   "alt": "Two-story grey house with double white garage doors and covered porch with chairs, green lawn and wide concrete driveway at dusk"
+  },
+  "body": null
+ },
+ "/service-areas/broken-arrow-ok": {
+  "hero": {
+   "file": "/images/service-areas-broken-arrow-ok-tulsa-water-damage-repair.webp",
+   "alt": "Row of new two-story siding houses with white garage doors and concrete driveways, brown dormant lawn in front"
+  },
+  "body": null
+ },
+ "/service-areas/sand-springs-ok": {
+  "hero": {
+   "file": "/images/service-areas-sand-springs-ok-tulsa-water-damage-repair.webp",
+   "alt": "White modern house with brown wood beams and steep roof, green lawn, brick walkway and yellow autumn leaves on a tree branch"
+  },
+  "body": null
+ },
+ "/service-areas/skiatook-ok": {
+  "hero": {
+   "file": "/images/service-areas-skiatook-ok-tulsa-water-damage-repair.webp",
+   "alt": "Grey siding house with stone chimney and stone front, white garage door, dark car in driveway and yellow flowering shrubs"
+  },
+  "body": null
+ },
+ "/service-areas/coweta-ok": {
+  "hero": {
+   "file": "/images/service-areas-coweta-ok-tulsa-water-damage-repair.webp",
+   "alt": "Two-story grey and beige house with stone base, covered front porch with rocking chairs, small shed and driveway at the side"
+  },
+  "body": null
+ },
+ "/service-areas/catoosa-ok": {
+  "hero": {
+   "file": "/images/service-areas-catoosa-ok-tulsa-water-damage-repair.webp",
+   "alt": "Two-story red brick house with teal front door and shutters, double white garage doors, green lawn and tall pine trees"
+  },
+  "body": null
+ },
+ "/service-areas/collinsville-ok": {
+  "hero": {
+   "file": "/images/service-areas-collinsville-ok-tulsa-water-damage-repair.webp",
+   "alt": "Single-story beige bungalow with wide covered porch, white railings, brick walkway, potted plants and a flag on the porch"
+  },
+  "body": null
+ },
+ "/service-areas/sapulpa-ok": {
+  "hero": {
+   "file": "/images/service-areas-sapulpa-ok-tulsa-water-damage-repair.webp",
+   "alt": "Light green single-story house with brown garage door, covered porch, concrete driveway and neighbouring houses on both sides"
+  },
+  "body": null
+ },
+ "/service-areas/midtown-tulsa": {
+  "hero": {
+   "file": "/images/service-areas-midtown-tulsa-tulsa-water-damage-repair.webp",
+   "alt": "Large pale green two-story house with red shutters, wide front porch with white columns, brick steps and green lawn"
+  },
+  "body": null
+ },
+ "/service-areas/brookside-tulsa": {
+  "hero": {
+   "file": "/images/service-areas-brookside-tulsa-tulsa-water-damage-repair.webp",
+   "alt": "Grey two-story house with white trim, double porch with balcony above, dark blue front door and small evergreen shrubs"
+  },
+  "body": null
+ },
+ "/service-areas/south-tulsa": {
+  "hero": {
+   "file": "/images/service-areas-south-tulsa-tulsa-water-damage-repair.webp",
+   "alt": "Beige two-story house with black shutters, stone base around the entrance, double white garage door and wide concrete driveway"
+  },
+  "body": null
+ },
+ "/service-areas/west-tulsa": {
+  "hero": {
+   "file": "/images/service-areas-west-tulsa-tulsa-water-damage-repair.webp",
+   "alt": "Light blue two-story house with red front door, white double garage door, flowering trees and concrete driveway"
+  },
+  "body": null
+ },
+ "/service-areas/north-tulsa": {
+  "hero": {
+   "file": "/images/service-areas-north-tulsa-tulsa-water-damage-repair.webp",
+   "alt": "Row of brick townhouses with tan garage doors, concrete driveways and brown dormant grass, black car parked at the right"
+  },
+  "body": null
+ },
+ "/service-areas/east-tulsa": {
+  "hero": {
+   "file": "/images/service-areas-east-tulsa-tulsa-water-damage-repair.webp",
+   "alt": "Beige two-story house with light blue front door, white double garage door, small shrubs and brown dormant lawn"
+  },
+  "body": null
+ },
+ "/service-areas/cherry-street-tulsa": {
+  "hero": {
+   "file": "/images/service-areas-cherry-street-tulsa-tulsa-water-damage-repair.webp",
+   "alt": "Tan two-story house with white garage door and dark front door between two neighbouring houses, mulch beds and small trees"
+  },
+  "body": null
+ }
 }

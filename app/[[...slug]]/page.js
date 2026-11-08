@@ -80,7 +80,7 @@ function titleCase(s) {
 }
 
 function parseHandleItem(html) {
-  const href = (html.match(/<a href="([^"]+)"/) || [])[1] || '/services/';
+  const href = (html.match(/<a href="([^"]+)"/) || [])[1] || '/services';
   const label = (html.match(/<strong>([\s\S]*?)<\/strong>/) || [])[1] || '';
   const body = html
     .replace(/^<a[^>]*><strong>[\s\S]*?<\/strong>/, '')
@@ -134,7 +134,7 @@ function groupBlocks(blocks, page) {
       if (
         i < blocks.length &&
         blocks[i].t === 'p' &&
-        /^<a href="\/services\/">See the full services directory:/.test((blocks[i].html || '').trim())
+        /^<a href="\/services">See the full services directory:/.test((blocks[i].html || '').trim())
       ) {
         out.push({ t: 'handle-more', html: blocks[i].html });
         i++;
@@ -368,7 +368,7 @@ function Hero({ page }) {
               <a className="btn btn-cyan" href={SITE.phoneHref}>
                 Call Now · {SITE.phone}
               </a>
-              <a className="btn btn-cream" href="/contact/">
+              <a className="btn btn-cream" href="/contact">
                 Request Emergency Service
               </a>
             </div>
@@ -409,7 +409,7 @@ function NavyBand({ intro }) {
           <a className="btn btn-cyan" href={SITE.phoneHref}>
             Call Now · {SITE.phone}
           </a>
-          <a className="btn btn-cream" href="/contact/">
+          <a className="btn btn-cream" href="/contact">
             Request Emergency Service
           </a>
         </div>

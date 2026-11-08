@@ -232,7 +232,7 @@ export function FinalCta() {
             <a className="btn btn-cyan" href={SITE.phoneHref}>
               Call Now · {SITE.phone}
             </a>
-            <a className="btn btn-cream" href="/contact/">
+            <a className="btn btn-cream" href="/contact">
               Request Emergency Service
             </a>
           </div>
