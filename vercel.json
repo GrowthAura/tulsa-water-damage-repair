@@ -1,6 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "comment": "Slash -> no-slash 308 redirects (2026-11-08 round, user decision resolving open F1). Vercel serves permanent:true as 308. Every flipped page's old slash form redirects exactly once to its no-slash canonical; the no-slash canonical serves 200 directly with no hop. Homepage '/' is NOT redirected (keeps its trailing slash).",
   "redirects": [
     {
       "source": "/about-us/",
