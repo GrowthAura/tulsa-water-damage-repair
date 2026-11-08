@@ -2,7 +2,7 @@ import { DM_Sans } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header';
 import { Reveal } from './components/Reveal';
-import { SITE } from './lib';
+import { SITE } from './lib-meta';
 
 const dmSans = DM_Sans({ subsets: ['latin'], weight: ['400', '500', '700'], display: 'swap' });
 

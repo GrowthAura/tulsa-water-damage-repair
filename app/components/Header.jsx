@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { SITE, SERVICE_GROUPS, AREA_GROUPS } from '../lib';
+import { SITE, SERVICE_GROUPS, AREA_GROUPS } from '../lib-meta';
 
 export default function Header() {
   const navRef = useRef(null);

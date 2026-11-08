@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { SITE, TRUST_CHECKS, PAGE_BY_SLUG, pageImage, normSlug, shortName, SERVICE_TITLES } from '../lib';
+import { SITE, TRUST_CHECKS, normSlug, shortName, SERVICE_TITLES } from '../lib-meta';
+import { PAGE_BY_SLUG, pageImage } from '../lib';
 
 export function TrustBand() {
   return (

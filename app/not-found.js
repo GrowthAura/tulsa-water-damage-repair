@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { SITE } from './lib';
+import { SITE } from './lib-meta';
 import Footer from './components/Footer';
 import { FinalCta } from './components/Shared';
 

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { SITE, FOOTER_SERVICES, FOOTER_AREAS, shortName } from '../lib';
+import { SITE, FOOTER_SERVICES, FOOTER_AREAS, shortName } from '../lib-meta';
 
 export default function Footer({ showMap = true }) {
   return (

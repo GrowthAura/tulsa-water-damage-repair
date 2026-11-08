@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { SITE } from '../lib';
+import { SITE } from '../lib-meta';
 
 /*
  * Non-emergency contact form. No delivery inbox exists in the source doc,

@@ -1,10 +1,8 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { PAGES, PAGE_BY_SLUG, pageImage } from '../lib';
 import {
   SITE,
-  PAGES,
-  PAGE_BY_SLUG,
-  pageImage,
   normSlug,
   shortName,
   parentOf,
@@ -12,7 +10,7 @@ import {
   RESOURCE_SLUGS,
   TRUST_CHECKS,
   areaMapQuery,
-} from '../lib';
+} from '../lib-meta';
 import Footer from '../components/Footer';
 import { TrustBand, ServiceListCards, serviceListItems, AreaCards, ResourceCards, FaqList, FinalCta, MapBlock } from '../components/Shared';
 import ContactForm from '../components/ContactForm';
