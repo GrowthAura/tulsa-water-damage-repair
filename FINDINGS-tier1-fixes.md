@@ -70,8 +70,8 @@ was made: no words touched, no titles/descriptions (U5), no dead doc phrases
 
 ## Push
 
-- main: <SHA — filled at push time>
-- gh-pages: <SHA — filled at push time>
+- main: **4572153** (4572153197d38369f9089a73eebaf65d3f74bfed)
+- gh-pages: **0d105e6** (0d105e61dd6c9a509590986b99782dc7456f1f2a)
 - Live preview verified after push: home 200, one no-slash URL 200 direct,
   robots.txt live shows the new groups, one guide page live shows Article
   schema + new subtype.
