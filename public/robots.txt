@@ -70,4 +70,3 @@ User-agent: MistralAI-Training
 Allow: /
 
 Sitemap: https://www.tulsawaterdamagerepair.com/sitemap.xml
-Host: www.tulsawaterdamagerepair.com
