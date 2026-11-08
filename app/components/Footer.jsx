@@ -70,6 +70,16 @@ export default function Footer({ showMap = true }) {
                 </Link>
               </li>
             </ul>
+            {showMap && (
+              <div className="footer-mini-map">
+                <iframe
+                  title={`Map — ${SITE.address}`}
+                  src={`https://www.google.com/maps?q=${encodeURIComponent(SITE.mapQuery)}&output=embed`}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            )}
           </div>
           <div className="footer-col">
             <h3>Emergency Help</h3>

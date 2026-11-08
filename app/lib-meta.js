@@ -113,6 +113,17 @@ export const SERVICE_TITLES = {
   '/services/hardwood-floor-drying': 'Hardwood floor drying',
   '/services/fire-damage-restoration': '<a href="/services/fire-damage-restoration">Fire damage restoration</a>',
   '/services/smoke-soot-damage-cleanup': '<a href="/services/smoke-soot-damage-cleanup">Smoke and soot cleanup</a>',
+  /* Homepage service-list cards (2026-11-08): the 3 homepage groups have no
+     <strong>, so parseServiceItem falls back to this map. Plain titles here —
+     the card's <Link> is the single link; values are stripped of <a> at render. */
+  '/services/emergency-water-damage-restoration': 'Emergency water damage restoration',
+  '/services/water-mitigation': 'Water mitigation and structural drying',
+  '/services/flood-damage-restoration': 'Flood damage restoration',
+  '/services/flooded-basement-cleanup': 'Flooded basement and crawlspace cleanup',
+  '/services/sewage-backup-cleanup': 'Sewage backup cleanup',
+  '/services/mold-remediation': 'Mold remediation',
+  '/services/storm-damage-repair': 'Storm damage repair',
+  '/services/commercial-water-damage': 'Commercial water damage restoration',
 };
 
 export const AREA_GROUPS = [
