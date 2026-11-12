@@ -160,9 +160,70 @@ function groupBlocks(blocks, page) {
   return out;
 }
 
+/* areaServed — shared by LocalBusiness and by each Service node: every real
+   service area on the site (Tulsa + 12 suburb cities + 7 Tulsa neighborhoods,
+   area-page H1s verbatim, location prefix stripped). No invented place. */
+const AREA_SERVED = [
+  { '@type': 'City', name: 'Tulsa' },
+  { '@type': 'City', name: 'Broken Arrow' },
+  { '@type': 'City', name: 'Bixby' },
+  { '@type': 'City', name: 'Catoosa' },
+  { '@type': 'City', name: 'Claremore' },
+  { '@type': 'City', name: 'Collinsville' },
+  { '@type': 'City', name: 'Coweta' },
+  { '@type': 'City', name: 'Glenpool' },
+  { '@type': 'City', name: 'Jenks' },
+  { '@type': 'City', name: 'Owasso' },
+  { '@type': 'City', name: 'Sand Springs' },
+  { '@type': 'City', name: 'Sapulpa' },
+  { '@type': 'City', name: 'Skiatook' },
+  { '@type': 'Place', name: 'Midtown Tulsa' },
+  { '@type': 'Place', name: 'Brookside, Tulsa' },
+  { '@type': 'Place', name: 'South Tulsa' },
+  { '@type': 'Place', name: 'West Tulsa' },
+  { '@type': 'Place', name: 'North Tulsa' },
+  { '@type': 'Place', name: 'East Tulsa' },
+  { '@type': 'Place', name: 'Cherry Street & the Pearl District' },
+];
+
+/* Area-page "about" — the specific city/neighborhood each area page covers
+   (same names as AREA_SERVED). Used as WebPage.about on area pages only. */
+const AREA_ABOUT = {
+  '/service-areas/broken-arrow-ok': { '@type': 'City', name: 'Broken Arrow' },
+  '/service-areas/bixby-ok': { '@type': 'City', name: 'Bixby' },
+  '/service-areas/catoosa-ok': { '@type': 'City', name: 'Catoosa' },
+  '/service-areas/claremore-ok': { '@type': 'City', name: 'Claremore' },
+  '/service-areas/collinsville-ok': { '@type': 'City', name: 'Collinsville' },
+  '/service-areas/coweta-ok': { '@type': 'City', name: 'Coweta' },
+  '/service-areas/glenpool-ok': { '@type': 'City', name: 'Glenpool' },
+  '/service-areas/jenks-ok': { '@type': 'City', name: 'Jenks' },
+  '/service-areas/owasso-ok': { '@type': 'City', name: 'Owasso' },
+  '/service-areas/sand-springs-ok': { '@type': 'City', name: 'Sand Springs' },
+  '/service-areas/sapulpa-ok': { '@type': 'City', name: 'Sapulpa' },
+  '/service-areas/skiatook-ok': { '@type': 'City', name: 'Skiatook' },
+  '/service-areas/midtown-tulsa': { '@type': 'Place', name: 'Midtown Tulsa' },
+  '/service-areas/brookside-tulsa': { '@type': 'Place', name: 'Brookside, Tulsa' },
+  '/service-areas/south-tulsa': { '@type': 'Place', name: 'South Tulsa' },
+  '/service-areas/west-tulsa': { '@type': 'Place', name: 'West Tulsa' },
+  '/service-areas/north-tulsa': { '@type': 'Place', name: 'North Tulsa' },
+  '/service-areas/east-tulsa': { '@type': 'Place', name: 'East Tulsa' },
+  '/service-areas/cherry-street-tulsa': { '@type': 'Place', name: 'Cherry Street & the Pearl District' },
+};
+
 function jsonLd(page) {
   const url = SITE.url + page.slug;
   const heroImg = pageImage(page.slug).hero;
+  /* Offer catalog (homepage LocalBusiness only): the 18 real services,
+     names = service H1s with the " in Tulsa, OK" suffix stripped. */
+  const serviceCatalog = PAGES.filter((p) => p.type === 'service').map((p) => ({
+    '@type': 'Offer',
+    itemOffered: {
+      '@type': 'Service',
+      name: p.h1.replace(/ in Tulsa, OK$/, ''),
+      url: SITE.url + p.slug,
+      provider: { '@id': SITE.url + '/#business' },
+    },
+  }));
   const parent = parentOf(page);
   /* BreadcrumbList must match the visible breadcrumb trail exactly:
      - homepage: a single Home item (it renders no visible trail, and a
@@ -184,6 +245,19 @@ function jsonLd(page) {
       "We're a water damage restoration team based at 400 S 129th E Ave in Tulsa, OK 74108.",
     telephone: SITE.phone,
     url: SITE.url + '/',
+    /* image = the business's main hero photo (homepage hero, real site asset);
+       logo = the brand mark as a real image file (favicon-512 — the same Heavy
+       A drop the header shows as inline SVG; no separate logo file exists). */
+    image: SITE.url + '/images/home-tulsa-water-damage-repair.webp',
+    logo: SITE.url + '/favicon-512x512.png',
+    /* contactPoint: the doc's phone, the business's customer line.
+       No email in the doc, so none here. */
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: SITE.phone,
+      contactType: 'customer service',
+      availableLanguage: 'English',
+    },
     address: {
       '@type': 'PostalAddress',
       streetAddress: '400 S 129th E Ave',
@@ -198,31 +272,7 @@ function jsonLd(page) {
     geo: { '@type': 'GeoCoordinates', latitude: 36.15467, longitude: -95.83348 },
     hasMap:
       'https://www.google.com/maps?q=400%20S%20129th%20E%20Ave%2C%20Tulsa%2C%20OK%2074108&output=embed',
-    /* areaServed: every real service area on the site — Tulsa + the 12
-       suburb cities + the 7 Tulsa neighborhoods (area-page H1s verbatim,
-       location prefix stripped). No invented place. */
-    areaServed: [
-      { '@type': 'City', name: 'Tulsa' },
-      { '@type': 'City', name: 'Broken Arrow' },
-      { '@type': 'City', name: 'Bixby' },
-      { '@type': 'City', name: 'Catoosa' },
-      { '@type': 'City', name: 'Claremore' },
-      { '@type': 'City', name: 'Collinsville' },
-      { '@type': 'City', name: 'Coweta' },
-      { '@type': 'City', name: 'Glenpool' },
-      { '@type': 'City', name: 'Jenks' },
-      { '@type': 'City', name: 'Owasso' },
-      { '@type': 'City', name: 'Sand Springs' },
-      { '@type': 'City', name: 'Sapulpa' },
-      { '@type': 'City', name: 'Skiatook' },
-      { '@type': 'Place', name: 'Midtown Tulsa' },
-      { '@type': 'Place', name: 'Brookside, Tulsa' },
-      { '@type': 'Place', name: 'South Tulsa' },
-      { '@type': 'Place', name: 'West Tulsa' },
-      { '@type': 'Place', name: 'North Tulsa' },
-      { '@type': 'Place', name: 'East Tulsa' },
-      { '@type': 'Place', name: 'Cherry Street & the Pearl District' },
-    ],
+    areaServed: AREA_SERVED,
     /* knowsAbout: the 18 real services — service-page H1s verbatim with
        only the " in Tulsa, OK" location suffix stripped. */
     knowsAbout: [
@@ -251,16 +301,41 @@ function jsonLd(page) {
       opens: '00:00',
       closes: '23:59',
     },
+    /* hasOfferCatalog — homepage only (the full business profile): the 18
+       real services with their page URLs. Inner pages carry the same business
+       entity without the catalog (the Service node on service pages covers it). */
+    ...(page.type === 'homepage'
+      ? {
+          hasOfferCatalog: {
+            '@type': 'OfferCatalog',
+            name: 'Water Damage Restoration Services',
+            itemListElement: serviceCatalog,
+          },
+        }
+      : {}),
   };
   /* HomeAndConstructionBusiness belongs on EVERY page, not just homepage/service pages:
      the 34 area/resource/hub/about/contact/commercial pages had no business
      entity at all. WebPage is likewise present on every page. */
-  const webPage = { '@type': 'WebPage', '@id': url, url, name: page.h1, isPartOf: { '@id': SITE.url + '/#website' } };
+  const webPage = {
+    '@type': 'WebPage',
+    '@id': url,
+    url,
+    name: page.h1,
+    /* description = the page's own intro (doc text, entities already decoded
+       by lib.js fixPage); inLanguage en-US; primaryImageOfPage = the page's
+       real hero (every page has one). Area pages add about = that city/place. */
+    description: page.intro,
+    inLanguage: 'en-US',
+    ...(heroImg ? { primaryImageOfPage: SITE.url + heroImg.file } : {}),
+    ...(page.type === 'area' && AREA_ABOUT[page.slug] ? { about: AREA_ABOUT[page.slug] } : {}),
+    isPartOf: { '@id': SITE.url + '/#website' },
+  };
   const out = [
     {
       '@context': 'https://schema.org',
       '@graph': [
-        { '@type': 'WebSite', '@id': SITE.url + '/#website', url: SITE.url + '/', name: SITE.brand },
+        { '@type': 'WebSite', '@id': SITE.url + '/#website', url: SITE.url + '/', name: SITE.brand, inLanguage: 'en-US', publisher: { '@id': SITE.url + '/#business' } },
         { '@type': 'BreadcrumbList', itemListElement: crumbs },
         ...(page.type === 'homepage'
           ? [localBusiness, webPage]
@@ -269,9 +344,17 @@ function jsonLd(page) {
                 {
                   '@type': 'Service',
                   name: page.h1,
+                  /* serviceType = H1 minus the " in Tulsa, OK" suffix;
+                     description = the page's own intro (doc text);
+                     areaServed = the full 20-place list (this service is
+                     offered across every area, not Tulsa alone);
+                     image = the service's real hero. */
+                  serviceType: page.h1.replace(/ in Tulsa, OK$/, ''),
+                  description: page.intro,
                   url,
+                  ...(heroImg ? { image: SITE.url + heroImg.file } : {}),
                   provider: { '@id': SITE.url + '/#business' },
-                  areaServed: { '@type': 'City', name: 'Tulsa' },
+                  areaServed: AREA_SERVED,
                 },
                 localBusiness,
                 /* WebPage alongside Service: service pages previously had
@@ -303,6 +386,8 @@ function jsonLd(page) {
               {
                 '@type': 'Article',
                 headline: page.h1,
+                /* description = the guide's own intro (doc text). */
+                description: page.intro,
                 /* image = the guide's real hero (same file the page shows);
                    inLanguage + mainEntityOfPage tie the Article to its page. */
                 ...(heroImg ? { image: SITE.url + heroImg.file } : {}),
