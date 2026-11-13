@@ -550,14 +550,14 @@ function Block({ b, page }) {
       return <hr className="doc-divide" />;
     case 'h2':
       return (
-        <h2 id={slugify(b.text)} className="reveal">
+        <h2 id={slugify(b.text)}>
           {b.text}
         </h2>
       );
     case 'faq-heading':
       return (
         <>
-          <h2 id="faq" className="reveal">
+          <h2 id="faq">
             {b.text}
           </h2>
           <FaqList faqs={page.faqs} />

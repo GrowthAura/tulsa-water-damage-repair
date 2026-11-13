@@ -6,12 +6,17 @@ export default function Footer({ showMap = true }) {
     <footer className="site-footer">
       {showMap && (
         <div className="footer-map">
-          <iframe
-            title={`Map — ${SITE.address}`}
-            src={`https://www.google.com/maps?q=${encodeURIComponent(SITE.mapQuery)}&output=embed`}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
+          <a
+            href={`https://www.google.com/maps?q=${encodeURIComponent(SITE.mapQuery)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Open map — ${SITE.address} in Google Maps`}
+          >
+            <img src="/images/map-footer-tulsa.webp" alt={`Map — ${SITE.address}`} loading="eager" />
+          </a>
+          <p className="footer-map-attr">
+            © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors
+          </p>
         </div>
       )}
       <div className="container">
@@ -72,12 +77,17 @@ export default function Footer({ showMap = true }) {
             </ul>
             {showMap && (
               <div className="footer-mini-map">
-                <iframe
-                  title={`Map — ${SITE.address}`}
-                  src={`https://www.google.com/maps?q=${encodeURIComponent(SITE.mapQuery)}&output=embed`}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+                <a
+                  href={`https://www.google.com/maps?q=${encodeURIComponent(SITE.mapQuery)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Open map — ${SITE.address} in Google Maps`}
+                >
+                  <img src="/images/map-footer-mini-tulsa.webp" alt={`Map — ${SITE.address}`} loading="eager" />
+                </a>
+                <p className="footer-map-attr">
+                  © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors
+                </p>
               </div>
             )}
           </div>
