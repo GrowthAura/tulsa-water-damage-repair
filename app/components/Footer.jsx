@@ -10,9 +10,9 @@ export default function Footer({ showMap = true }) {
             href={`https://www.google.com/maps?q=${encodeURIComponent(SITE.mapQuery)}`}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Open map — ${SITE.address} in Google Maps`}
+            aria-label={`Open map - ${SITE.address} in Google Maps`}
           >
-            <img src="/images/map-footer-tulsa.webp" alt={`Map — ${SITE.address}`} loading="eager" />
+            <img src="/images/map-footer-tulsa.webp" alt={`Map - ${SITE.address}`} loading="eager" />
           </a>
           <p className="footer-map-attr">
             © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors
@@ -81,9 +81,9 @@ export default function Footer({ showMap = true }) {
                   href={`https://www.google.com/maps?q=${encodeURIComponent(SITE.mapQuery)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`Open map — ${SITE.address} in Google Maps`}
+                  aria-label={`Open map - ${SITE.address} in Google Maps`}
                 >
-                  <img src="/images/map-footer-mini-tulsa.webp" alt={`Map — ${SITE.address}`} loading="eager" />
+                  <img src="/images/map-footer-mini-tulsa.webp" alt={`Map - ${SITE.address}`} loading="eager" />
                 </a>
                 <p className="footer-map-attr">
                   © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors

@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="container" ref={navRef}>
-        <Link className="brand" href="/" aria-label="Tulsa Water Damage Repair — home">
+        <Link className="brand" href="/" aria-label="Tulsa Water Damage Repair - home">
           <span className="brand-mark" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
               {/* HEAVY classic drop (2026-11-08): same teardrop, same flat
