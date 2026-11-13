@@ -457,3 +457,38 @@ p.lead, .lead { font-size: 1.125rem; line-height: 1.65; }
 /* Resources hub cards: bigger titles + blurbs. */
 .resource-cards .card-body h3 { font-size: 1.5rem; line-height: 1.3; }
 .resource-cards .card-body p { font-size: 1.125rem; line-height: 1.65; }
+
+/* Navy band: padding + trust-list size moved here from inline styles
+   (same values, so every other page renders exactly as before). */
+.section.navy-band { padding: 2.5rem 0; }
+.navy-trust li { font-size: 1.125rem; }
+
+/* Hardwood floor page only — larger text + a more premium intro band.
+   Scoped by the slug-derived page class; all other pages stay 18px. */
+.page-services-hardwood-floor-drying .content-block p,
+.page-services-hardwood-floor-drying .content-block li,
+.page-services-hardwood-floor-drying .faq-list .faq-answer,
+.page-services-hardwood-floor-drying .faq-list .faq-answer p,
+.page-services-hardwood-floor-drying .faq-list summary h3,
+.page-services-hardwood-floor-drying .table-wrap th,
+.page-services-hardwood-floor-drying .table-wrap td,
+.page-services-hardwood-floor-drying .navy-trust li,
+.page-services-hardwood-floor-drying .call-strip p,
+.page-services-hardwood-floor-drying .aside-call p {
+  font-size: 1.25rem;
+}
+/* Best-ever intro: clearly bigger than the 20px body text. */
+.page-services-hardwood-floor-drying p.lead,
+.page-services-hardwood-floor-drying .lead {
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+/* Premium intro band: soft blue-grey wash + more breathing room, and a
+   wider gap between the two intro paragraphs. */
+.section.navy-band.page-services-hardwood-floor-drying {
+  background: var(--blue-gray);
+  padding: 3.5rem 0 3rem;
+}
+.page-services-hardwood-floor-drying .navy-band .lead { margin-bottom: 1.5rem; }
+/* More air between sections on this page. */
+.page-services-hardwood-floor-drying .doc-divide { margin: 3.25rem 0; }

@@ -464,14 +464,23 @@ function Hero({ page }) {
   );
 }
 
-function NavyBand({ intro }) {
+function NavyBand({ intro, pageClass }) {
+  // Intro can be two paragraphs (split on a blank line). Single-paragraph
+  // intros (every other page) still render exactly one <p className="lead">.
+  const paras = String(intro || '')
+    .split(/\n\s*\n/)
+    .map((s) => s.trim())
+    .filter(Boolean);
   return (
-    <section className="section" style={{ padding: '2.5rem 0' }}>
+    <section className={`section navy-band${pageClass ? ` ${pageClass}` : ''}`}>
       <div className="container">
-        <p className="lead" style={{ color: 'var(--navy)' }}>
-          {intro}
-        </p>
+        {paras.map((p, i) => (
+          <p key={i} className="lead" style={{ color: 'var(--navy)' }}>
+            {p}
+          </p>
+        ))}
         <ul
+          className="navy-trust"
           style={{
             listStyle: 'none',
             margin: '1.5rem 0',
@@ -482,7 +491,7 @@ function NavyBand({ intro }) {
           }}
         >
           {TRUST_CHECKS.map((c) => (
-            <li key={c} style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', fontWeight: 700, fontSize: '1.125rem', color: 'var(--ink)' }}>
+            <li key={c} style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', fontWeight: 700, color: 'var(--ink)' }}>
               <span className="check" aria-hidden="true" style={{ width: 20, height: 20, borderRadius: '50%', border: '1px solid var(--blue)', color: 'var(--blue)', display: 'grid', placeItems: 'center', fontSize: '0.75rem' }}>
                 ✓
               </span>
@@ -663,6 +672,12 @@ export default function Page({ params }) {
   const isArea = page.type === 'area';
   const isContact = page.type === 'contact';
 
+  // Slug-derived class for page-scoped styling (e.g. one page's larger text).
+  const slugClass =
+    page.slug && page.slug !== '/'
+      ? `page-${page.slug.replace(/[^a-z0-9]+/gi, '-').replace(/^-+|-+$/g, '')}`
+      : '';
+
   // First normal paragraph is the intro: hero (home) or navy band (inner) shows it.
   let blocks = [...page.blocks];
   let intro = page.intro || '';
@@ -722,7 +737,7 @@ export default function Page({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd(page)) }}
       />
       <Hero page={page} />
-      {isHome ? <TrustBand /> : intro && <NavyBand intro={intro} />}
+      {isHome ? <TrustBand /> : intro && <NavyBand intro={intro} pageClass={slugClass} />}
       {isResourcesHub ? (
         <>
           <section className="section" style={{ paddingBottom: 0 }}>
@@ -737,7 +752,7 @@ export default function Page({ params }) {
           </div>
         </section>
       ) : (
-        <section className={`section page-${page.type}`}>
+        <section className={`section page-${page.type}${slugClass ? ` ${slugClass}` : ''}`}>
           <div className="container">
             {crumbs}
             <div className="split">
