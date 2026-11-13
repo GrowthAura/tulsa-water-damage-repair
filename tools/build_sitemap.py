@@ -12,15 +12,24 @@ photo actually on that page (hero + content/card photos), NOT just the hero.
   each page) — a photo is listed only if it is actually rendered on that page.
   Falls back to the page's hero file if the built HTML is not present.
   All images are /images/*.webp real photos (no logos/icons in /images/).
-- lastmod is DATE-ONLY (YYYY-MM-DD). Three dates (his order 2026-11-12,
-  to avoid a bulk-stamp penalty): TODAY (2026-11-12) on the 10 key pages,
-  2026-11-07 on the 10 resource guides, 2026-11-08 on the other 33.
+- lastmod is DATE-ONLY (YYYY-MM-DD). Four dates (his order 2026-11-14,
+  to avoid a bulk-stamp penalty): 2026-11-12 on the 10 key pages,
+  2026-11-07 on the 10 resource guides, 2026-11-08 on the other 32,
+  2026-11-14 on the hardwood page (rebuilt + fixed + live 2026-11-14).
+  NOTE: no page carries 2026-11-13 — zero commits that day, so a 11-13
+  stamp would be a false date (the thing that erodes sitemap trust).
 """
 import json, os, re, sys
 BASE = os.path.expanduser('~/workspace/tulsa-water-damage-repair/site')
 pages = json.load(open(os.path.join(BASE, 'content', 'pages.json')))
 DOMAIN = 'https://www.tulsawaterdamagerepair.com'
 TODAY = '2026-11-12'
+
+# Pages with a newer real last-change date (honest only — never stamp a
+# date a page did not actually change on).
+RECENT_OVERRIDES = {
+    '/services/hardwood-floor-drying': '2026-11-14',
+}
 
 # 10 key pages carry today's date (his order: ~10 pages on today).
 TODAY_PAGES = {
@@ -45,6 +54,8 @@ def hero_file(slug):
     return slug.strip('/').replace('/', '-') + '-tulsa-water-damage-repair.webp'
 
 def lastmod_for(slug):
+    if slug in RECENT_OVERRIDES:
+        return RECENT_OVERRIDES[slug]
     if slug in TODAY_PAGES:
         return TODAY
     if slug.startswith('/resources/'):
