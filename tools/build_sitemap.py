@@ -29,6 +29,7 @@ TODAY = '2026-11-12'
 # date a page did not actually change on).
 RECENT_OVERRIDES = {
     '/services/hardwood-floor-drying': '2026-11-14',
+    '/services': '2026-11-14',
 }
 
 # 10 key pages carry today's date (his order: ~10 pages on today).
