@@ -131,22 +131,6 @@ p.lead, .lead { font-size: 1.1875rem; line-height: 1.65; }
 .btn-outline:hover { background: rgba(7, 50, 79, 0.08); color: var(--navy-dark); }
 .btn .btn-small { display: block; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; }
 
-/* Utility strip — deep navy, scrolls away; the sticky main bar stays. */
-.utility-strip { background: var(--deep-navy); color: var(--pale-text); }
-.utility-strip .container {
-  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
-  padding-top: 0.45rem; padding-bottom: 0.45rem;
-  font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em;
-}
-.utility-strip a { color: var(--cream); text-decoration: none; white-space: nowrap; }
-.utility-strip a:hover { color: var(--cyan-light); text-decoration: underline; }
-.utility-strip .strip-short { display: none; }
-@media (max-width: 639px) {
-  .utility-strip .strip-full { display: none; }
-  .utility-strip .strip-short { display: inline; }
-  .utility-strip .container { font-size: 0.85rem; }
-}
-
 /* Header */
 .site-header { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 1px solid var(--pale); box-shadow: 0 6px 24px -12px rgba(6, 42, 74, 0.4); }
 .site-header .container { display: flex; align-items: center; gap: 1rem; min-height: 5.5rem; }
@@ -231,13 +215,6 @@ p.lead, .lead { font-size: 1.1875rem; line-height: 1.65; }
 .hero-brand-panel .panel-drop svg { width: 6rem; height: 6rem; opacity: 0.9; filter: drop-shadow(0 12px 28px rgba(0, 191, 255, 0.35)); }
 .hero-content { position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: center; width: 100%; padding: 5rem 0 4rem; }
 @media (min-width: 1024px) { .hero-content { padding: 6rem 0 5rem; } }
-.hero-badge {
-  display: inline-flex; align-items: center; gap: 0.5rem; align-self: flex-start;
-  background: rgba(6, 42, 74, 0.55); border: 1px solid rgba(127, 219, 255, 0.45);
-  color: var(--cream); font-weight: 700; font-size: 1.1875rem; padding: 0.5rem 0.9rem;
-  border-radius: 999px; margin-bottom: 1.25rem;
-}
-.hero-badge .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 0 3px rgba(0, 191, 255, 0.25); animation: pulse-ring 2s ease-out infinite; }
 /* Place chip (area pages): the city from the page's own H1, presentation only. */
 .place-chip {
   display: inline-flex; align-items: center; gap: 0.5rem; align-self: flex-start;
@@ -548,7 +525,7 @@ p.lead, .lead { font-size: 1.1875rem; line-height: 1.65; }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
   .hero-media img { animation: none; }
-  .live-dot, .hero-badge .dot { animation: none; }
+  .live-dot { animation: none; }
   html { scroll-behavior: auto; }
 }
 
@@ -873,7 +850,6 @@ p.lead, .lead { font-size: 1.1875rem; line-height: 1.65; }
 /* ABOUT LINKS (#6, follow-up 2026-11-23): authority citations at the bottom
    of the About page only. Mist band, white cards, navy headings. */
 .about-links h2 { margin-bottom: 1rem; }
-.about-links-lede { font-size: 1.1875rem; line-height: 1.7; max-width: 62rem; margin-bottom: 2rem; }
 .about-links-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
 @media (min-width: 640px) { .about-links-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1024px) { .about-links-grid { grid-template-columns: repeat(3, 1fr); } }
@@ -889,4 +865,3 @@ p.lead, .lead { font-size: 1.1875rem; line-height: 1.65; }
 .about-link-card a:hover { color: var(--blue); text-decoration: underline; }
 .about-link-card a span { color: var(--cyan); flex: none; }
 .about-link-card p { font-size: 1.1875rem; line-height: 1.6; color: var(--slate); margin: 0; }
-.about-links-note { font-size: 1.1875rem; line-height: 1.6; color: var(--slate); margin: 2rem 0 0; }

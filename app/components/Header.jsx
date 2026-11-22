@@ -27,15 +27,6 @@ export default function Header() {
 
   return (
     <>
-      <div className="utility-strip">
-        <div className="container">
-          <span>
-            <span className="strip-full">Crews Standing By 24/7 · Tulsa + 19 Areas</span>
-            <span className="strip-short">Crews Standing By 24/7</span>
-          </span>
-          <a href={SITE.phoneHref}>{SITE.phone}</a>
-        </div>
-      </div>
       <header className="site-header">
         <div className="container" ref={navRef}>
           <Link className="brand" href="/" aria-label="Tulsa Water Damage Repair - home">

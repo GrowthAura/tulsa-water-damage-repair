@@ -546,12 +546,6 @@ function Hero({ page, pageClass }) {
       )}
       <div className="hero-content">
         <div className="container">
-          {isHome && (
-            <span className="hero-badge">
-              <span className="dot" aria-hidden="true" />
-              Tulsa, Oklahoma · 24/7 Emergency Response
-            </span>
-          )}
           {page.type === 'area' && (
             <span className="place-chip">{placeFromH1(page.h1)}</span>
           )}

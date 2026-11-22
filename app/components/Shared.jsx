@@ -543,10 +543,6 @@ export function AboutLinks() {
     <section className="section section-mist about-links" aria-label="Sources and authorities">
       <div className="container">
         <p className="eyebrow">Sources and authorities</p>
-        <h2>Why you can trust this local content</h2>
-        <p className="about-links-lede">
-          This site is written for Tulsa homes and Tulsa conditions. The pages below are the public sources the content follows and checks against: the local chamber and the City of Tulsa, the restoration industry standard, and the federal flood and mold guidance the insurance guides cite.
-        </p>
         <ul className="about-links-grid">
           {ABOUT_AUTHORITIES.map((a) => (
             <li key={a.url} className="about-link-card">
@@ -558,9 +554,6 @@ export function AboutLinks() {
             </li>
           ))}
         </ul>
-        <p className="about-links-note">
-          This business has no social media profiles yet, so none are listed here.
-        </p>
       </div>
     </section>
   );
