@@ -10,6 +10,8 @@ import {
   RESOURCE_SLUGS,
   TRUST_CHECKS,
   areaMapQuery,
+  pageGeo,
+  BUSINESS_GEO,
 } from '../lib-meta';
 import Footer from '../components/Footer';
 import { TrustBand, ServiceListCards, serviceListItems, AreaCards, ResourceCards, FaqList, FinalCta, MapBlock } from '../components/Shared';
@@ -36,12 +38,21 @@ export function generateMetadata({ params }) {
   if (!page) return {};
   const url = SITE.url + page.slug;
   const img = pageImage(page.slug).hero;
+  const geo = pageGeo(page.slug);
   // NOTE: canonical + og:url are rendered manually in the page component.
   // Next.js normalizes them to the trailingSlash form, which would break the
   // doc's exact mixed canonical forms (23 routes have no trailing slash).
   return {
     title: page.metaTitle,
     description: page.metaDescription,
+    /* GEO meta tags (rebuild §6a): region + per-page place + coordinates.
+       Area pages carry their own city; every other page carries Tulsa. */
+    other: {
+      'geo.region': 'US-OK',
+      'geo.placename': geo.name,
+      'geo.position': `${geo.latitude};${geo.longitude}`,
+      ICBM: `${geo.latitude}, ${geo.longitude}`,
+    },
     openGraph: {
       title: page.metaTitle,
       description: page.metaDescription,
@@ -348,10 +359,12 @@ function jsonLd(page) {
                      description = the page's own intro (doc text);
                      areaServed = the full 20-place list (this service is
                      offered across every area, not Tulsa alone);
+                     geo = the business coords (rebuild §6c);
                      image = the service's real hero. */
                   serviceType: page.h1.replace(/ in Tulsa, OK$/, ''),
                   description: page.intro,
                   url,
+                  geo: { '@type': 'GeoCoordinates', latitude: BUSINESS_GEO.latitude, longitude: BUSINESS_GEO.longitude },
                   ...(heroImg ? { image: SITE.url + heroImg.file } : {}),
                   provider: { '@id': SITE.url + '/#business' },
                   areaServed: AREA_SERVED,
@@ -406,12 +419,25 @@ function jsonLd(page) {
   return out;
 }
 
-function Hero({ page }) {
+/* The place an area page covers, taken from its own H1 (presentation only):
+   "Water Damage Restoration in Broken Arrow, OK" -> "Broken Arrow, OK". */
+function placeFromH1(h1) {
+  return (h1 || '').replace(/^Water Damage Restoration in /, '');
+}
+
+function Hero({ page, pageClass }) {
   const img = pageImage(page.slug).hero;
   const isHome = page.type === 'homepage';
   const isShort = !isHome;
+  /* Intro can be two paragraphs (split on a blank line). The hero now carries
+     the intro on EVERY page (it used to sit in the NavyBand below on inner
+     pages); the NavyBand is now a slim quick-facts band with no intro. */
+  const introParas = String(page.intro || '')
+    .split(/\n\s*\n/)
+    .map((s) => s.trim())
+    .filter(Boolean);
   return (
-    <section className={`hero ${isShort ? 'hero-short' : ''}`}>
+    <section className={`hero ${isShort ? 'hero-short' : ''}${pageClass ? ` ${pageClass}` : ''}`}>
       {img ? (
         <div className="hero-media">
           <img
@@ -419,12 +445,24 @@ function Hero({ page }) {
             alt={img.alt}
             width={1200}
             height={800}
+            loading="eager"
+            fetchPriority="high"
             style={img.pos ? { objectPosition: img.pos } : undefined}
           />
         </div>
       ) : (
         <div className="hero-brand-panel">
-          <div className="panel-inner" aria-hidden="true" />
+          <div className="panel-inner">
+            <span className="panel-drop" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M12 1.9c0 0-7.4 8.7-7.4 13.7a7.4 7.4 0 0 0 14.9 0c0-5-7.4-13.7-7.4-13.7Z"
+                  fill="#00BFFF"
+                />
+                <circle cx="9.0" cy="16.4" r="1.95" fill="#fff" />
+              </svg>
+            </span>
+          </div>
         </div>
       )}
       <div className="hero-content">
@@ -432,7 +470,7 @@ function Hero({ page }) {
           {isHome && (
             <span className="hero-badge">
               <span className="dot" aria-hidden="true" />
-              24/7 Emergency Response
+              Tulsa, Oklahoma · 24/7 Emergency Response
             </span>
           )}
           {page.type !== 'homepage' && (
@@ -446,70 +484,62 @@ function Hero({ page }) {
                     : 'Tulsa Water Damage Repair'}
             </p>
           )}
-          <h1>{page.h1}</h1>
-          {isHome && <p className="hero-intro">{page.intro}</p>}
-          {isHome && (
-            <div className="hero-ctas">
-              <a className="btn btn-cyan" href={SITE.phoneHref}>
-                Call Now · {SITE.phone}
-              </a>
-              <a className="btn btn-cream" href="/contact">
-                Request Emergency Service
-              </a>
-            </div>
+          {page.type === 'area' && (
+            <span className="place-chip">{placeFromH1(page.h1)}</span>
           )}
+          <h1>{page.h1}</h1>
+          {introParas.map((p, i) => (
+            <p key={i} className="hero-intro">{p}</p>
+          ))}
+          <div className="hero-ctas">
+            <a className="btn btn-cyan" href={SITE.phoneHref}>
+              Call Now · {SITE.phone}
+            </a>
+            <a className="btn btn-cream" href="/contact">
+              Request Emergency Service
+            </a>
+          </div>
+          {isHome && <p className="hero-areas">Serving Tulsa + 19 areas</p>}
         </div>
       </div>
     </section>
   );
 }
 
-function NavyBand({ intro, pageClass }) {
-  // Intro can be two paragraphs (split on a blank line). Single-paragraph
-  // intros (every other page) still render exactly one <p className="lead">.
-  const paras = String(intro || '')
-    .split(/\n\s*\n/)
-    .map((s) => s.trim())
-    .filter(Boolean);
+/* Slim quick-facts band: trust checks as chips + call CTA. The intro moved
+   into the hero — it is NOT duplicated here. */
+function NavyBand({ pageClass }) {
   return (
     <section className={`section navy-band${pageClass ? ` ${pageClass}` : ''}`}>
       <div className="container">
-        {paras.map((p, i) => (
-          <p key={i} className="lead" style={{ color: 'var(--navy)' }}>
-            {p}
-          </p>
-        ))}
-        <ul
-          className="navy-trust"
-          style={{
-            listStyle: 'none',
-            margin: '1.5rem 0',
-            padding: 0,
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: '0.75rem 2rem',
-          }}
-        >
-          {TRUST_CHECKS.map((c) => (
-            <li key={c} style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', fontWeight: 700, color: 'var(--ink)' }}>
-              <span className="check" aria-hidden="true" style={{ width: 20, height: 20, borderRadius: '50%', border: '1px solid var(--blue)', color: 'var(--blue)', display: 'grid', placeItems: 'center', fontSize: '0.75rem' }}>
-                ✓
-              </span>
-              {c}
-            </li>
-          ))}
-        </ul>
-        <div className="hero-ctas" style={{ marginTop: 0 }}>
-          <a className="btn btn-cyan" href={SITE.phoneHref}>
-            Call Now · {SITE.phone}
-          </a>
-          <a className="btn btn-cream" href="/contact">
-            Request Emergency Service
-          </a>
+        <div className="navy-band-inner">
+          <ul className="navy-trust">
+            {TRUST_CHECKS.map((c) => (
+              <li key={c}>
+                <span className="check" aria-hidden="true">✓</span>
+                {c}
+              </li>
+            ))}
+          </ul>
+          <div className="hero-ctas">
+            <a className="btn btn-cyan" href={SITE.phoneHref}>
+              Call Now · {SITE.phone}
+            </a>
+            <a className="btn btn-outline" href="/contact">
+              Request Emergency Service
+            </a>
+          </div>
         </div>
       </div>
     </section>
   );
+}
+
+/* Caption for the sticky photo card: service name + place (area pages use
+   their own city/neighborhood name from AREA_ABOUT). */
+function asideCaption(page) {
+  if (page.type === 'area' && AREA_ABOUT[page.slug]) return AREA_ABOUT[page.slug].name;
+  return `${shortName(page.slug)} · Tulsa, OK`;
 }
 
 function StickyAside({ page }) {
@@ -519,9 +549,19 @@ function StickyAside({ page }) {
       {body ? (
         <figure className="sticky-figure" style={{ margin: 0 }}>
           <img src={body.file} alt={body.alt} width={1200} height={800} loading="lazy" />
+          <figcaption className="sticky-caption">{asideCaption(page)}</figcaption>
         </figure>
       ) : (
         <div className="brand-panel">
+          <span className="panel-drop" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M12 1.9c0 0-7.4 8.7-7.4 13.7a7.4 7.4 0 0 0 14.9 0c0-5-7.4-13.7-7.4-13.7Z"
+                fill="#00BFFF"
+              />
+              <circle cx="9.0" cy="16.4" r="1.95" fill="#fff" />
+            </svg>
+          </span>
           <h3>{SITE.brand}</h3>
           <p>Water damage restoration across Tulsa County, day or night.</p>
           <ul>
@@ -548,12 +588,16 @@ function Block({ b, page }) {
   switch (b.t) {
     case 'hr':
       return <hr className="doc-divide" />;
-    case 'h2':
+    case 'h2': {
+      /* Step headings (insurance-claim guide) get the numbered-badge class;
+         the text itself stays verbatim. */
+      const isStep = /^Step \d+/.test(b.text || '');
       return (
-        <h2 id={slugify(b.text)}>
+        <h2 id={slugify(b.text)} className={isStep ? 'step-h2' : undefined}>
           {b.text}
         </h2>
       );
+    }
     case 'faq-heading':
       return (
         <>
@@ -654,7 +698,7 @@ function Block({ b, page }) {
       return (
         <div className="contact-grid">
           <div>
-            <MapBlock query={SITE.mapQuery} title={`Map — ${SITE.address}`} />
+            <MapBlock query={SITE.mapQuery} title={`Map · ${SITE.address}`} />
           </div>
           <ContactForm />
         </div>
@@ -678,9 +722,9 @@ export default function Page({ params }) {
       ? `page-${page.slug.replace(/[^a-z0-9]+/gi, '-').replace(/^-+|-+$/g, '')}`
       : '';
 
-  // First normal paragraph is the intro: hero (home) or navy band (inner) shows it.
+  // First normal paragraph is the intro: the hero shows it (all pages now),
+  // so it is removed from the body blocks.
   let blocks = [...page.blocks];
-  let intro = page.intro || '';
   const firstP = blocks.findIndex((b) => b.t === 'p');
   if (firstP >= 0) blocks.splice(firstP, 1);
   // Drop leading section dividers left over after the intro was consumed.
@@ -736,8 +780,8 @@ export default function Page({ params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd(page)) }}
       />
-      <Hero page={page} />
-      {isHome ? <TrustBand /> : intro && <NavyBand intro={intro} pageClass={slugClass} />}
+      <Hero page={page} pageClass={slugClass} />
+      {isHome ? <TrustBand /> : <NavyBand pageClass={slugClass} />}
       {isResourcesHub ? (
         <>
           <section className="section" style={{ paddingBottom: 0 }}>
@@ -767,7 +811,7 @@ export default function Page({ params }) {
       {isArea && (
         <section className="section" aria-label="Service area map">
           <div className="container">
-            <MapBlock query={areaMapQuery(page.slug)} title={`Map — ${shortName(page.slug)}, Tulsa, OK`} />
+            <MapBlock query={areaMapQuery(page.slug)} title={`Map · ${shortName(page.slug)}, Tulsa, OK`} />
           </div>
         </section>
       )}

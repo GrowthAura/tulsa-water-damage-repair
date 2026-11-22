@@ -1,10 +1,11 @@
-import { DM_Sans } from 'next/font/google';
+import { DM_Sans, Fraunces } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header';
 import { Reveal } from './components/Reveal';
 import { SITE } from './lib-meta';
 
 const dmSans = DM_Sans({ subsets: ['latin'], weight: ['400', '500', '700'], display: 'swap' });
+const fraunces = Fraunces({ subsets: ['latin'], weight: ['600', '700'], display: 'swap', variable: '--font-fraunces' });
 
 export const metadata = {
   metadataBase: new URL(SITE.url),
@@ -21,13 +22,13 @@ export const metadata = {
 };
 
 export const viewport = {
-  themeColor: '#073B66',
+  themeColor: '#062A4A',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={dmSans.className}>
+      <body className={`${dmSans.className} ${fraunces.variable}`}>
         <noscript>
           <style>{`.reveal{opacity:1 !important;transform:none !important;}`}</style>
         </noscript>

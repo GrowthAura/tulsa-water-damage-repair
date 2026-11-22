@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { SITE, FOOTER_SERVICES, FOOTER_AREAS, shortName } from '../lib-meta';
+import { SITE, FOOTER_SERVICES, FOOTER_AREAS, RESOURCE_SLUGS, shortName } from '../lib-meta';
 
 export default function Footer({ showMap = true }) {
   return (
@@ -22,7 +22,21 @@ export default function Footer({ showMap = true }) {
       <div className="container">
         <div className="footer-cols">
           <div className="footer-col">
-            <h3>Tulsa Water Damage Repair</h3>
+            <div className="footer-brand">
+              <span className="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="27" height="27" fill="none" aria-hidden="true">
+                  <path
+                    d="M12 1.9c0 0-7.4 8.7-7.4 13.7a7.4 7.4 0 0 0 14.9 0c0-5-7.4-13.7-7.4-13.7Z"
+                    fill="#00BFFF"
+                  />
+                  <circle cx="9.0" cy="16.4" r="1.95" fill="#fff" />
+                </svg>
+              </span>
+              <span>
+                <strong>Tulsa Water Damage Repair</strong>
+                <small>Tulsa, Oklahoma</small>
+              </span>
+            </div>
             <p>
               Water damage restoration across Tulsa County, day or night. We extract water, dry the
               structure to measured targets and document everything for your insurance claim.
@@ -50,8 +64,7 @@ export default function Footer({ showMap = true }) {
             </ul>
           </div>
           <div className="footer-col">
-            <h3>Service Area</h3>
-            <p>Serving Tulsa, Oklahoma &amp; surrounding areas.</p>
+            <h3>Service Areas</h3>
             <ul>
               {FOOTER_AREAS.map((s) => (
                 <li key={s}>
@@ -67,11 +80,15 @@ export default function Footer({ showMap = true }) {
           </div>
           <div className="footer-col">
             <h3>Resources</h3>
-            <p>Guides and cost information from Tulsa Water Damage Repair.</p>
             <ul>
+              {RESOURCE_SLUGS.map((s) => (
+                <li key={s}>
+                  <Link href={s}>{shortName(s)}</Link>
+                </li>
+              ))}
               <li>
                 <Link href="/resources" className="footer-more">
-                  Blog
+                  View all guides
                 </Link>
               </li>
             </ul>

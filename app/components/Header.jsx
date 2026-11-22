@@ -26,106 +26,120 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="site-header">
-      <div className="container" ref={navRef}>
-        <Link className="brand" href="/" aria-label="Tulsa Water Damage Repair - home">
-          <span className="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" aria-hidden="true">
-              {/* HEAVY classic drop (2026-11-08): same teardrop, same flat
-                  cyan #00BFFF + white dot — scaled up to match the heavier
-                  favicon (width 13 -> 14.9 units, top 2.5 -> 1.9). Navy tile
-                  and wordmark unchanged. */}
-              <path
-                d="M12 1.9c0 0-7.4 8.7-7.4 13.7a7.4 7.4 0 0 0 14.9 0c0-5-7.4-13.7-7.4-13.7Z"
-                fill="#00BFFF"
-              />
-              <circle cx="9.0" cy="16.4" r="1.95" fill="#fff" />
-            </svg>
-          </span>
+    <>
+      <div className="utility-strip">
+        <div className="container">
           <span>
-            Tulsa Water Damage Repair
-            <small>Tulsa, Oklahoma</small>
+            <span className="strip-full">Crews Standing By 24/7 · Tulsa + 19 Areas</span>
+            <span className="strip-short">Crews Standing By 24/7</span>
           </span>
-        </Link>
-        <nav className="main-nav" aria-label="Main">
-          <Link href="/">Home</Link>
-          <details>
-            <summary>Services ▾</summary>
-            <div className="nav-drop">
-              {SERVICE_GROUPS.map((g) => (
-                <div key={g.label}>
-                  <p className="drop-group">{g.label}</p>
-                  {g.slugs.map((s) => (
-                    <Link key={s} href={s}>
-                      {shortFor(s)}
-                    </Link>
-                  ))}
-                </div>
-              ))}
-              <p className="drop-group">All Services</p>
-              <Link href="/services">View every service →</Link>
-            </div>
-          </details>
-          <details>
-            <summary>Service Areas ▾</summary>
-            <div className="nav-drop">
-              {AREA_GROUPS.map((g) => (
-                <div key={g.label}>
-                  <p className="drop-group">{g.label}</p>
-                  {g.slugs.map((s) => (
-                    <Link key={s} href={s}>
-                      {shortFor(s)}
-                    </Link>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </details>
-          <Link href="/about-us">About Us</Link>
-          <Link href="/resources">Blog</Link>
-          <Link href="/contact">Contact</Link>
-        </nav>
-        <a className="btn btn-cyan header-cta" href={SITE.phoneHref}>
-          <span className="btn-small">Emergency?</span>
-          {SITE.phone}
-        </a>
-        <div className="mobile-head">
-          <a className="btn btn-cyan" href={SITE.phoneHref} aria-label={`Call ${SITE.phone}`}>
-            ☎
-          </a>
-          <details>
-            <summary className="btn btn-cream" aria-label="Open menu">
-              ☰ Menu
-            </summary>
-            <div className="mobile-menu">
-              <Link href="/">Home</Link>
-              {SERVICE_GROUPS.map((g) => (
-                <div key={g.label}>
-                  <p className="drop-group">{g.label}</p>
-                  {g.slugs.map((s) => (
-                    <Link key={s} href={s}>
-                      {shortFor(s)}
-                    </Link>
-                  ))}
-                </div>
-              ))}
-              <p className="drop-group">Service Areas</p>
-              {AREA_GROUPS.flatMap((g) => g.slugs).map((s) => (
-                <Link key={s} href={s}>
-                  {shortFor(s)}
-                </Link>
-              ))}
-              <Link href="/about-us">About Us</Link>
-              <Link href="/resources">Blog</Link>
-              <Link href="/contact">Contact</Link>
-              <a className="btn btn-cyan" href={SITE.phoneHref}>
-                Call Now · {SITE.phone}
-              </a>
-            </div>
-          </details>
+          <a href={SITE.phoneHref}>{SITE.phone}</a>
         </div>
       </div>
-    </header>
+      <header className="site-header">
+        <div className="container" ref={navRef}>
+          <Link className="brand" href="/" aria-label="Tulsa Water Damage Repair - home">
+            <span className="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="27" height="27" fill="none" aria-hidden="true">
+                {/* HEAVY classic drop (2026-11-08): same teardrop, same flat
+                    cyan #00BFFF + white dot — scaled up to match the heavier
+                    favicon (width 13 -> 14.9 units, top 2.5 -> 1.9). Navy tile
+                    and wordmark unchanged. */}
+                <path
+                  d="M12 1.9c0 0-7.4 8.7-7.4 13.7a7.4 7.4 0 0 0 14.9 0c0-5-7.4-13.7-7.4-13.7Z"
+                  fill="#00BFFF"
+                />
+                <circle cx="9.0" cy="16.4" r="1.95" fill="#fff" />
+              </svg>
+            </span>
+            <span>
+              Tulsa Water Damage Repair
+              <small>Tulsa, Oklahoma</small>
+            </span>
+          </Link>
+          <nav className="main-nav" aria-label="Main">
+            <Link href="/">Home</Link>
+            <details>
+              <summary>Services ▾</summary>
+              <div className="nav-drop">
+                {SERVICE_GROUPS.map((g) => (
+                  <div key={g.label}>
+                    <p className="drop-group">{g.label}</p>
+                    {g.slugs.map((s) => (
+                      <Link key={s} href={s}>
+                        {shortFor(s)}
+                      </Link>
+                    ))}
+                  </div>
+                ))}
+                <p className="drop-group">All Services</p>
+                <Link href="/services">View every service →</Link>
+              </div>
+            </details>
+            <details>
+              <summary>Service Areas ▾</summary>
+              <div className="nav-drop">
+                {AREA_GROUPS.map((g) => (
+                  <div key={g.label}>
+                    <p className="drop-group">{g.label}</p>
+                    {g.slugs.map((s) => (
+                      <Link key={s} href={s}>
+                        {shortFor(s)}
+                      </Link>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </details>
+            <Link href="/about-us">About Us</Link>
+            <Link href="/resources">Blog</Link>
+            <Link href="/contact">Contact</Link>
+          </nav>
+          <a className="btn btn-cyan header-cta" href={SITE.phoneHref}>
+            <span className="header-cta-top">
+              <span className="live-dot" aria-hidden="true" />
+              <span className="btn-small">Emergency?</span>
+            </span>
+            {SITE.phone}
+          </a>
+          <div className="mobile-head">
+            <a className="btn btn-cyan" href={SITE.phoneHref} aria-label={`Call ${SITE.phone}`}>
+              ☎
+            </a>
+            <details>
+              <summary className="btn btn-cream" aria-label="Open menu">
+                ☰ Menu
+              </summary>
+              <div className="mobile-menu">
+                <Link href="/">Home</Link>
+                {SERVICE_GROUPS.map((g) => (
+                  <div key={g.label}>
+                    <p className="drop-group">{g.label}</p>
+                    {g.slugs.map((s) => (
+                      <Link key={s} href={s}>
+                        {shortFor(s)}
+                      </Link>
+                    ))}
+                  </div>
+                ))}
+                <p className="drop-group">Service Areas</p>
+                {AREA_GROUPS.flatMap((g) => g.slugs).map((s) => (
+                  <Link key={s} href={s}>
+                    {shortFor(s)}
+                  </Link>
+                ))}
+                <Link href="/about-us">About Us</Link>
+                <Link href="/resources">Blog</Link>
+                <Link href="/contact">Contact</Link>
+                <a className="btn btn-cyan" href={SITE.phoneHref}>
+                  Call Now · {SITE.phone}
+                </a>
+              </div>
+            </details>
+          </div>
+        </div>
+      </header>
+    </>
   );
 }
 

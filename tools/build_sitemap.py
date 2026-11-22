@@ -71,8 +71,11 @@ def images_for(slug):
         imgs = sorted(set(re.findall(r'src="(/images/[^"]+\.(?:webp|jpg|jpeg|png))"', html)))
         if imgs:
             return imgs
-    # Fallback: hero only (built HTML not present yet).
-    return ['/images/' + hero_file(slug)]
+    # Fallback: no <img src> on this page (e.g. /contact has a null hero) —
+    # return NO images. Never invent a hero filename: the old fallback
+    # derived '<slug>-tulsa-water-damage-repair.webp' and listed the deleted
+    # contact orphan in the sitemap (verification 2026-11-22).
+    return []
 
 urls = sorted({p['slug'] for p in pages})
 assert len(urls) == 53, f'expected 53 urls, got {len(urls)}'

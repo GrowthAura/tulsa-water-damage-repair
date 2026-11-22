@@ -167,6 +167,9 @@ export const FOOTER_SERVICES = [
   '/services/flood-damage-restoration',
   '/services/mold-remediation',
   '/services/burst-pipe-water-damage',
+  '/services/sewage-backup-cleanup',
+  '/services/storm-damage-repair',
+  '/services/hardwood-floor-drying',
   '/services/commercial-water-damage',
 ];
 
@@ -176,8 +179,47 @@ export const FOOTER_AREAS = [
   '/service-areas/bixby-ok',
   '/service-areas/jenks-ok',
   '/service-areas/sand-springs-ok',
-  '/service-areas/midtown-tulsa',
+  '/service-areas/glenpool-ok',
+  '/service-areas/claremore-ok',
+  '/service-areas/catoosa-ok',
+  '/service-areas/collinsville-ok',
+  '/service-areas/skiatook-ok',
+  '/service-areas/coweta-ok',
+  '/service-areas/sapulpa-ok',
 ];
+
+/* Geo — rebuild 2026-11-22 (§6a). Business coords are the verified lookup
+   of the business address (36.15467, -95.83348). Suburb coords were verified
+   with real geocoding (street/full-address level, correct city + county)
+   2026-11-22; the 7 Tulsa neighborhoods sit inside Tulsa, so they carry
+   the business (Tulsa) coords — logged, not invented. */
+export const BUSINESS_GEO = { latitude: 36.15467, longitude: -95.83348 };
+
+export const AREA_GEO = {
+  '/service-areas/broken-arrow-ok': { name: 'Broken Arrow, Oklahoma', latitude: 36.07077, longitude: -95.7962 },
+  '/service-areas/owasso-ok': { name: 'Owasso, Oklahoma', latitude: 36.26806, longitude: -95.85502 },
+  '/service-areas/bixby-ok': { name: 'Bixby, Oklahoma', latitude: 35.93809, longitude: -95.88054 },
+  '/service-areas/jenks-ok': { name: 'Jenks, Oklahoma', latitude: 36.02427, longitude: -95.97524 },
+  '/service-areas/sand-springs-ok': { name: 'Sand Springs, Oklahoma', latitude: 36.13966, longitude: -96.10843 },
+  '/service-areas/glenpool-ok': { name: 'Glenpool, Oklahoma', latitude: 35.96465, longitude: -96.0103 },
+  '/service-areas/claremore-ok': { name: 'Claremore, Oklahoma', latitude: 36.30566, longitude: -95.6079 },
+  '/service-areas/catoosa-ok': { name: 'Catoosa, Oklahoma', latitude: 36.18809, longitude: -95.74602 },
+  '/service-areas/collinsville-ok': { name: 'Collinsville, Oklahoma', latitude: 36.36423, longitude: -95.84014 },
+  '/service-areas/skiatook-ok': { name: 'Skiatook, Oklahoma', latitude: 36.36818, longitude: -95.99799 },
+  '/service-areas/coweta-ok': { name: 'Coweta, Oklahoma', latitude: 35.95195, longitude: -95.65021 },
+  '/service-areas/sapulpa-ok': { name: 'Sapulpa, Oklahoma', latitude: 35.99932, longitude: -96.09716 },
+  '/service-areas/midtown-tulsa': { name: 'Midtown Tulsa, Oklahoma', latitude: 36.12959, longitude: -95.9741 },
+  '/service-areas/brookside-tulsa': { name: 'Brookside, Tulsa, Oklahoma', latitude: 36.10418, longitude: -95.972 },
+  '/service-areas/south-tulsa': { name: 'South Tulsa, Oklahoma', latitude: 36.06785, longitude: -95.93277 },
+  '/service-areas/west-tulsa': { name: 'West Tulsa, Oklahoma', latitude: 36.13503, longitude: -96.00252 },
+  '/service-areas/north-tulsa': { name: 'North Tulsa, Oklahoma', latitude: 36.21862, longitude: -95.97471 },
+  '/service-areas/east-tulsa': { name: 'East Tulsa, Oklahoma', latitude: 36.17328, longitude: -95.94032 },
+  '/service-areas/cherry-street-tulsa': { name: 'Cherry Street, Tulsa, Oklahoma', latitude: 36.14073, longitude: -95.97128 },
+};
+
+export function pageGeo(slug) {
+  return AREA_GEO[slug] || { name: 'Tulsa, Oklahoma', ...BUSINESS_GEO };
+}
 
 /* Resource pages, in doc order. The /resources/ hub lists all ten, so no
    resource page is an orphan: /resources/water-damage-vs-flood-damage-

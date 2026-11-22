@@ -46,11 +46,12 @@ export function ServiceCards({ slugs, heading, eyebrow }) {
             if (!p) return null;
             const img = pageImage(slug).hero;
             return (
-              <article className="card reveal" key={slug}>
+              <article className="card" key={slug}>
                 <CardMedia img={img} label={shortName(slug)} />
                 <div className="card-body">
                   <h3>
                     <Link href={slug}>{shortName(slug)}</Link>
+                    <span className="card-arrow" aria-hidden="true">→</span>
                   </h3>
                   <p>{p.blurb}</p>
                 </div>
@@ -123,11 +124,12 @@ export function ServiceListCards({ items }) {
       {items.map((it) => {
         const img = pageImage(it.href).hero || pageImage(normSlug(it.href)).hero;
         return (
-          <article className="card reveal" key={it.href}>
+          <article className="card" key={it.href}>
             <CardMedia img={img} label={it.titleHtml.replace(/<[^>]*>/g, '')} />
             <div className="card-body">
               <h3>
                 <Link href={it.href} dangerouslySetInnerHTML={{ __html: it.titleHtml }} />
+                <span className="card-arrow" aria-hidden="true">→</span>
               </h3>
               {it.descHtml && <p dangerouslySetInnerHTML={{ __html: it.descHtml }} />}
             </div>
@@ -140,7 +142,7 @@ export function ServiceListCards({ items }) {
 
 export function ResourceCards({ slugs, heading, eyebrow }) {
   return (
-    <section className="section resource-cards" aria-label={heading || 'Resources'}>
+    <section className="section section-mist resource-cards" aria-label={heading || 'Resources'}>
       <div className="container">
         {eyebrow && <p className="eyebrow">{eyebrow}</p>}
         {heading && <h2>{heading}</h2>}
@@ -150,11 +152,12 @@ export function ResourceCards({ slugs, heading, eyebrow }) {
             if (!p) return null;
             const img = pageImage(slug).hero;
             return (
-              <article className="card reveal" key={slug}>
+              <article className="card" key={slug}>
                 <CardMedia img={img} label={shortName(slug)} />
                 <div className="card-body">
                   <h3>
                     <Link href={slug}>{p.h1}</Link>
+                    <span className="card-arrow" aria-hidden="true">→</span>
                   </h3>
                   <p>{p.blurb}</p>
                 </div>
@@ -168,29 +171,30 @@ export function ResourceCards({ slugs, heading, eyebrow }) {
 }
 
 export function AreaCards({ slugs, heading, eyebrow }) {
+  /* Embedded inside the homepage content container (not a top-level section),
+     so it renders as a rounded mist panel rather than a full-bleed section. */
   return (
-    <section className="section" aria-label={heading || 'Service areas'}>
-      <div className="container">
-        {eyebrow && <p className="eyebrow">{eyebrow}</p>}
-        {heading && <h2>{heading}</h2>}
-        <div className="cards">
+    <section className="area-cards-panel" aria-label={heading || 'Service areas'}>
+      {eyebrow && <p className="eyebrow">{eyebrow}</p>}
+      {heading && <h2>{heading}</h2>}
+      <div className="cards">
           {slugs.map((slug) => {
             const p = PAGE_BY_SLUG[slug];
             if (!p) return null;
             const img = pageImage(slug).hero;
             return (
-              <article className="card reveal" key={slug}>
+              <article className="card" key={slug}>
                 <CardMedia img={img} label={shortName(slug)} />
                 <div className="card-body">
                   <h3>
                     <Link href={slug}>{shortName(slug)}</Link>
+                    <span className="card-arrow" aria-hidden="true">→</span>
                   </h3>
                   <p>{p.blurb}</p>
                 </div>
               </article>
             );
           })}
-        </div>
       </div>
     </section>
   );
@@ -217,7 +221,7 @@ export function FinalCta() {
   return (
     <section className="final-cta" aria-label="Get help now">
       <div className="container">
-        <div className="final-cta-card reveal">
+        <div className="final-cta-card">
           <div className="accent-line on-navy">
             <p className="eyebrow on-navy" style={{ margin: 0 }}>
               Start with a clear assessment
@@ -246,7 +250,7 @@ export function MapBlock({ query, title }) {
   return (
     <iframe
       className="map-frame"
-      title={title || `Map — ${query}`}
+      title={title || `Map · ${query}`}
       src={`https://www.google.com/maps?q=${encodeURIComponent(query)}&output=embed`}
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"

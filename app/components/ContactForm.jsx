@@ -42,7 +42,7 @@ export default function ContactForm() {
           </button>
           <div className="form-note">
             <p>
-              <strong>Emergencies:</strong> do not use this form — water keeps spreading while
+              <strong>Emergencies:</strong> do not use this form. Water keeps spreading while
               you wait for a reply. Call <a href={SITE.phoneHref}>{SITE.phone}</a> now.
             </p>
           </div>
