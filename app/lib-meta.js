@@ -221,6 +221,130 @@ export function pageGeo(slug) {
   return AREA_GEO[slug] || { name: 'Tulsa, Oklahoma', ...BUSINESS_GEO };
 }
 
+/* Area identity (#4, follow-up 2026-11-23): one distinct "at a glance"
+   block per directional area page (South / West / North / East Tulsa only).
+   Every fact is drawn from that page's own doc content in
+   content/pages.json (ZIP/coverage lists + intro + pattern sections).
+   Nothing invented, no clean ZIP partition forced (74127 spans West +
+   North, 74145 spans South + East, exactly as the doc states it).
+   Maps URLs verified live 2026-11-23 (all HTTP 200; South needed a
+   browser user agent on the first hit, 403 on curl's default UA, then
+   200 twice with a browser UA). Coordinates reuse AREA_GEO. */
+export const AREA_IDENTITY = {
+  '/service-areas/south-tulsa': {
+    variant: 'slab',
+    name: 'South Tulsa',
+    eyebrow: 'South Tulsa at a glance',
+    heading: 'Slab homes, attic air handlers, and hail roofs',
+    lede: "South Tulsa from 61st Street south past 101st, Sheridan to Memorial and beyond is slab homes, attic-mounted air handlers and roofs that take hail every spring. That construction pattern drives South Tulsa's three most common water damage calls: slab leaks that spread under flooring for weeks before anyone notices, AC condensate overflows that soak ceilings overnight in July, and water heaters that pick the worst possible night to fail.",
+    stat: { value: '1970s to 2000s', label: 'when most South Tulsa slab homes were built' },
+    zips: [
+      { code: '74133', note: 'The heart of South Tulsa, 71st to 101st between Sheridan and Memorial' },
+      { code: '74136', note: 'West of the BA Expressway, including Southern Hills' },
+      { code: '74137', note: 'South of 101st, toward the Creek Turnpike' },
+      { code: '74135', note: 'Southern portions' },
+      { code: '74145', note: 'Southern portions' },
+    ],
+    neighborhoods: ['Southern Hills', 'Tanglewood', 'Woodland Hills', 'Forest Ridge', 'Regency Park'],
+    corridorNote: 'plus the corridors toward the Creek Turnpike',
+    nearby: ['Bixby', 'Jenks', 'Broken Arrow', 'Brookside'],
+    patterns: [
+      { title: 'Slab leaks', text: 'The most common hidden damage in South Tulsa. Copper and CPVC lines buried in the slab fail as expansive clay soil swells after rain and contracts during drought, and water spreads under flooring for weeks before anyone notices.' },
+      { title: 'AC condensate overflow', text: 'Attic air handlers produce gallons of condensation a day in July and August. One clogged drain line can stain a ceiling within hours and soak through the drywall in a day.' },
+      { title: 'Hail and water heaters', text: 'The 71st, 81st, 91st and 101st Street corridors take neighborhood-wide hail in spring, and garage, closet and attic water heaters 15 to 25 years old are entering the failure window.' },
+      { title: 'Mingo Creek drainage', text: 'Properties near Mingo Creek tributaries can take on storm runoff during stalled spring storms. Rising outside water is Category 3.' },
+    ],
+    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=South+Tulsa,+Tulsa,+OK',
+  },
+  '/service-areas/west-tulsa': {
+    variant: 'river',
+    name: 'West Tulsa',
+    eyebrow: 'West Tulsa at a glance',
+    heading: 'West of the Arkansas River, shaped by the 2019 flood',
+    lede: "West Tulsa sits on the Arkansas River's west bank and in May to June 2019, that geography put floodwater in homes and businesses that had never taken on water before. But flooding is only part of the picture. Red Fork and the Westside hold some of the oldest residential construction in the city: 1920s to 1960s homes with galvanized pipes, cast-iron drains, crawlspaces and sewer laterals that back up when the system overloads during storms.",
+    stat: { value: '2019', label: 'the May to June flood, Keystone Dam releases, river levels not seen since 1986' },
+    floodYears: [
+      { year: '1984', note: 'River flood reached West Tulsa' },
+      { year: '1986', note: 'Last comparable river levels before 2019' },
+      { year: '2019', note: 'Keystone Dam releases, Category 3 water in homes and businesses' },
+    ],
+    floodNote: 'The 1984, 1986 and 2019 floods all affected West Tulsa, making it one of the most flood-exposed areas in the Tulsa metro.',
+    zips: [
+      { code: '74107', note: 'Red Fork, the Westside, and neighborhoods west of the Arkansas River' },
+      { code: '74127', note: 'Garden City, the Southwest Boulevard corridor, toward Sand Springs' },
+    ],
+    neighborhoods: ['Red Fork', 'Westside', 'Garden City'],
+    corridorNote: 'plus the Southwest Boulevard corridor',
+    nearby: ['Sand Springs', 'Sapulpa', 'Jenks'],
+    patterns: [
+      { title: 'Arkansas River flooding', text: 'Low-lying properties along the river corridor took on Category 3 floodwater in 2019. Every porous material it contacts must be removed, not dried.' },
+      { title: 'Sewer backup', text: 'Mid-20th-century sewer infrastructure overloads during heavy rain and river flooding, backing sewage up through floor drains and ground-level toilets.' },
+      { title: '1920s to 1960s homes', text: 'Galvanized supply lines corrode from the inside, cast-iron drains crack from root intrusion, and plaster walls hold water far longer than drywall.' },
+      { title: 'Mold after the flood', text: 'Homes flooded in 2019 that were never dried to measured targets can still harbor mold inside wall cavities and crawlspaces years later.' },
+    ],
+    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=West+Tulsa,+Tulsa,+OK',
+  },
+  '/service-areas/north-tulsa': {
+    variant: 'oldest',
+    name: 'North Tulsa',
+    eyebrow: 'North Tulsa at a glance',
+    heading: "The city's oldest housing stock, and the leaks that hide in it",
+    lede: "North Tulsa has some of the city's oldest housing stock: 1920s to 1950s homes with original galvanized supply lines, cast-iron sewer laterals under decades-old trees, plaster walls, crawlspaces over damp clay, and plumbing that has been in service for 70 to 100 years. Water damage here often starts small and stays hidden: a slow drip inside a plaster wall, a crawlspace that has been damp for years, a sewer lateral narrowing from root intrusion for a decade.",
+    stat: { value: '70 to 100 years', label: 'how long North Tulsa plumbing has been in service' },
+    zips: [
+      { code: '74106', note: 'Greenwood, the North Peoria corridor' },
+      { code: '74110', note: "Kendall-Whittier's northern edge, Dawson" },
+      { code: '74126', note: 'Owen Park, the North Lewis corridor' },
+      { code: '74130', note: 'Northern residential areas' },
+      { code: '74127', note: 'Areas north of the river corridor' },
+    ],
+    neighborhoods: ['Greenwood', 'Owen Park', 'Dawson', 'Kendall-Whittier'],
+    corridorNote: 'plus the North Peoria and North Lewis corridors',
+    nearby: ['Owasso', 'Skiatook', 'Midtown'],
+    patterns: [
+      { title: 'Aging galvanized supply lines', text: 'Galvanized steel corrodes from the inside over decades until it fails at a joint, often inside a plaster wall where the leak runs for days or weeks before a stain appears.' },
+      { title: 'Root-cracked sewer laterals', text: 'Mature tree roots grow into clay and cast-iron laterals, narrowing the pipe until a partial blockage becomes a full Category 3 backup through floor drains and low toilets.' },
+      { title: 'Crawlspace moisture and mold', text: 'Pier-and-beam homes sit over crawlspaces where clay soil holds moisture year-round. Without a vapor barrier, ground moisture grows mold on structural wood silently, often for years.' },
+      { title: 'Bird Creek flooding', text: 'Low-lying areas near Bird Creek tributaries can flood during stalled spring storms. Rising outside water is Category 3 and needs NFIP flood coverage.' },
+    ],
+    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=North+Tulsa,+Tulsa,+OK',
+  },
+  '/service-areas/east-tulsa': {
+    variant: 'base',
+    name: 'East Tulsa',
+    eyebrow: 'East Tulsa at a glance',
+    heading: 'The widest mix of homes in Tulsa, and our home base',
+    lede: "East Tulsa runs from 1950s ranch homes off Admiral and 11th Street to 1980s slab neighborhoods near 61st, plus warehouses, shops and light-industrial buildings along the Memorial and Sheridan corridors. That mix means every kind of water damage shows up here: galvanized pipe failures in ranch homes, slab leaks in 1970s to 1980s construction, overnight appliance floods, commercial roof leaks over inventory, and Mingo Creek drainage that overflows during stalled spring storms.",
+    stat: { value: '1950s to 1980s', label: 'the housing eras East Tulsa spans, the widest range in the metro' },
+    baseNote: 'Our base at 400 S 129th E Ave sits in East Tulsa, making East Tulsa our closest service area with the shortest response times.',
+    eras: [
+      { era: '1950s ranch', note: 'Admiral and 11th Street' },
+      { era: '1970s to 1980s slab', note: 'Slab neighborhoods near 61st' },
+      { era: 'Warehouses and shops', note: 'Memorial and Sheridan corridors' },
+    ],
+    zips: [
+      { code: '74112', note: 'Admiral Place area, older ranch neighborhoods' },
+      { code: '74115', note: 'North of Admiral, including Mohawk Park area' },
+      { code: '74116', note: 'Northeast East Tulsa' },
+      { code: '74128', note: 'East toward Catoosa' },
+      { code: '74129', note: 'Central East Tulsa, the 31st to 51st Street corridor' },
+      { code: '74134', note: 'South of 51st along Memorial' },
+      { code: '74145', note: '51st to 71st between Sheridan and Memorial' },
+      { code: '74146', note: 'East of Memorial, toward Broken Arrow line' },
+    ],
+    neighborhoods: ['Admiral Place', 'Mohawk Park'],
+    corridorNote: 'plus the 31st to 51st Street corridor and the Memorial and Sheridan corridors',
+    nearby: ['Broken Arrow', 'Catoosa', 'South Tulsa', 'Midtown'],
+    patterns: [
+      { title: '1950s ranch plumbing', text: 'Galvanized supply lines and cast-iron drains fail inside walls, and plaster walls, original hardwood and pier-and-beam crawlspaces need longer, material-specific drying.' },
+      { title: 'Slab leaks, 1970s to 1980s', text: 'Copper lines buried in concrete have been stressed by expansive clay soil for 40 to 50 years. These homes are now well past the failure window for buried supply lines.' },
+      { title: 'Appliance and water heater failures', text: 'Water heaters, washing machine hoses and refrigerator ice-maker lines in homes 15 to 30 or more years old fail with increasing frequency, almost always overnight.' },
+      { title: 'Mingo Creek and flat commercial roofs', text: 'Low-lying areas near Mingo Creek take on storm runoff in the 51st to 71st Street corridors, and flat roofs on warehouses and shops along Admiral, Memorial and Sheridan pond water and take hail.' },
+    ],
+    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=East+Tulsa,+Tulsa,+OK',
+  },
+};
+
 /* Resource pages, in doc order. The /resources/ hub lists all ten, so no
    resource page is an orphan: /resources/water-damage-vs-flood-damage-
    insurance-oklahoma has zero inbound body links in the doc; the other nine

@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# AI search bots — explicit Allow (these fetch pages for AI answers)
+# AI search bots - explicit Allow (these fetch pages for AI answers)
 User-agent: Googlebot
 Allow: /
 
@@ -38,7 +38,7 @@ Allow: /
 User-agent: Meta-WebIndexer
 Allow: /
 
-# AI training bots — explicit Allow (established allow-everything pattern)
+# AI training bots - explicit Allow (established allow-everything pattern)
 User-agent: GPTBot
 Allow: /
 

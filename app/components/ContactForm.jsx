@@ -19,7 +19,7 @@ export default function ContactForm() {
           <p>
             <strong>This form is not connected to an inbox yet.</strong> Your message was not
             sent anywhere. For the fastest help, call{' '}
-            <a href={SITE.phoneHref}>{SITE.phone}</a> — answered 24/7.
+            <a href={SITE.phoneHref}>{SITE.phone}</a> - answered 24/7.
           </p>
         </div>
       ) : (

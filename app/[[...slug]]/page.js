@@ -12,9 +12,11 @@ import {
   areaMapQuery,
   pageGeo,
   BUSINESS_GEO,
+  AREA_GEO,
+  AREA_IDENTITY,
 } from '../lib-meta';
 import Footer from '../components/Footer';
-import { TrustBand, ServiceListCards, serviceListItems, AreaCards, ResourceCards, FaqList, FinalCta, MapBlock } from '../components/Shared';
+import { TrustBand, ServiceListCards, serviceListItems, AreaCards, ResourceCards, FaqList, FinalCta, MapBlock, AreaIdentity, AboutLinks } from '../components/Shared';
 import ContactForm from '../components/ContactForm';
 
 export const dynamicParams = false;
@@ -173,28 +175,52 @@ function groupBlocks(blocks, page) {
 
 /* areaServed — shared by LocalBusiness and by each Service node: every real
    service area on the site (Tulsa + 12 suburb cities + 7 Tulsa neighborhoods,
-   area-page H1s verbatim, location prefix stripped). No invented place. */
+   area-page H1s verbatim, location prefix stripped). Each Place carries its
+   real ZIP codes + geo coordinates (#5, follow-up 2026-11-23).
+   ZIPs are each area page's OWN coverage list from content/pages.json —
+   nearby-community mentions are excluded (Claremore is 74017/74019, not
+   Catoosa's 74015 or Collinsville's 74021; Owasso is 74055; Skiatook is
+   74070). 74127 spans West + North and 74145 spans South + East, exactly as
+   the doc states. Midtown's 7 ZIPs come from its neighborhood list
+   (Florence Park 74105/74114, Kendall-Whittier 74104/74110) plus its
+   "zip codes covered" sentence (74103, 74104, 74114, 74119, 74120).
+   Geo from AREA_GEO (lib-meta.js); Tulsa City uses BUSINESS_GEO. Tulsa has
+   no single postalCode, so it carries none. Nothing invented. */
+function areaPlace(type, name, zips, geo) {
+  return {
+    '@type': type,
+    name,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: type === 'City' ? name : 'Tulsa',
+      addressRegion: 'OK',
+      addressCountry: 'US',
+      ...(zips ? { postalCode: zips } : {}),
+    },
+    geo: { '@type': 'GeoCoordinates', latitude: geo.latitude, longitude: geo.longitude },
+  };
+}
 const AREA_SERVED = [
-  { '@type': 'City', name: 'Tulsa' },
-  { '@type': 'City', name: 'Broken Arrow' },
-  { '@type': 'City', name: 'Bixby' },
-  { '@type': 'City', name: 'Catoosa' },
-  { '@type': 'City', name: 'Claremore' },
-  { '@type': 'City', name: 'Collinsville' },
-  { '@type': 'City', name: 'Coweta' },
-  { '@type': 'City', name: 'Glenpool' },
-  { '@type': 'City', name: 'Jenks' },
-  { '@type': 'City', name: 'Owasso' },
-  { '@type': 'City', name: 'Sand Springs' },
-  { '@type': 'City', name: 'Sapulpa' },
-  { '@type': 'City', name: 'Skiatook' },
-  { '@type': 'Place', name: 'Midtown Tulsa' },
-  { '@type': 'Place', name: 'Brookside, Tulsa' },
-  { '@type': 'Place', name: 'South Tulsa' },
-  { '@type': 'Place', name: 'West Tulsa' },
-  { '@type': 'Place', name: 'North Tulsa' },
-  { '@type': 'Place', name: 'East Tulsa' },
-  { '@type': 'Place', name: 'Cherry Street & the Pearl District' },
+  areaPlace('City', 'Tulsa', null, BUSINESS_GEO),
+  areaPlace('City', 'Broken Arrow', ['74011', '74012', '74014'], AREA_GEO['/service-areas/broken-arrow-ok']),
+  areaPlace('City', 'Bixby', ['74008'], AREA_GEO['/service-areas/bixby-ok']),
+  areaPlace('City', 'Catoosa', ['74015'], AREA_GEO['/service-areas/catoosa-ok']),
+  areaPlace('City', 'Claremore', ['74017', '74019'], AREA_GEO['/service-areas/claremore-ok']),
+  areaPlace('City', 'Collinsville', ['74021'], AREA_GEO['/service-areas/collinsville-ok']),
+  areaPlace('City', 'Coweta', ['74429'], AREA_GEO['/service-areas/coweta-ok']),
+  areaPlace('City', 'Glenpool', ['74033'], AREA_GEO['/service-areas/glenpool-ok']),
+  areaPlace('City', 'Jenks', ['74037'], AREA_GEO['/service-areas/jenks-ok']),
+  areaPlace('City', 'Owasso', ['74055'], AREA_GEO['/service-areas/owasso-ok']),
+  areaPlace('City', 'Sand Springs', ['74063'], AREA_GEO['/service-areas/sand-springs-ok']),
+  areaPlace('City', 'Sapulpa', ['74066'], AREA_GEO['/service-areas/sapulpa-ok']),
+  areaPlace('City', 'Skiatook', ['74070'], AREA_GEO['/service-areas/skiatook-ok']),
+  areaPlace('Place', 'Midtown Tulsa', ['74103', '74104', '74105', '74110', '74114', '74119', '74120'], AREA_GEO['/service-areas/midtown-tulsa']),
+  areaPlace('Place', 'Brookside, Tulsa', ['74105'], AREA_GEO['/service-areas/brookside-tulsa']),
+  areaPlace('Place', 'South Tulsa', ['74133', '74135', '74136', '74137', '74145'], AREA_GEO['/service-areas/south-tulsa']),
+  areaPlace('Place', 'West Tulsa', ['74107', '74127'], AREA_GEO['/service-areas/west-tulsa']),
+  areaPlace('Place', 'North Tulsa', ['74106', '74110', '74126', '74127', '74130'], AREA_GEO['/service-areas/north-tulsa']),
+  areaPlace('Place', 'East Tulsa', ['74112', '74115', '74116', '74128', '74129', '74134', '74145', '74146'], AREA_GEO['/service-areas/east-tulsa']),
+  areaPlace('Place', 'Cherry Street & the Pearl District', ['74104', '74120'], AREA_GEO['/service-areas/cherry-street-tulsa']),
 ];
 
 /* Area-page "about" — the specific city/neighborhood each area page covers
@@ -221,20 +247,69 @@ const AREA_ABOUT = {
   '/service-areas/cherry-street-tulsa': { '@type': 'Place', name: 'Cherry Street & the Pearl District' },
 };
 
+/* isRelatedTo — related services per service page (#5, follow-up 2026-11-23).
+   13 of 18 come straight from the doc: each service page's own internal
+   links to other /services/ pages in its doc blocks (hardwood's "Related
+   Services" list: water mitigation + emergency; mold's links: AC drain,
+   roof leak, flood; and so on). The 5 pages with no doc-internal service
+   link get a conservative pairing grounded in the page's own words:
+   burst pipe -> water mitigation + emergency (its intro: "We extract water,
+   map..."); AC drain overflow -> ceiling + water mitigation (its intro puts
+   the water "onto your ceiling drywall"); water heater -> appliance +
+   water mitigation (the appliance page links TO water heater); smoke/soot
+   -> fire + water mitigation (its text: "dry the firefighting water");
+   fire -> smoke/soot + water mitigation (its intro names both). Every
+   target is a real service page from the sitemap. */
+const SERVICE_RELATED = {
+  '/services/emergency-water-damage-restoration': ['/services/mold-remediation'],
+  '/services/water-mitigation': ['/services/slab-leak-water-damage', '/services/ac-drain-line-overflow-cleanup'],
+  '/services/flood-damage-restoration': ['/services/mold-remediation'],
+  '/services/mold-remediation': ['/services/ac-drain-line-overflow-cleanup', '/services/roof-leak-water-damage', '/services/flood-damage-restoration'],
+  '/services/commercial-water-damage': ['/services/water-mitigation', '/services/mold-remediation'],
+  '/services/flooded-basement-cleanup': ['/services/mold-remediation'],
+  '/services/storm-damage-repair': ['/services/roof-leak-water-damage', '/services/mold-remediation'],
+  '/services/burst-pipe-water-damage': ['/services/water-mitigation', '/services/emergency-water-damage-restoration'],
+  '/services/sewage-backup-cleanup': ['/services/flooded-basement-cleanup'],
+  '/services/ceiling-water-damage': ['/services/storm-damage-repair'],
+  '/services/hardwood-floor-drying': ['/services/water-mitigation', '/services/emergency-water-damage-restoration'],
+  '/services/ac-drain-line-overflow-cleanup': ['/services/ceiling-water-damage', '/services/water-mitigation'],
+  '/services/appliance-leak-water-damage': ['/services/water-heater-leak-cleanup', '/services/hardwood-floor-drying'],
+  '/services/water-heater-leak-cleanup': ['/services/appliance-leak-water-damage', '/services/water-mitigation'],
+  '/services/roof-leak-water-damage': ['/services/storm-damage-repair'],
+  '/services/slab-leak-water-damage': ['/services/mold-remediation'],
+  '/services/smoke-soot-damage-cleanup': ['/services/fire-damage-restoration', '/services/water-mitigation'],
+  '/services/fire-damage-restoration': ['/services/smoke-soot-damage-cleanup', '/services/water-mitigation'],
+};
+
+function relatedServices(slug) {
+  return (SERVICE_RELATED[slug] || []).map((s) => ({
+    '@type': 'Service',
+    name: PAGE_BY_SLUG[s].h1.replace(/ in Tulsa, OK$/, ''),
+    url: SITE.url + s,
+  }));
+}
+
 function jsonLd(page) {
   const url = SITE.url + page.slug;
   const heroImg = pageImage(page.slug).hero;
   /* Offer catalog (homepage LocalBusiness only): the 18 real services,
-     names = service H1s with the " in Tulsa, OK" suffix stripped. */
-  const serviceCatalog = PAGES.filter((p) => p.type === 'service').map((p) => ({
-    '@type': 'Offer',
-    itemOffered: {
-      '@type': 'Service',
-      name: p.h1.replace(/ in Tulsa, OK$/, ''),
-      url: SITE.url + p.slug,
-      provider: { '@id': SITE.url + '/#business' },
-    },
-  }));
+     names = service H1s with the " in Tulsa, OK" suffix stripped.
+     Each itemOffered Service also carries isRelatedTo (same map as the
+     service-page Service node, #5). */
+  const serviceCatalog = PAGES.filter((p) => p.type === 'service').map((p) => {
+    const rel = relatedServices(p.slug);
+    return {
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: p.h1.replace(/ in Tulsa, OK$/, ''),
+        url: SITE.url + p.slug,
+        provider: { '@id': SITE.url + '/#business' },
+        ...(rel.length ? { isRelatedTo: rel } : {}),
+      },
+    };
+  });
+  const related = relatedServices(page.slug);
   const parent = parentOf(page);
   /* BreadcrumbList must match the visible breadcrumb trail exactly:
      - homepage: a single Home item (it renders no visible trail, and a
@@ -278,11 +353,13 @@ function jsonLd(page) {
       addressCountry: 'US',
     },
     /* GeoCoordinates from a real map lookup of the business address
-       (36.15467, -95.83348 — FULL_ADDRESS match); hasMap is the exact
-       Google Maps URL the site's own footer embed uses. */
+       (36.15467, -95.83348 — FULL_ADDRESS match); hasMap is the standard
+       Google Maps search URL for the same address (#5: verified HTTP 200
+       twice, plain curl + browser UA, 2026-11-23; the old output=embed URL
+       301s, so it was replaced). */
     geo: { '@type': 'GeoCoordinates', latitude: 36.15467, longitude: -95.83348 },
     hasMap:
-      'https://www.google.com/maps?q=400%20S%20129th%20E%20Ave%2C%20Tulsa%2C%20OK%2074108&output=embed',
+      'https://www.google.com/maps/search/?api=1&query=400+S+129th+E+Ave,+Tulsa,+OK+74108',
     areaServed: AREA_SERVED,
     /* knowsAbout: the 18 real services — service-page H1s verbatim with
        only the " in Tulsa, OK" location suffix stripped. */
@@ -360,7 +437,8 @@ function jsonLd(page) {
                      areaServed = the full 20-place list (this service is
                      offered across every area, not Tulsa alone);
                      geo = the business coords (rebuild §6c);
-                     image = the service's real hero. */
+                     image = the service's real hero;
+                     isRelatedTo = related services, real URLs only (#5). */
                   serviceType: page.h1.replace(/ in Tulsa, OK$/, ''),
                   description: page.intro,
                   url,
@@ -368,6 +446,7 @@ function jsonLd(page) {
                   ...(heroImg ? { image: SITE.url + heroImg.file } : {}),
                   provider: { '@id': SITE.url + '/#business' },
                   areaServed: AREA_SERVED,
+                  ...(related.length ? { isRelatedTo: related } : {}),
                 },
                 localBusiness,
                 /* WebPage alongside Service: service pages previously had
@@ -472,17 +551,6 @@ function Hero({ page, pageClass }) {
               <span className="dot" aria-hidden="true" />
               Tulsa, Oklahoma · 24/7 Emergency Response
             </span>
-          )}
-          {page.type !== 'homepage' && (
-            <p className="eyebrow on-navy">
-              {page.type === 'service'
-                ? 'Water damage restoration · Tulsa, OK'
-                : page.type === 'area'
-                  ? 'Service area · Tulsa, OK'
-                  : page.type === 'resource'
-                    ? 'Guide · Tulsa, OK'
-                    : 'Tulsa Water Damage Repair'}
-            </p>
           )}
           {page.type === 'area' && (
             <span className="place-chip">{placeFromH1(page.h1)}</span>
@@ -815,6 +883,8 @@ export default function Page({ params }) {
           </div>
         </section>
       )}
+      {AREA_IDENTITY[page.slug] && <AreaIdentity slug={page.slug} />}
+      {page.slug === '/about-us' && <AboutLinks />}
       <FinalCta />
       <Footer showMap={!isArea && !isContact} />
     </>
