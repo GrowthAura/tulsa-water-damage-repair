@@ -61,17 +61,11 @@ h2 {
   letter-spacing: -0.015em;
   margin: 0 0 1rem;
 }
-@supports ((background-clip: text) or (-webkit-background-clip: text)) {
-  h2 {
-    background: linear-gradient(100deg, var(--navy) 0%, var(--blue) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-  }
-  /* H2s that sit on navy keep solid cream (gradient would be unreadable there). */
-  .final-cta-card h2, .section-navy h2 { background: none; -webkit-text-fill-color: var(--cream); color: var(--cream); }
-}
+/* Headings are SOLID colours — never gradient text (background-clip: text
+   + transparent fill). That technique made every H1/H2 invisible in
+   Google's renderer (computed colour rgba(0,0,0,0); the gradient does not
+   paint there), so Google saw blank pages and stopped indexing. Fixed
+   2026-11-23: solid cream H1 on the hero, solid navy H2 everywhere. */
 h3 { font-family: var(--font-dm-sans), 'DM Sans', system-ui, sans-serif; color: var(--blue); font-weight: 700; font-size: clamp(1.4rem, 2.2vw, 1.9rem); line-height: 1.12; letter-spacing: -0.015em; margin: 0 0 0.75rem; }
 p { margin: 0 0 1.25rem; }
 p.lead, .lead { font-size: 1.1875rem; line-height: 1.65; }
@@ -224,15 +218,6 @@ p.lead, .lead { font-size: 1.1875rem; line-height: 1.65; }
 }
 .place-chip::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--cyan); flex: none; }
 .hero h1 { color: var(--cream); }
-@supports ((background-clip: text) or (-webkit-background-clip: text)) {
-  .hero h1 {
-    background: linear-gradient(100deg, #f7f3ea 20%, #bfefff 55%, #7fdbff 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-  }
-}
 .hero .hero-intro { color: var(--pale-text); font-size: 1.25rem; line-height: 1.65; margin-top: 1.25rem; max-width: 46rem; }
 .hero .hero-intro + .hero-intro { margin-top: 1rem; }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
@@ -296,8 +281,7 @@ p.lead, .lead { font-size: 1.1875rem; line-height: 1.65; }
   content: counter(step-num, decimal-leading-zero);
   flex: none; display: inline-grid; place-items: center; width: 2.75rem; height: 2.75rem;
   border-radius: 50%; background: var(--navy); color: var(--cyan-light);
-  /* The H2 gradient rule sets -webkit-text-fill-color: transparent on all
-     h2 text — the badge digits inherit it and vanish. Reset it here. */
+  /* Badge digits keep their own fill colour (independent of the H2). */
   -webkit-text-fill-color: var(--cyan-light);
   font-family: var(--font-dm-sans), 'DM Sans', system-ui, sans-serif;
   font-size: 1.05rem; font-weight: 700; letter-spacing: 0; margin-top: 0.15rem;
