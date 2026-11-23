@@ -12,38 +12,50 @@ photo actually on that page (hero + content/card photos), NOT just the hero.
   each page) — a photo is listed only if it is actually rendered on that page.
   Falls back to the page's hero file if the built HTML is not present.
   All images are /images/*.webp real photos (no logos/icons in /images/).
-- lastmod is DATE-ONLY (YYYY-MM-DD). Four dates (his order 2026-11-14,
-  to avoid a bulk-stamp penalty): 2026-11-12 on the 10 key pages,
-  2026-11-07 on the 10 resource guides, 2026-11-08 on the other 32,
-  2026-11-14 on the hardwood page (rebuilt + fixed + live 2026-11-14).
-  NOTE: no page carries 2026-11-13 — zero commits that day, so a 11-13
-  stamp would be a false date (the thing that erodes sitemap trust).
+- lastmod is DATE-ONLY (YYYY-MM-DD). Four dates (his order 2026-11-23):
+  2026-11-23 on the 24 pages with substantive Nov 23 changes (follow-up
+  round + 4 cuts: homepage, About, the 4 directional areas, all 18
+  services — eyebrow cut + new schema + text/header), 2026-11-22 on the
+  18 pages whose last substantive change was the Nov 22 rebuild (other
+  15 areas, Contact, services hub, commercial), 2026-11-07 on the 10
+  resource guides (blogs, unchanged — his order), 2026-11-12 on the
+  resources hub (unchanged). NOTE: no page carries a date it did not
+  actually change on — Nov 22 = rebuild day, Nov 23 = follow-up + cuts
+  day, both real change days (unlike the 2026-11-13 request, which had
+  zero commits and was refused as a false date).
 """
 import json, os, re, sys
 BASE = os.path.expanduser('~/workspace/tulsa-water-damage-repair/site')
 pages = json.load(open(os.path.join(BASE, 'content', 'pages.json')))
 DOMAIN = 'https://www.tulsawaterdamagerepair.com'
-TODAY = '2026-11-12'
 
-# Pages with a newer real last-change date (honest only — never stamp a
-# date a page did not actually change on).
-RECENT_OVERRIDES = {
-    '/services/hardwood-floor-drying': '2026-11-14',
-    '/services': '2026-11-14',
-}
-
-# 10 key pages carry today's date (his order: ~10 pages on today).
-TODAY_PAGES = {
+# 24 pages with substantive Nov 23 changes (honest only — never stamp a
+# date a page did not actually change on). Follow-up round + 4 cuts.
+NOV23_PAGES = {
     '/',
-    '/services',
-    '/services/emergency-water-damage-restoration',
-    '/services/water-mitigation',
-    '/services/mold-remediation',
-    '/services/flood-damage-restoration',
+    '/about-us',
+    '/service-areas/south-tulsa',
+    '/service-areas/west-tulsa',
+    '/service-areas/north-tulsa',
+    '/service-areas/east-tulsa',
+    '/services/ac-drain-line-overflow-cleanup',
+    '/services/appliance-leak-water-damage',
     '/services/burst-pipe-water-damage',
-    '/commercial',
-    '/contact',
-    '/resources',
+    '/services/ceiling-water-damage',
+    '/services/commercial-water-damage',
+    '/services/emergency-water-damage-restoration',
+    '/services/fire-damage-restoration',
+    '/services/flood-damage-restoration',
+    '/services/flooded-basement-cleanup',
+    '/services/hardwood-floor-drying',
+    '/services/mold-remediation',
+    '/services/roof-leak-water-damage',
+    '/services/sewage-backup-cleanup',
+    '/services/slab-leak-water-damage',
+    '/services/smoke-soot-damage-cleanup',
+    '/services/storm-damage-repair',
+    '/services/water-heater-leak-cleanup',
+    '/services/water-mitigation',
 }
 
 def hero_file(slug):
@@ -55,13 +67,13 @@ def hero_file(slug):
     return slug.strip('/').replace('/', '-') + '-tulsa-water-damage-repair.webp'
 
 def lastmod_for(slug):
-    if slug in RECENT_OVERRIDES:
-        return RECENT_OVERRIDES[slug]
-    if slug in TODAY_PAGES:
-        return TODAY
+    if slug in NOV23_PAGES:
+        return '2026-11-23'
     if slug.startswith('/resources/'):
         return '2026-11-07'
-    return '2026-11-08'
+    if slug == '/resources':
+        return '2026-11-12'
+    return '2026-11-22'
 
 def images_for(slug):
     """Every /images/ photo actually rendered on this page (built HTML)."""
@@ -79,7 +91,7 @@ def images_for(slug):
 
 urls = sorted({p['slug'] for p in pages})
 assert len(urls) == 53, f'expected 53 urls, got {len(urls)}'
-assert len(TODAY_PAGES) == 10, f'expected 10 today pages, got {len(TODAY_PAGES)}'
+assert len(NOV23_PAGES) == 24, f'expected 24 Nov-23 pages, got {len(NOV23_PAGES)}'
 
 # Verify every listed image file exists in public/images/ before writing.
 total_imgs = 0
