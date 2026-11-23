@@ -132,10 +132,6 @@ export const AREA_GROUPS = [
     slugs: [
       '/service-areas/midtown-tulsa',
       '/service-areas/brookside-tulsa',
-      '/service-areas/south-tulsa',
-      '/service-areas/west-tulsa',
-      '/service-areas/north-tulsa',
-      '/service-areas/east-tulsa',
       '/service-areas/cherry-street-tulsa',
     ],
   },
@@ -186,6 +182,10 @@ export const FOOTER_AREAS = [
   '/service-areas/skiatook-ok',
   '/service-areas/coweta-ok',
   '/service-areas/sapulpa-ok',
+  '/service-areas/south-tulsa',
+  '/service-areas/west-tulsa',
+  '/service-areas/north-tulsa',
+  '/service-areas/east-tulsa',
 ];
 
 /* Geo — rebuild 2026-11-22 (§6a). Business coords are the verified lookup

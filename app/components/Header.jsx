@@ -48,7 +48,9 @@ export default function Header() {
           <nav className="main-nav" aria-label="Main">
             <Link href="/">Home</Link>
             <details>
-              <summary>Services ▾</summary>
+              <summary>
+                <Link href="/services">Services</Link> ▾
+              </summary>
               <div className="nav-drop">
                 {SERVICE_GROUPS.map((g) => (
                   <div key={g.label}>
@@ -114,6 +116,8 @@ export default function Header() {
                     ))}
                   </div>
                 ))}
+                <p className="drop-group">All Services</p>
+                <Link href="/services">View every service →</Link>
                 <p className="drop-group">Service Areas</p>
                 {AREA_GROUPS.flatMap((g) => g.slugs).map((s) => (
                   <Link key={s} href={s}>
