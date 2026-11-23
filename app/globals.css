@@ -193,7 +193,14 @@ p.lead, .lead { font-size: 1.1875rem; line-height: 1.65; }
 .mobile-menu .btn { width: 100%; margin-top: 1rem; }
 
 /* Hero — full-bleed photo, deep-navy left scrim, content on top. */
-.hero { background: #062a4a; background-size: cover; background-position: center; background-repeat: no-repeat; color: #f7f3ea; position: relative; overflow: hidden; min-height: 78vh; min-height: 78svh; display: flex; isolation: isolate; }
+.hero { background: #062a4a; background-size: cover; background-position: center; background-repeat: no-repeat; color: #f7f3ea; position: relative; min-height: 78vh; min-height: 78svh; display: flex; }
+/* isolation + overflow:hidden removed 2026-11-23: five fixes in, the hero
+   text STILL did not paint in Google's renderer (literal colors + Georgia
+   confirmed loaded 12:52, text in DOM, screenshot blank). The last two
+   hero-only properties that can hide content in a quirky renderer are
+   isolation (stacking-context quirk) and overflow:hidden (clips anything
+   a flex quirk pushes outside the hero's bounds). Removing both — the
+   hero is now a plain flex block with a background and text. */
 /* .hero-media removed 2026-11-23: the photo + gradient are now layered
    backgrounds on .hero itself (see Hero in page.js). No separate media
    layer, no ::after overlay, no z-index stacking for Google to mis-paint. */
