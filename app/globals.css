@@ -193,7 +193,7 @@ p.lead, .lead { font-size: 1.1875rem; line-height: 1.65; }
 .mobile-menu .btn { width: 100%; margin-top: 1rem; }
 
 /* Hero — full-bleed photo, deep-navy left scrim, content on top. */
-.hero { background: var(--deep-navy); background-size: cover; background-position: center; background-repeat: no-repeat; color: var(--cream); position: relative; overflow: hidden; min-height: 78vh; min-height: 78svh; display: flex; isolation: isolate; }
+.hero { background: #062a4a; background-size: cover; background-position: center; background-repeat: no-repeat; color: #f7f3ea; position: relative; overflow: hidden; min-height: 78vh; min-height: 78svh; display: flex; isolation: isolate; }
 /* .hero-media removed 2026-11-23: the photo + gradient are now layered
    backgrounds on .hero itself (see Hero in page.js). No separate media
    layer, no ::after overlay, no z-index stacking for Google to mis-paint. */
@@ -216,8 +216,8 @@ p.lead, .lead { font-size: 1.1875rem; line-height: 1.65; }
   padding: 0.4rem 0.9rem; border-radius: 999px; margin-bottom: 1.25rem;
 }
 .place-chip::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--cyan); flex: none; }
-.hero h1 { color: var(--cream); }
-.hero .hero-intro { color: var(--pale-text); font-size: 1.25rem; line-height: 1.65; margin-top: 1.25rem; max-width: 46rem; }
+.hero h1 { color: #f7f3ea; font-family: Georgia, 'Times New Roman', serif; }
+.hero .hero-intro { color: #d9ecf6; font-size: 1.25rem; line-height: 1.65; margin-top: 1.25rem; max-width: 46rem; }
 .hero .hero-intro + .hero-intro { margin-top: 1rem; }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
 .hero-areas { display: flex; align-items: center; gap: 0.55rem; margin: 1.5rem 0 0; color: var(--pale-text); font-weight: 700; font-size: 1.1875rem; }
