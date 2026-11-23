@@ -193,7 +193,15 @@ p.lead, .lead { font-size: 1.1875rem; line-height: 1.65; }
 .mobile-menu .btn { width: 100%; margin-top: 1rem; }
 
 /* Hero — full-bleed photo, deep-navy left scrim, content on top. */
-.hero { background: #062a4a; background-size: cover; background-position: center; background-repeat: no-repeat; color: #f7f3ea; position: relative; min-height: 78vh; min-height: 78svh; display: flex; }
+.hero { background: #062a4a; background-size: cover; background-position: center; background-repeat: no-repeat; color: #f7f3ea; position: relative; min-height: 560px; display: flex; }
+/* min-height changed 78vh/78svh -> fixed 560px (2026-11-23): six fixes in,
+   the hero text STILL did not paint in Google's renderer (12:57 live
+   test, new CSS confirmed, text in DOM, screenshot blank) — and a
+   byte-identical fetch proves Googlebot and a normal browser receive
+   the EXACT same HTML. The last viewport-dependent property is the
+   78vh/78svh min-height: if Google's renderer computes the viewport
+   taller than the screenshot, the vertically-centred text sits below
+   the visible area. A fixed pixel height removes that variable. */
 /* isolation + overflow:hidden removed 2026-11-23: five fixes in, the hero
    text STILL did not paint in Google's renderer (literal colors + Georgia
    confirmed loaded 12:52, text in DOM, screenshot blank). The last two
