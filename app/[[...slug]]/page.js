@@ -515,21 +515,29 @@ function Hero({ page, pageClass }) {
     .split(/\n\s*\n/)
     .map((s) => s.trim())
     .filter(Boolean);
+  /* Photo hero: the photo + dark gradient are layered BACKGROUNDS on the
+     section itself (no separate media layer, no ::after overlay, no z-index
+     stacking, no transform animation). The text is plain flow content on
+     top, so every renderer — including Google's — paints it. This replaced
+     the absolute .hero-media <img> + ::after overlay, which Google's
+     renderer painted above the text in every live test (URL Inspection +
+     Rich Results), even after the gradient-text fix, the stacking
+     hardening, and the kenburns removal. */
+  const heroBg = img
+    ? {
+        backgroundImage: `linear-gradient(90deg, rgba(6, 42, 74, 0.94) 0%, rgba(6, 42, 74, 0.78) 45%, rgba(6, 42, 74, 0.38) 75%, rgba(6, 42, 74, 0.28) 100%), linear-gradient(to bottom, rgba(6, 42, 74, 0.2), rgba(6, 42, 74, 0.5) 85%, rgba(6, 42, 74, 0.72)), url(${img.file})`,
+        backgroundSize: 'cover',
+        backgroundPosition: img.pos ? img.pos : 'center',
+        backgroundRepeat: 'no-repeat',
+      }
+    : undefined;
   return (
-    <section className={`hero ${isShort ? 'hero-short' : ''}${pageClass ? ` ${pageClass}` : ''}`}>
-      {img ? (
-        <div className="hero-media">
-          <img
-            src={img.file}
-            alt={img.alt}
-            width={1200}
-            height={800}
-            loading="eager"
-            fetchPriority="high"
-            style={img.pos ? { objectPosition: img.pos } : undefined}
-          />
-        </div>
-      ) : (
+    <section
+      className={`hero ${isShort ? 'hero-short' : ''}${pageClass ? ` ${pageClass}` : ''}`}
+      style={heroBg}
+      {...(img ? { role: 'img', 'aria-label': img.alt } : {})}
+    >
+      {!img && (
         <div className="hero-brand-panel">
           <div className="panel-inner">
             <span className="panel-drop" aria-hidden="true">
